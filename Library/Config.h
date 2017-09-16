@@ -15,8 +15,8 @@
 #define kClientID @"431281662590-2sm5ihqbmrvkv9ohg9rf80d880ucv6r8.apps.googleusercontent.com";
 #define BASE_URL_SOURCE @"http://www.townhouseapp.com"
 
-#define USER_ID_APP [[NSUserDefaults standardUserDefaults]objectForKey:@"SPUserNameID"]
-#define USER_NAME_APP [[NSUserDefaults standardUserDefaults]objectForKey:@"name"]
+#define USER_ID_ [[NSUserDefaults standardUserDefaults]objectForKey:@"ID"]
+#define USER_NAME_ [[NSUserDefaults standardUserDefaults]objectForKey:@"name"]
 
 
 ////// --- COLORS

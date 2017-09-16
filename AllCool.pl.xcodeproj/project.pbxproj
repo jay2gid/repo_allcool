@@ -71,6 +71,7 @@
 		922BA61A1F62A5FF0068A5C3 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 922BA6191F62A5FF0068A5C3 /* test.png */; };
 		922BA61D1F62B0660068A5C3 /* FavListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 922BA61C1F62B0660068A5C3 /* FavListVC.m */; };
 		922BA61F1F62BEDD0068A5C3 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 922BA61E1F62BEDD0068A5C3 /* icon.png */; };
+		92A2D2361F63F26100A961F4 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2D2351F63F26100A961F4 /* SettingVC.m */; };
 		92ADAEDF1F5FC83B00501EA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ADAEDE1F5FC83B00501EA0 /* main.m */; };
 		92ADAEE21F5FC83B00501EA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ADAEE11F5FC83B00501EA0 /* AppDelegate.m */; };
 		92ADAEE51F5FC83B00501EA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ADAEE41F5FC83B00501EA0 /* ViewController.m */; };
@@ -322,6 +323,8 @@
 		922BA61B1F62B0660068A5C3 /* FavListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavListVC.h; path = ViewController/FavList/FavListVC.h; sourceTree = "<group>"; };
 		922BA61C1F62B0660068A5C3 /* FavListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavListVC.m; path = ViewController/FavList/FavListVC.m; sourceTree = "<group>"; };
 		922BA61E1F62BEDD0068A5C3 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = allcoolicon/icon.png; sourceTree = SOURCE_ROOT; };
+		92A2D2341F63F26100A961F4 /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingVC.h; path = ViewController/Setting/SettingVC.h; sourceTree = "<group>"; };
+		92A2D2351F63F26100A961F4 /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingVC.m; path = ViewController/Setting/SettingVC.m; sourceTree = "<group>"; };
 		92ADAEDA1F5FC83B00501EA0 /* AllCool.pl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllCool.pl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92ADAEDE1F5FC83B00501EA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92ADAEE01F5FC83B00501EA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -500,9 +503,9 @@
 				922BA57A1F600B520068A5C3 /* TpKeyBoard */,
 				922BA57F1F600B520068A5C3 /* UserSession.h */,
 				922BA5801F600B520068A5C3 /* UserSession.m */,
-				922BA5411F600B520068A5C3 /* Config.h */,
 				922BA5811F600B520068A5C3 /* WebServiceCalls.h */,
 				922BA5821F600B520068A5C3 /* WebServiceCalls.m */,
+				922BA5411F600B520068A5C3 /* Config.h */,
 				922BA5AB1F600C650068A5C3 /* PrefixHeader.pch */,
 			);
 			path = Library;
@@ -701,13 +704,13 @@
 			name = Splash;
 			sourceTree = "<group>";
 		};
-		922BA5CA1F6153190068A5C3 /* Custom View */ = {
+		922BA5CA1F6153190068A5C3 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
 				922BA5C31F601C570068A5C3 /* HeaderView */,
 				922BA5D01F6164A30068A5C3 /* DrewerVeiw */,
 			);
-			name = "Custom View";
+			name = CustomView;
 			sourceTree = "<group>";
 		};
 		922BA5D01F6164A30068A5C3 /* DrewerVeiw */ = {
@@ -734,6 +737,7 @@
 				922BA6181F62A0C40068A5C3 /* Browary */,
 				922BA61B1F62B0660068A5C3 /* FavListVC.h */,
 				922BA61C1F62B0660068A5C3 /* FavListVC.m */,
+				92A2D2371F63F26900A961F4 /* Setting */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -786,6 +790,15 @@
 			name = Browary;
 			sourceTree = "<group>";
 		};
+		92A2D2371F63F26900A961F4 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				92A2D2341F63F26100A961F4 /* SettingVC.h */,
+				92A2D2351F63F26100A961F4 /* SettingVC.m */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
 		92ADAED11F5FC83B00501EA0 = {
 			isa = PBXGroup;
 			children = (
@@ -812,7 +825,7 @@
 				92ADAEE31F5FC83B00501EA0 /* ViewController.h */,
 				92ADAEE41F5FC83B00501EA0 /* ViewController.m */,
 				922BA5D41F6164F50068A5C3 /* Cells */,
-				922BA5CA1F6153190068A5C3 /* Custom View */,
+				922BA5CA1F6153190068A5C3 /* CustomView */,
 				922BA5D11F6164C30068A5C3 /* Controller */,
 				92ADAEE91F5FC83B00501EA0 /* Assets.xcassets */,
 				92ADAEE61F5FC83B00501EA0 /* Main.storyboard */,
@@ -1190,6 +1203,7 @@
 				922BA5A81F600B520068A5C3 /* UserSession.m in Sources */,
 				922BA5C81F60234A0068A5C3 /* SplashVC.m in Sources */,
 				92ADAEE21F5FC83B00501EA0 /* AppDelegate.m in Sources */,
+				92A2D2361F63F26100A961F4 /* SettingVC.m in Sources */,
 				922BA5DD1F61693D0068A5C3 /* FavBearVC.m in Sources */,
 				922BA5201F6009710068A5C3 /* LoginVC.m in Sources */,
 				922BA5841F600B520068A5C3 /* AFHTTPRequestOperationManager.m in Sources */,
