@@ -71,6 +71,12 @@
 		922BA61A1F62A5FF0068A5C3 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 922BA6191F62A5FF0068A5C3 /* test.png */; };
 		922BA61D1F62B0660068A5C3 /* FavListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 922BA61C1F62B0660068A5C3 /* FavListVC.m */; };
 		922BA61F1F62BEDD0068A5C3 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 922BA61E1F62BEDD0068A5C3 /* icon.png */; };
+		92A2A9F11F6D63130000939D /* ACFloatingTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A2A9F01F6D63130000939D /* ACFloatingTextfield.swift */; };
+		92A2A9F51F6D65F50000939D /* ChangePasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2A9F41F6D65F50000939D /* ChangePasswordVC.m */; };
+		92A2A9F81F6D68AE0000939D /* icon_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A2A9F71F6D68AE0000939D /* icon_back.png */; };
+		92A2A9FB1F6D6A9C0000939D /* ProfileEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2A9FA1F6D6A9C0000939D /* ProfileEditVC.m */; };
+		92A2A9FF1F6D6E200000939D /* RadarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2A9FE1F6D6E200000939D /* RadarVC.m */; };
+		92A2D2361F63F26100A961F4 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2D2351F63F26100A961F4 /* SettingVC.m */; };
 		92ADAEDF1F5FC83B00501EA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ADAEDE1F5FC83B00501EA0 /* main.m */; };
 		92ADAEE21F5FC83B00501EA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ADAEE11F5FC83B00501EA0 /* AppDelegate.m */; };
 		92ADAEE51F5FC83B00501EA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ADAEE41F5FC83B00501EA0 /* ViewController.m */; };
@@ -322,6 +328,17 @@
 		922BA61B1F62B0660068A5C3 /* FavListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavListVC.h; path = ViewController/FavList/FavListVC.h; sourceTree = "<group>"; };
 		922BA61C1F62B0660068A5C3 /* FavListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavListVC.m; path = ViewController/FavList/FavListVC.m; sourceTree = "<group>"; };
 		922BA61E1F62BEDD0068A5C3 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = allcoolicon/icon.png; sourceTree = SOURCE_ROOT; };
+		92A2A9F01F6D63130000939D /* ACFloatingTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACFloatingTextfield.swift; sourceTree = "<group>"; };
+		92A2A9F21F6D63A90000939D /* BHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHeader.h; sourceTree = "<group>"; };
+		92A2A9F31F6D65F50000939D /* ChangePasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChangePasswordVC.h; path = ViewController/NewPassword/ChangePasswordVC.h; sourceTree = "<group>"; };
+		92A2A9F41F6D65F50000939D /* ChangePasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChangePasswordVC.m; path = ViewController/NewPassword/ChangePasswordVC.m; sourceTree = "<group>"; };
+		92A2A9F71F6D68AE0000939D /* icon_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_back.png; path = ../../../../Desktop/icon_back.png; sourceTree = "<group>"; };
+		92A2A9F91F6D6A9C0000939D /* ProfileEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileEditVC.h; path = ViewController/EditProfileVC/ProfileEditVC.h; sourceTree = "<group>"; };
+		92A2A9FA1F6D6A9C0000939D /* ProfileEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileEditVC.m; path = ViewController/EditProfileVC/ProfileEditVC.m; sourceTree = "<group>"; };
+		92A2A9FD1F6D6E200000939D /* RadarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RadarVC.h; path = ViewController/RadarVC/RadarVC.h; sourceTree = "<group>"; };
+		92A2A9FE1F6D6E200000939D /* RadarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RadarVC.m; path = ViewController/RadarVC/RadarVC.m; sourceTree = "<group>"; };
+		92A2D2341F63F26100A961F4 /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingVC.h; path = ViewController/Setting/SettingVC.h; sourceTree = "<group>"; };
+		92A2D2351F63F26100A961F4 /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingVC.m; path = ViewController/Setting/SettingVC.m; sourceTree = "<group>"; };
 		92ADAEDA1F5FC83B00501EA0 /* AllCool.pl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllCool.pl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92ADAEDE1F5FC83B00501EA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92ADAEE01F5FC83B00501EA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -500,10 +517,12 @@
 				922BA57A1F600B520068A5C3 /* TpKeyBoard */,
 				922BA57F1F600B520068A5C3 /* UserSession.h */,
 				922BA5801F600B520068A5C3 /* UserSession.m */,
-				922BA5411F600B520068A5C3 /* Config.h */,
 				922BA5811F600B520068A5C3 /* WebServiceCalls.h */,
 				922BA5821F600B520068A5C3 /* WebServiceCalls.m */,
+				922BA5411F600B520068A5C3 /* Config.h */,
 				922BA5AB1F600C650068A5C3 /* PrefixHeader.pch */,
+				92A2A9F01F6D63130000939D /* ACFloatingTextfield.swift */,
+				92A2A9F21F6D63A90000939D /* BHeader.h */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -701,13 +720,13 @@
 			name = Splash;
 			sourceTree = "<group>";
 		};
-		922BA5CA1F6153190068A5C3 /* Custom View */ = {
+		922BA5CA1F6153190068A5C3 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
 				922BA5C31F601C570068A5C3 /* HeaderView */,
 				922BA5D01F6164A30068A5C3 /* DrewerVeiw */,
 			);
-			name = "Custom View";
+			name = CustomView;
 			sourceTree = "<group>";
 		};
 		922BA5D01F6164A30068A5C3 /* DrewerVeiw */ = {
@@ -734,6 +753,10 @@
 				922BA6181F62A0C40068A5C3 /* Browary */,
 				922BA61B1F62B0660068A5C3 /* FavListVC.h */,
 				922BA61C1F62B0660068A5C3 /* FavListVC.m */,
+				92A2D2371F63F26900A961F4 /* Setting */,
+				92A2A9F61F6D66060000939D /* ChangePassword */,
+				92A2A9FC1F6D6AD30000939D /* ProfileEditVC */,
+				92A2AA001F6D6E320000939D /* RadarVC */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -786,6 +809,42 @@
 			name = Browary;
 			sourceTree = "<group>";
 		};
+		92A2A9F61F6D66060000939D /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				92A2A9F31F6D65F50000939D /* ChangePasswordVC.h */,
+				92A2A9F41F6D65F50000939D /* ChangePasswordVC.m */,
+			);
+			name = ChangePassword;
+			sourceTree = "<group>";
+		};
+		92A2A9FC1F6D6AD30000939D /* ProfileEditVC */ = {
+			isa = PBXGroup;
+			children = (
+				92A2A9F91F6D6A9C0000939D /* ProfileEditVC.h */,
+				92A2A9FA1F6D6A9C0000939D /* ProfileEditVC.m */,
+			);
+			name = ProfileEditVC;
+			sourceTree = "<group>";
+		};
+		92A2AA001F6D6E320000939D /* RadarVC */ = {
+			isa = PBXGroup;
+			children = (
+				92A2A9FD1F6D6E200000939D /* RadarVC.h */,
+				92A2A9FE1F6D6E200000939D /* RadarVC.m */,
+			);
+			name = RadarVC;
+			sourceTree = "<group>";
+		};
+		92A2D2371F63F26900A961F4 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				92A2D2341F63F26100A961F4 /* SettingVC.h */,
+				92A2D2351F63F26100A961F4 /* SettingVC.m */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
 		92ADAED11F5FC83B00501EA0 = {
 			isa = PBXGroup;
 			children = (
@@ -812,7 +871,7 @@
 				92ADAEE31F5FC83B00501EA0 /* ViewController.h */,
 				92ADAEE41F5FC83B00501EA0 /* ViewController.m */,
 				922BA5D41F6164F50068A5C3 /* Cells */,
-				922BA5CA1F6153190068A5C3 /* Custom View */,
+				922BA5CA1F6153190068A5C3 /* CustomView */,
 				922BA5D11F6164C30068A5C3 /* Controller */,
 				92ADAEE91F5FC83B00501EA0 /* Assets.xcassets */,
 				92ADAEE61F5FC83B00501EA0 /* Main.storyboard */,
@@ -837,6 +896,7 @@
 		92ADAEF41F5FC99800501EA0 /* allcoolicon */ = {
 			isa = PBXGroup;
 			children = (
+				92A2A9F71F6D68AE0000939D /* icon_back.png */,
 				922BA6131F627EE20068A5C3 /* rate.png */,
 				922BA5C41F601FE20068A5C3 /* menu.png */,
 				92ADAEF51F5FC99800501EA0 /* activity.png */,
@@ -1101,6 +1161,7 @@
 				92ADAFC71F5FC99800501EA0 /* placeholder_filled.png in Resources */,
 				92ADAF821F5FC99800501EA0 /* comment_chat.png in Resources */,
 				922BA5C21F601C510068A5C3 /* HeaderView.xib in Resources */,
+				92A2A9F81F6D68AE0000939D /* icon_back.png in Resources */,
 				92ADAEED1F5FC83B00501EA0 /* LaunchScreen.storyboard in Resources */,
 				92ADAFAB1F5FC99800501EA0 /* likew.png in Resources */,
 				92ADAFB11F5FC99800501EA0 /* listfestival.png in Resources */,
@@ -1164,6 +1225,7 @@
 				922BA5941F600B520068A5C3 /* SDWebImageDownloader.m in Sources */,
 				922BA5881F600B520068A5C3 /* AFURLConnectionOperation.m in Sources */,
 				922BA5831F600B520068A5C3 /* AFHTTPRequestOperation.m in Sources */,
+				92A2A9F51F6D65F50000939D /* ChangePasswordVC.m in Sources */,
 				922BA5971F600B520068A5C3 /* SDWebImagePrefetcher.m in Sources */,
 				922BA59E1F600B520068A5C3 /* UIView+WebCacheOperation.m in Sources */,
 				922BA5A41F600B520068A5C3 /* SVProgressHUD.m in Sources */,
@@ -1190,10 +1252,12 @@
 				922BA5A81F600B520068A5C3 /* UserSession.m in Sources */,
 				922BA5C81F60234A0068A5C3 /* SplashVC.m in Sources */,
 				92ADAEE21F5FC83B00501EA0 /* AppDelegate.m in Sources */,
+				92A2D2361F63F26100A961F4 /* SettingVC.m in Sources */,
 				922BA5DD1F61693D0068A5C3 /* FavBearVC.m in Sources */,
 				922BA5201F6009710068A5C3 /* LoginVC.m in Sources */,
 				922BA5841F600B520068A5C3 /* AFHTTPRequestOperationManager.m in Sources */,
 				922BA5871F600B520068A5C3 /* AFSecurityPolicy.m in Sources */,
+				92A2A9FF1F6D6E200000939D /* RadarVC.m in Sources */,
 				92ADAEDF1F5FC83B00501EA0 /* main.m in Sources */,
 				922BA5901F600B520068A5C3 /* NSData+ImageContentType.m in Sources */,
 				922BA5D71F6167B90068A5C3 /* BearCell.m in Sources */,
@@ -1205,8 +1269,10 @@
 				922BA5951F600B520068A5C3 /* SDWebImageDownloaderOperation.m in Sources */,
 				922BA61D1F62B0660068A5C3 /* FavListVC.m in Sources */,
 				922BA5EB1F61764B0068A5C3 /* MyTextField.m in Sources */,
+				92A2A9FB1F6D6A9C0000939D /* ProfileEditVC.m in Sources */,
 				922BA58D1F600B520068A5C3 /* MBProgressHUD.m in Sources */,
 				922BA5A11F600B520068A5C3 /* StarRatingControl.m in Sources */,
+				92A2A9F11F6D63130000939D /* ACFloatingTextfield.swift in Sources */,
 				922BA6171F62A0AF0068A5C3 /* BrowaryVC.m in Sources */,
 				922BA58E1F600B520068A5C3 /* Reachability.m in Sources */,
 				922BA58F1F600B520068A5C3 /* MKAnnotationView+WebCache.m in Sources */,
@@ -1343,7 +1409,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.woko.AllCool-pl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AllCool.pl/AllCool.pl-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = Library/BHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1359,7 +1425,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.woko.AllCool-pl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AllCool.pl/AllCool.pl-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = Library/BHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -15,8 +15,8 @@
 #define kClientID @"431281662590-2sm5ihqbmrvkv9ohg9rf80d880ucv6r8.apps.googleusercontent.com";
 #define BASE_URL_SOURCE @"http://www.townhouseapp.com"
 
-#define USER_ID_APP [[NSUserDefaults standardUserDefaults]objectForKey:@"SPUserNameID"]
-#define USER_NAME_APP [[NSUserDefaults standardUserDefaults]objectForKey:@"name"]
+#define USER_ID_ [[NSUserDefaults standardUserDefaults]objectForKey:@"ID"]
+#define USER_NAME_ [[NSUserDefaults standardUserDefaults]objectForKey:@"name"]
 
 
 ////// --- COLORS
@@ -67,7 +67,7 @@
 
 
 
-#define GET_HEADER_VIEW_WITH_BACK ViewHeader *header = [[[NSBundle mainBundle] loadNibNamed:@"ViewHeader" owner:self options:nil] objectAtIndex:0]; header.selfBack = self;[self.view addSubview:header]; header.frame = CGRectMake(0, 0, WIDTH, 64); if(is_Poster){ header.backgroundColor = HEADER_COLOR_POSTER;}else{header.backgroundColor = HEADER_COLOR_WORKER;}
+#define GET_HEADER_VIEW_WITH_BACK HeaderView *header = [[[NSBundle mainBundle] loadNibNamed:@"HeaderView" owner:self options:nil] objectAtIndex:0];header.selfBack = self;[self.view addSubview:header];header.frame = CGRectMake(0, 0, WIDTH, 64);header.viewBack.hidden = NO;header.btnMenu.hidden = true; header.imgMenu.hidden = true;
 
 
 #define GET_HEADER_MAIN header = [[[NSBundle mainBundle] loadNibNamed:@"ViewHeader" owner:self options:nil] objectAtIndex:0]; header.selfBack = self;[self.view addSubview:header]; header.frame = CGRectMake(0, 0, WIDTH, 64); header.viewBack.hidden = YES; header.lblTitle.text = @"Home"; header.ViewMenu.hidden = NO; if(is_Poster){ header.backgroundColor = HEADER_COLOR_POSTER;}else{header.backgroundColor = HEADER_COLOR_WORKER;}

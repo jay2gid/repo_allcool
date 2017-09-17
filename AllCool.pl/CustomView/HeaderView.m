@@ -13,6 +13,9 @@
 - (void)drawRect:(CGRect)rect {
 
 }
+- (IBAction)tapBack:(id)sender {
+    [self.selfBack.navigationController popViewControllerAnimated:YES];
+}
 
 - (IBAction)tapMenu:(id)sender
 {
