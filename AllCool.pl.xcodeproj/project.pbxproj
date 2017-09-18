@@ -76,6 +76,9 @@
 		92A2A9F81F6D68AE0000939D /* icon_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A2A9F71F6D68AE0000939D /* icon_back.png */; };
 		92A2A9FB1F6D6A9C0000939D /* ProfileEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2A9FA1F6D6A9C0000939D /* ProfileEditVC.m */; };
 		92A2A9FF1F6D6E200000939D /* RadarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2A9FE1F6D6E200000939D /* RadarVC.m */; };
+		92A2AA101F6FF2050000939D /* dotted.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A2AA0F1F6FF2050000939D /* dotted.png */; };
+		92A2AA131F6FFF030000939D /* BotalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2AA121F6FFF030000939D /* BotalVC.m */; };
+		92A2AA161F7007AC0000939D /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A2AA151F7007AC0000939D /* bear.png */; };
 		92A2D2361F63F26100A961F4 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2D2351F63F26100A961F4 /* SettingVC.m */; };
 		92ADAEDF1F5FC83B00501EA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ADAEDE1F5FC83B00501EA0 /* main.m */; };
 		92ADAEE21F5FC83B00501EA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ADAEE11F5FC83B00501EA0 /* AppDelegate.m */; };
@@ -324,7 +327,7 @@
 		922BA6131F627EE20068A5C3 /* rate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rate.png; path = ../AllCool.pl/rate.png; sourceTree = "<group>"; };
 		922BA6151F62A0AF0068A5C3 /* BrowaryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrowaryVC.h; path = ViewController/Browary/BrowaryVC.h; sourceTree = "<group>"; };
 		922BA6161F62A0AF0068A5C3 /* BrowaryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrowaryVC.m; path = ViewController/Browary/BrowaryVC.m; sourceTree = "<group>"; };
-		922BA6191F62A5FF0068A5C3 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		922BA6191F62A5FF0068A5C3 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test.png; path = ../AllCool.pl/test.png; sourceTree = "<group>"; };
 		922BA61B1F62B0660068A5C3 /* FavListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavListVC.h; path = ViewController/FavList/FavListVC.h; sourceTree = "<group>"; };
 		922BA61C1F62B0660068A5C3 /* FavListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavListVC.m; path = ViewController/FavList/FavListVC.m; sourceTree = "<group>"; };
 		922BA61E1F62BEDD0068A5C3 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = allcoolicon/icon.png; sourceTree = SOURCE_ROOT; };
@@ -337,6 +340,10 @@
 		92A2A9FA1F6D6A9C0000939D /* ProfileEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileEditVC.m; path = ViewController/EditProfileVC/ProfileEditVC.m; sourceTree = "<group>"; };
 		92A2A9FD1F6D6E200000939D /* RadarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RadarVC.h; path = ViewController/RadarVC/RadarVC.h; sourceTree = "<group>"; };
 		92A2A9FE1F6D6E200000939D /* RadarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RadarVC.m; path = ViewController/RadarVC/RadarVC.m; sourceTree = "<group>"; };
+		92A2AA0F1F6FF2050000939D /* dotted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dotted.png; sourceTree = "<group>"; };
+		92A2AA111F6FFF030000939D /* BotalVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BotalVC.h; path = ViewController/Botal/BotalVC.h; sourceTree = "<group>"; };
+		92A2AA121F6FFF030000939D /* BotalVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BotalVC.m; path = ViewController/Botal/BotalVC.m; sourceTree = "<group>"; };
+		92A2AA151F7007AC0000939D /* bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bear.png; sourceTree = "<group>"; };
 		92A2D2341F63F26100A961F4 /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingVC.h; path = ViewController/Setting/SettingVC.h; sourceTree = "<group>"; };
 		92A2D2351F63F26100A961F4 /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingVC.m; path = ViewController/Setting/SettingVC.m; sourceTree = "<group>"; };
 		92ADAEDA1F5FC83B00501EA0 /* AllCool.pl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllCool.pl.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -757,6 +764,7 @@
 				92A2A9F61F6D66060000939D /* ChangePassword */,
 				92A2A9FC1F6D6AD30000939D /* ProfileEditVC */,
 				92A2AA001F6D6E320000939D /* RadarVC */,
+				92A2AA141F6FFF0A0000939D /* Botal */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -836,6 +844,15 @@
 			name = RadarVC;
 			sourceTree = "<group>";
 		};
+		92A2AA141F6FFF0A0000939D /* Botal */ = {
+			isa = PBXGroup;
+			children = (
+				92A2AA111F6FFF030000939D /* BotalVC.h */,
+				92A2AA121F6FFF030000939D /* BotalVC.m */,
+			);
+			name = Botal;
+			sourceTree = "<group>";
+		};
 		92A2D2371F63F26900A961F4 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
@@ -878,8 +895,7 @@
 				92ADAEEB1F5FC83B00501EA0 /* LaunchScreen.storyboard */,
 				92ADAEEE1F5FC83B00501EA0 /* Info.plist */,
 				92ADAEF41F5FC99800501EA0 /* allcoolicon */,
-				922BA6191F62A5FF0068A5C3 /* test.png */,
-				922BA61E1F62BEDD0068A5C3 /* icon.png */,
+				92A2AA151F7007AC0000939D /* bear.png */,
 				92ADAEDD1F5FC83B00501EA0 /* Supporting Files */,
 			);
 			path = AllCool.pl;
@@ -896,6 +912,9 @@
 		92ADAEF41F5FC99800501EA0 /* allcoolicon */ = {
 			isa = PBXGroup;
 			children = (
+				92A2AA0F1F6FF2050000939D /* dotted.png */,
+				922BA6191F62A5FF0068A5C3 /* test.png */,
+				922BA61E1F62BEDD0068A5C3 /* icon.png */,
 				92A2A9F71F6D68AE0000939D /* icon_back.png */,
 				922BA6131F627EE20068A5C3 /* rate.png */,
 				922BA5C41F601FE20068A5C3 /* menu.png */,
@@ -1114,6 +1133,7 @@
 				922BA61A1F62A5FF0068A5C3 /* test.png in Resources */,
 				922BA6141F627EE20068A5C3 /* rate.png in Resources */,
 				92ADAFC01F5FC99800501EA0 /* noimage.jpg in Resources */,
+				92A2AA101F6FF2050000939D /* dotted.png in Resources */,
 				92ADAF701F5FC99800501EA0 /* beer.png in Resources */,
 				92ADAF9F1F5FC99800501EA0 /* googleplus.png in Resources */,
 				92ADAFC51F5FC99800501EA0 /* photocamera.png in Resources */,
@@ -1180,6 +1200,7 @@
 				92ADAF781F5FC99800501EA0 /* calendar_blocj.png in Resources */,
 				92ADAFCF1F5FC99800501EA0 /* radiusbutton.png in Resources */,
 				92ADAFA61F5FC99800501EA0 /* join_active.png in Resources */,
+				92A2AA161F7007AC0000939D /* bear.png in Resources */,
 				92ADAF7D1F5FC99800501EA0 /* chat_bubble.png in Resources */,
 				92ADAFC81F5FC99800501EA0 /* post_note.png in Resources */,
 				92ADAF881F5FC99800501EA0 /* down_arrow.png in Resources */,
@@ -1240,6 +1261,7 @@
 				922BA5A51F600B520068A5C3 /* SVRadialGradientLayer.m in Sources */,
 				922BA58B1F600B520068A5C3 /* AFURLSessionManager.m in Sources */,
 				922BA5891F600B520068A5C3 /* AFURLRequestSerialization.m in Sources */,
+				92A2AA131F6FFF030000939D /* BotalVC.m in Sources */,
 				922BA59D1F600B520068A5C3 /* UIImageView+WebCache.m in Sources */,
 				922BA5A61F600B520068A5C3 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				922BA6111F627C4F0068A5C3 /* FestivalListVC.m in Sources */,

@@ -7,8 +7,8 @@
 //
 
 #import "FavBearVC.h"
-
-@interface FavBearVC ()
+#import "BotalVC.h"
+@interface FavBearVC ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 
@@ -45,5 +45,10 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    BotalVC *OBJ = [self.storyboard instantiateViewControllerWithIdentifier:@"BotalVC"];
+    [self.navigationController pushViewController:OBJ animated:YES];
+}
 
 @end
