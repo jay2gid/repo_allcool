@@ -22,6 +22,7 @@
     }];
     
     titleArray = @[@"Mapa",@"Ulubione bary",@"Ulubione piwa",@"Broway",@"Festiwale piwne",@"Inne listy",@"Radar",@"Aktywność",@"Profil",@"Ustawienia",@"Wyloguj się"];
+   
     imageArray = @[@"route",@"favpub",@"favbeer",@"barrel",@"rock_and_roll",@"otherlist",@"radarr",@"activity",@"useredit",@"settingss",@"circle_logout"];
     
     table.delegate = self;
