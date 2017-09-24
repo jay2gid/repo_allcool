@@ -8,6 +8,8 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+@class ACFloatingTextfield;
+
 #import "AppDelegate.h"
 #import "Config.h"
 #import "WebServiceCalls.h"
@@ -23,5 +25,8 @@
 #import "LoginVC.h"
 
 #import "HeaderView.h"
+#import "ACFloatingTextField.h"
+
+#import "AllCool_pl-Swift.h"
 
 #endif

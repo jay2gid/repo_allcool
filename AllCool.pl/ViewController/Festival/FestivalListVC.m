@@ -33,9 +33,9 @@
     tag =1;
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)tapButtons:(UIButton *)sender {
@@ -52,17 +52,17 @@
     [tableList reloadData];
 }
 
-
 #pragma mark Table
 
 -(CGFloat)tableView:(UITableView* )tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 90;
 }
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (tag == 1) {
-        
+    if (tag == 1)
+    {
         return 3;
     }
     return 5;
@@ -70,10 +70,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"Cells" owner:self options:nil]objectAtIndex:2];
-    
-    
     return cell;
 }
-
 
 @end

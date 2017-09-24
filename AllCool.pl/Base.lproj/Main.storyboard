@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hqt-Jl-znw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1xL-5A-AhO">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -347,7 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0xh-VY-i2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="263" y="213"/>
+            <point key="canvasLocation" x="293" y="213"/>
         </scene>
         <!--SignUP VC-->
         <scene sceneID="3Ah-69-lEr">
@@ -1683,6 +1683,9 @@
                                                 <state key="normal" title="Dodaj nową listę">
                                                     <color key="titleColor" red="0.71764705880000002" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="tapDodaj:" destination="1xL-5A-AhO" eventType="touchUpInside" id="w3c-51-IcS"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1690,12 +1693,73 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nkd-NS-HY5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EnU-cJ-KUh" customClass="ViewCorner">
+                                        <rect key="frame" x="17" y="161" width="286" height="233"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sML-BT-Ena">
+                                                <rect key="frame" x="245" y="0.0" width="41" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                <state key="normal" backgroundImage="cross_out.png"/>
+                                                <connections>
+                                                    <action selector="tapCroll:" destination="1xL-5A-AhO" eventType="touchUpInside" id="PZe-sG-NX6"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dodaj nową listę" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWB-Tc-lAK">
+                                                <rect key="frame" x="59" y="8" width="169" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dodaj nową listę" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcb-z1-vuX">
+                                                <rect key="frame" x="8" y="29" width="270" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="tasks.png" translatesAutoresizingMaskIntoConstraints="NO" id="yim-0p-m5t">
+                                                <rect key="frame" x="112" y="57" width="62" height="49"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Podas" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hVA-in-KBR" customClass="ACFloatingTextfield" customModule="AllCool_pl" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="121" width="270" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9B-QP-9PL">
+                                                <rect key="frame" x="8" y="187" width="270" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                <color key="backgroundColor" red="0.71764705880000002" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="UTWORZ">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tapAddList:" destination="1xL-5A-AhO" eventType="touchUpInside" id="Rw9-8L-i3d"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="btn" destination="TS5-mE-cOw" id="eKL-sW-imM"/>
                         <outlet property="scrollData" destination="GaU-B3-aIQ" id="jMU-Rj-ulC"/>
+                        <outlet property="txtPodasName" destination="hVA-in-KBR" id="xxd-q7-as7"/>
+                        <outlet property="viewPopup" destination="Nkd-NS-HY5" id="Pfc-VI-4rt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fzy-P8-3VG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1706,6 +1770,7 @@
     <resources>
         <image name="allcool_welcome_logo.png" width="810" height="321"/>
         <image name="bear.png" width="154" height="242"/>
+        <image name="cross_out.png" width="128" height="128"/>
         <image name="customer.png" width="128" height="128"/>
         <image name="dotted.png" width="187" height="183"/>
         <image name="facebook_logo.png" width="128" height="128"/>
@@ -1714,10 +1779,11 @@
         <image name="locatorbg.png" width="1080" height="1920"/>
         <image name="padlock.png" width="128" height="128"/>
         <image name="quotes.png" width="128" height="128"/>
+        <image name="tasks.png" width="128" height="128"/>
         <image name="user_login.png" width="128" height="128"/>
         <image name="useredit.png" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rao-7l-LQf"/>
+        <segue reference="RcV-9b-tzf"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -8,10 +8,16 @@
 
 #import "FavListVC.h"
 
+@class ACFloatingTextfield;
+
 @interface FavListVC ()
 {
     IBOutlet UIButton *btn;
     IBOutlet UIScrollView *scrollData;
+    IBOutlet UIView *viewPopup;
+    
+    IBOutlet ACFloatingTextfield *txtPodasName;
+    
 }
 
 @end
@@ -26,10 +32,11 @@
     
     [self loadData];
     scrollData.backgroundColor = [UIColor colorWithRed:220/255.0 green:220/255.0 blue:220/255.0 alpha:1];
-    
+
     btn.layer.borderWidth = 1;
     btn.layer.borderColor = APP_COLOR_RED.CGColor;
     btn.layer.cornerRadius = 2;
+    
 }
 
 -(void)loadData
@@ -66,5 +73,21 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+- (IBAction)tapDodaj:(id)sender {
+    
+    viewPopup.hidden = false;
+}
+
+- (IBAction)tapCroll:(id)sender {
+    
+    viewPopup.hidden = true;
+}
+
+- (IBAction)tapAddList:(id)sender
+{
+    viewPopup.hidden = true;
+}
+
 
 @end

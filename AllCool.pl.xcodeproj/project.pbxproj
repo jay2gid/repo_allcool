@@ -71,7 +71,6 @@
 		922BA61A1F62A5FF0068A5C3 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 922BA6191F62A5FF0068A5C3 /* test.png */; };
 		922BA61D1F62B0660068A5C3 /* FavListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 922BA61C1F62B0660068A5C3 /* FavListVC.m */; };
 		922BA61F1F62BEDD0068A5C3 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 922BA61E1F62BEDD0068A5C3 /* icon.png */; };
-		92A2A9F11F6D63130000939D /* ACFloatingTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A2A9F01F6D63130000939D /* ACFloatingTextfield.swift */; };
 		92A2A9F51F6D65F50000939D /* ChangePasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2A9F41F6D65F50000939D /* ChangePasswordVC.m */; };
 		92A2A9F81F6D68AE0000939D /* icon_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A2A9F71F6D68AE0000939D /* icon_back.png */; };
 		92A2A9FB1F6D6A9C0000939D /* ProfileEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2A9FA1F6D6A9C0000939D /* ProfileEditVC.m */; };
@@ -204,6 +203,8 @@
 		92ADAFDE1F5FC99800501EA0 /* vote_select.png in Resources */ = {isa = PBXBuildFile; fileRef = 92ADAF681F5FC99800501EA0 /* vote_select.png */; };
 		92ADAFDF1F5FC99800501EA0 /* vote_unselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 92ADAF691F5FC99800501EA0 /* vote_unselect.png */; };
 		92ADAFE01F5FC99800501EA0 /* withoutcolor.png in Resources */ = {isa = PBXBuildFile; fileRef = 92ADAF6A1F5FC99800501EA0 /* withoutcolor.png */; };
+		92C3C8441F7618B7008404C7 /* ACFloatingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C3C8431F7618B7008404C7 /* ACFloatingTextField.m */; };
+		92C3C8461F761997008404C7 /* ACFloatingTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C3C8451F761997008404C7 /* ACFloatingTextfield.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -331,7 +332,6 @@
 		922BA61B1F62B0660068A5C3 /* FavListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavListVC.h; path = ViewController/FavList/FavListVC.h; sourceTree = "<group>"; };
 		922BA61C1F62B0660068A5C3 /* FavListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavListVC.m; path = ViewController/FavList/FavListVC.m; sourceTree = "<group>"; };
 		922BA61E1F62BEDD0068A5C3 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = allcoolicon/icon.png; sourceTree = SOURCE_ROOT; };
-		92A2A9F01F6D63130000939D /* ACFloatingTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACFloatingTextfield.swift; sourceTree = "<group>"; };
 		92A2A9F21F6D63A90000939D /* BHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHeader.h; sourceTree = "<group>"; };
 		92A2A9F31F6D65F50000939D /* ChangePasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChangePasswordVC.h; path = ViewController/NewPassword/ChangePasswordVC.h; sourceTree = "<group>"; };
 		92A2A9F41F6D65F50000939D /* ChangePasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChangePasswordVC.m; path = ViewController/NewPassword/ChangePasswordVC.m; sourceTree = "<group>"; };
@@ -474,6 +474,9 @@
 		92ADAF681F5FC99800501EA0 /* vote_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vote_select.png; sourceTree = "<group>"; };
 		92ADAF691F5FC99800501EA0 /* vote_unselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vote_unselect.png; sourceTree = "<group>"; };
 		92ADAF6A1F5FC99800501EA0 /* withoutcolor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = withoutcolor.png; sourceTree = "<group>"; };
+		92C3C8421F7618B7008404C7 /* ACFloatingTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACFloatingTextField.h; sourceTree = "<group>"; };
+		92C3C8431F7618B7008404C7 /* ACFloatingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACFloatingTextField.m; sourceTree = "<group>"; };
+		92C3C8451F761997008404C7 /* ACFloatingTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACFloatingTextfield.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -528,7 +531,8 @@
 				922BA5821F600B520068A5C3 /* WebServiceCalls.m */,
 				922BA5411F600B520068A5C3 /* Config.h */,
 				922BA5AB1F600C650068A5C3 /* PrefixHeader.pch */,
-				92A2A9F01F6D63130000939D /* ACFloatingTextfield.swift */,
+				92C3C8451F761997008404C7 /* ACFloatingTextfield.swift */,
+				92C3C8411F7618B7008404C7 /* ACFloatingTextField */,
 				92A2A9F21F6D63A90000939D /* BHeader.h */,
 			);
 			path = Library;
@@ -758,8 +762,7 @@
 				922BA60B1F627BB10068A5C3 /* FavBravery */,
 				922BA6121F627C5B0068A5C3 /* Festival */,
 				922BA6181F62A0C40068A5C3 /* Browary */,
-				922BA61B1F62B0660068A5C3 /* FavListVC.h */,
-				922BA61C1F62B0660068A5C3 /* FavListVC.m */,
+				92A392931F72CEFB00B3EA7B /* FavList */,
 				92A2D2371F63F26900A961F4 /* Setting */,
 				92A2A9F61F6D66060000939D /* ChangePassword */,
 				92A2A9FC1F6D6AD30000939D /* ProfileEditVC */,
@@ -860,6 +863,15 @@
 				92A2D2351F63F26100A961F4 /* SettingVC.m */,
 			);
 			name = Setting;
+			sourceTree = "<group>";
+		};
+		92A392931F72CEFB00B3EA7B /* FavList */ = {
+			isa = PBXGroup;
+			children = (
+				922BA61B1F62B0660068A5C3 /* FavListVC.h */,
+				922BA61C1F62B0660068A5C3 /* FavListVC.m */,
+			);
+			name = FavList;
 			sourceTree = "<group>";
 		};
 		92ADAED11F5FC83B00501EA0 = {
@@ -1039,6 +1051,15 @@
 			);
 			path = allcoolicon;
 			sourceTree = SOURCE_ROOT;
+		};
+		92C3C8411F7618B7008404C7 /* ACFloatingTextField */ = {
+			isa = PBXGroup;
+			children = (
+				92C3C8421F7618B7008404C7 /* ACFloatingTextField.h */,
+				92C3C8431F7618B7008404C7 /* ACFloatingTextField.m */,
+			);
+			path = ACFloatingTextField;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -1264,6 +1285,7 @@
 				92A2AA131F6FFF030000939D /* BotalVC.m in Sources */,
 				922BA59D1F600B520068A5C3 /* UIImageView+WebCache.m in Sources */,
 				922BA5A61F600B520068A5C3 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				92C3C8461F761997008404C7 /* ACFloatingTextfield.swift in Sources */,
 				922BA6111F627C4F0068A5C3 /* FestivalListVC.m in Sources */,
 				922BA5A71F600B520068A5C3 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				922BA5AE1F600E9F0068A5C3 /* ViewCorner.m in Sources */,
@@ -1292,9 +1314,9 @@
 				922BA61D1F62B0660068A5C3 /* FavListVC.m in Sources */,
 				922BA5EB1F61764B0068A5C3 /* MyTextField.m in Sources */,
 				92A2A9FB1F6D6A9C0000939D /* ProfileEditVC.m in Sources */,
+				92C3C8441F7618B7008404C7 /* ACFloatingTextField.m in Sources */,
 				922BA58D1F600B520068A5C3 /* MBProgressHUD.m in Sources */,
 				922BA5A11F600B520068A5C3 /* StarRatingControl.m in Sources */,
-				92A2A9F11F6D63130000939D /* ACFloatingTextfield.swift in Sources */,
 				922BA6171F62A0AF0068A5C3 /* BrowaryVC.m in Sources */,
 				922BA58E1F600B520068A5C3 /* Reachability.m in Sources */,
 				922BA58F1F600B520068A5C3 /* MKAnnotationView+WebCache.m in Sources */,
@@ -1431,7 +1453,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.woko.AllCool-pl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = Library/BHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1447,7 +1469,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.woko.AllCool-pl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = Library/BHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
