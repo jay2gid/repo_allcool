@@ -7,7 +7,7 @@
 //
 
 #import "DrewerVeiw.h"
-
+#import "ProfilVC.h"
 @implementation DrewerVeiw
 {
     NSArray *imageArray,*titleArray;
@@ -63,10 +63,19 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSArray *array = @[@"FirstVC",@"FavBravery",@"FavBearVC",@"BrowaryVC",@"FestivalListVC",@"FavListVC",@"RadarVC",@"SettingVC"];
-  
-    UIViewController *con = [self.backSelf.storyboard instantiateViewControllerWithIdentifier:array[indexPath.row]];
     
-    [self.backSelf.navigationController pushViewController:con animated:YES];
+    if (indexPath.row == 8) {
+        
+        ProfilVC *obj = [[ProfilVC alloc]initWithNibName:@"ProfilVC" bundle:nil];
+        [self.backSelf.navigationController pushViewController:obj animated:YES];
+        
+    }
+    else
+    {
+        UIViewController *con = [self.backSelf.storyboard instantiateViewControllerWithIdentifier:array[indexPath.row]];
+        
+        [self.backSelf.navigationController pushViewController:con animated:YES];
+    }
 }
 - (IBAction)tap:(id)sender {
     
