@@ -72,7 +72,6 @@
 		922BA61D1F62B0660068A5C3 /* FavListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 922BA61C1F62B0660068A5C3 /* FavListVC.m */; };
 		922BA61F1F62BEDD0068A5C3 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 922BA61E1F62BEDD0068A5C3 /* icon.png */; };
 		92A2A9F51F6D65F50000939D /* ChangePasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2A9F41F6D65F50000939D /* ChangePasswordVC.m */; };
-		92A2A9F81F6D68AE0000939D /* icon_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A2A9F71F6D68AE0000939D /* icon_back.png */; };
 		92A2A9FB1F6D6A9C0000939D /* ProfileEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2A9FA1F6D6A9C0000939D /* ProfileEditVC.m */; };
 		92A2A9FF1F6D6E200000939D /* RadarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2A9FE1F6D6E200000939D /* RadarVC.m */; };
 		92A2AA101F6FF2050000939D /* dotted.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A2AA0F1F6FF2050000939D /* dotted.png */; };
@@ -205,6 +204,7 @@
 		92ADAFE01F5FC99800501EA0 /* withoutcolor.png in Resources */ = {isa = PBXBuildFile; fileRef = 92ADAF6A1F5FC99800501EA0 /* withoutcolor.png */; };
 		92C3C8441F7618B7008404C7 /* ACFloatingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C3C8431F7618B7008404C7 /* ACFloatingTextField.m */; };
 		92C3C8461F761997008404C7 /* ACFloatingTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C3C8451F761997008404C7 /* ACFloatingTextfield.swift */; };
+		92C3C84A1F78150E008404C7 /* icon_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 92C3C8491F78150E008404C7 /* icon_back.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -335,7 +335,6 @@
 		92A2A9F21F6D63A90000939D /* BHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHeader.h; sourceTree = "<group>"; };
 		92A2A9F31F6D65F50000939D /* ChangePasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChangePasswordVC.h; path = ViewController/NewPassword/ChangePasswordVC.h; sourceTree = "<group>"; };
 		92A2A9F41F6D65F50000939D /* ChangePasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChangePasswordVC.m; path = ViewController/NewPassword/ChangePasswordVC.m; sourceTree = "<group>"; };
-		92A2A9F71F6D68AE0000939D /* icon_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_back.png; path = ../../../../Desktop/icon_back.png; sourceTree = "<group>"; };
 		92A2A9F91F6D6A9C0000939D /* ProfileEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileEditVC.h; path = ViewController/EditProfileVC/ProfileEditVC.h; sourceTree = "<group>"; };
 		92A2A9FA1F6D6A9C0000939D /* ProfileEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileEditVC.m; path = ViewController/EditProfileVC/ProfileEditVC.m; sourceTree = "<group>"; };
 		92A2A9FD1F6D6E200000939D /* RadarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RadarVC.h; path = ViewController/RadarVC/RadarVC.h; sourceTree = "<group>"; };
@@ -477,6 +476,7 @@
 		92C3C8421F7618B7008404C7 /* ACFloatingTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACFloatingTextField.h; sourceTree = "<group>"; };
 		92C3C8431F7618B7008404C7 /* ACFloatingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACFloatingTextField.m; sourceTree = "<group>"; };
 		92C3C8451F761997008404C7 /* ACFloatingTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACFloatingTextfield.swift; sourceTree = "<group>"; };
+		92C3C8491F78150E008404C7 /* icon_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_back.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -924,10 +924,10 @@
 		92ADAEF41F5FC99800501EA0 /* allcoolicon */ = {
 			isa = PBXGroup;
 			children = (
+				92C3C8491F78150E008404C7 /* icon_back.png */,
 				92A2AA0F1F6FF2050000939D /* dotted.png */,
 				922BA6191F62A5FF0068A5C3 /* test.png */,
 				922BA61E1F62BEDD0068A5C3 /* icon.png */,
-				92A2A9F71F6D68AE0000939D /* icon_back.png */,
 				922BA6131F627EE20068A5C3 /* rate.png */,
 				922BA5C41F601FE20068A5C3 /* menu.png */,
 				92ADAEF51F5FC99800501EA0 /* activity.png */,
@@ -1168,6 +1168,7 @@
 				92ADAFBA1F5FC99800501EA0 /* map_unselect.png in Resources */,
 				92ADAF751F5FC99800501EA0 /* box.png in Resources */,
 				92ADAFB81F5FC99800501EA0 /* map_red.png in Resources */,
+				92C3C84A1F78150E008404C7 /* icon_back.png in Resources */,
 				92ADAFA11F5FC99800501EA0 /* ic_messaging.png in Resources */,
 				92ADAF741F5FC99800501EA0 /* bermenu.jpg in Resources */,
 				92ADAFDE1F5FC99800501EA0 /* vote_select.png in Resources */,
@@ -1202,7 +1203,6 @@
 				92ADAFC71F5FC99800501EA0 /* placeholder_filled.png in Resources */,
 				92ADAF821F5FC99800501EA0 /* comment_chat.png in Resources */,
 				922BA5C21F601C510068A5C3 /* HeaderView.xib in Resources */,
-				92A2A9F81F6D68AE0000939D /* icon_back.png in Resources */,
 				92ADAEED1F5FC83B00501EA0 /* LaunchScreen.storyboard in Resources */,
 				92ADAFAB1F5FC99800501EA0 /* likew.png in Resources */,
 				92ADAFB11F5FC99800501EA0 /* listfestival.png in Resources */,
