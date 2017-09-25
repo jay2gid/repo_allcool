@@ -29,4 +29,6 @@
 
 #import "AllCool_pl-Swift.h"
 
+#import "FestivalViewVC.h"
+
 #endif

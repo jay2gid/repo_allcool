@@ -205,6 +205,12 @@
 		92C3C8441F7618B7008404C7 /* ACFloatingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C3C8431F7618B7008404C7 /* ACFloatingTextField.m */; };
 		92C3C8461F761997008404C7 /* ACFloatingTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C3C8451F761997008404C7 /* ACFloatingTextfield.swift */; };
 		92C3C84A1F78150E008404C7 /* icon_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 92C3C8491F78150E008404C7 /* icon_back.png */; };
+		C30CD31D1F7977500053C22B /* FestivalViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C30CD31C1F7977500053C22B /* FestivalViewVC.m */; };
+		C30CD3201F7983330053C22B /* FestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C30CD31F1F7983330053C22B /* FestCell.xib */; };
+		C30CD3231F798D7A0053C22B /* ExibitorTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C30CD3221F798D7A0053C22B /* ExibitorTVCell.m */; };
+		C30CD3261F798D960053C22B /* ProgramTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C30CD3251F798D960053C22B /* ProgramTVCell.m */; };
+		C30CD3291F798DD20053C22B /* RatingTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C30CD3281F798DD20053C22B /* RatingTVCell.m */; };
+		C30CD32C1F798E360053C22B /* CategoryTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C30CD32B1F798E360053C22B /* CategoryTVCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -477,6 +483,17 @@
 		92C3C8431F7618B7008404C7 /* ACFloatingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACFloatingTextField.m; sourceTree = "<group>"; };
 		92C3C8451F761997008404C7 /* ACFloatingTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACFloatingTextfield.swift; sourceTree = "<group>"; };
 		92C3C8491F78150E008404C7 /* icon_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_back.png; sourceTree = "<group>"; };
+		C30CD31B1F7977500053C22B /* FestivalViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FestivalViewVC.h; sourceTree = "<group>"; };
+		C30CD31C1F7977500053C22B /* FestivalViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FestivalViewVC.m; sourceTree = "<group>"; };
+		C30CD31F1F7983330053C22B /* FestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FestCell.xib; sourceTree = "<group>"; };
+		C30CD3211F798D7A0053C22B /* ExibitorTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExibitorTVCell.h; sourceTree = "<group>"; };
+		C30CD3221F798D7A0053C22B /* ExibitorTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExibitorTVCell.m; sourceTree = "<group>"; };
+		C30CD3241F798D960053C22B /* ProgramTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramTVCell.h; sourceTree = "<group>"; };
+		C30CD3251F798D960053C22B /* ProgramTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramTVCell.m; sourceTree = "<group>"; };
+		C30CD3271F798DD20053C22B /* RatingTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingTVCell.h; sourceTree = "<group>"; };
+		C30CD3281F798DD20053C22B /* RatingTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingTVCell.m; sourceTree = "<group>"; };
+		C30CD32A1F798E360053C22B /* CategoryTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTVCell.h; sourceTree = "<group>"; };
+		C30CD32B1F798E360053C22B /* CategoryTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTVCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -807,6 +824,9 @@
 			children = (
 				922BA60F1F627C4F0068A5C3 /* FestivalListVC.h */,
 				922BA6101F627C4F0068A5C3 /* FestivalListVC.m */,
+				C30CD31B1F7977500053C22B /* FestivalViewVC.h */,
+				C30CD31C1F7977500053C22B /* FestivalViewVC.m */,
+				C30CD31E1F7982FB0053C22B /* Fest Cell */,
 			);
 			name = Festival;
 			sourceTree = "<group>";
@@ -1061,6 +1081,22 @@
 			path = ACFloatingTextField;
 			sourceTree = "<group>";
 		};
+		C30CD31E1F7982FB0053C22B /* Fest Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C30CD31F1F7983330053C22B /* FestCell.xib */,
+				C30CD3211F798D7A0053C22B /* ExibitorTVCell.h */,
+				C30CD3221F798D7A0053C22B /* ExibitorTVCell.m */,
+				C30CD3241F798D960053C22B /* ProgramTVCell.h */,
+				C30CD3251F798D960053C22B /* ProgramTVCell.m */,
+				C30CD3271F798DD20053C22B /* RatingTVCell.h */,
+				C30CD3281F798DD20053C22B /* RatingTVCell.m */,
+				C30CD32A1F798E360053C22B /* CategoryTVCell.h */,
+				C30CD32B1F798E360053C22B /* CategoryTVCell.m */,
+			);
+			name = "Fest Cell";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1252,6 +1288,7 @@
 				92ADAFBC1F5FC99800501EA0 /* multiply.png in Resources */,
 				92ADAFA31F5FC99800501EA0 /* interested_notactive.png in Resources */,
 				92ADAFBF1F5FC99800501EA0 /* no_image.png in Resources */,
+				C30CD3201F7983330053C22B /* FestCell.xib in Resources */,
 				92ADAF891F5FC99800501EA0 /* dummyuser.png in Resources */,
 				92ADAFCB1F5FC99800501EA0 /* promotin.jpg in Resources */,
 			);
@@ -1267,6 +1304,7 @@
 				922BA5941F600B520068A5C3 /* SDWebImageDownloader.m in Sources */,
 				922BA5881F600B520068A5C3 /* AFURLConnectionOperation.m in Sources */,
 				922BA5831F600B520068A5C3 /* AFHTTPRequestOperation.m in Sources */,
+				C30CD31D1F7977500053C22B /* FestivalViewVC.m in Sources */,
 				92A2A9F51F6D65F50000939D /* ChangePasswordVC.m in Sources */,
 				922BA5971F600B520068A5C3 /* SDWebImagePrefetcher.m in Sources */,
 				922BA59E1F600B520068A5C3 /* UIView+WebCacheOperation.m in Sources */,
@@ -1276,6 +1314,7 @@
 				922BA5B11F600EDF0068A5C3 /* ButtonCorner.m in Sources */,
 				922BA5861F600B520068A5C3 /* AFNetworkReachabilityManager.m in Sources */,
 				922BA59A1F600B520068A5C3 /* UIImage+MultiFormat.m in Sources */,
+				C30CD3231F798D7A0053C22B /* ExibitorTVCell.m in Sources */,
 				922BA59B1F600B520068A5C3 /* UIImage+WebP.m in Sources */,
 				922BA5B81F6017CD0068A5C3 /* ForgotPsswodVC.m in Sources */,
 				922BA5B41F6015540068A5C3 /* SignupVC.m in Sources */,
@@ -1294,6 +1333,7 @@
 				92ADAEE51F5FC83B00501EA0 /* ViewController.m in Sources */,
 				922BA58A1F600B520068A5C3 /* AFURLResponseSerialization.m in Sources */,
 				922BA5A81F600B520068A5C3 /* UserSession.m in Sources */,
+				C30CD32C1F798E360053C22B /* CategoryTVCell.m in Sources */,
 				922BA5C81F60234A0068A5C3 /* SplashVC.m in Sources */,
 				92ADAEE21F5FC83B00501EA0 /* AppDelegate.m in Sources */,
 				92A2D2361F63F26100A961F4 /* SettingVC.m in Sources */,
@@ -1318,12 +1358,14 @@
 				922BA58D1F600B520068A5C3 /* MBProgressHUD.m in Sources */,
 				922BA5A11F600B520068A5C3 /* StarRatingControl.m in Sources */,
 				922BA6171F62A0AF0068A5C3 /* BrowaryVC.m in Sources */,
+				C30CD3291F798DD20053C22B /* RatingTVCell.m in Sources */,
 				922BA58E1F600B520068A5C3 /* Reachability.m in Sources */,
 				922BA58F1F600B520068A5C3 /* MKAnnotationView+WebCache.m in Sources */,
 				922BA5921F600B520068A5C3 /* SDWebImageCompat.m in Sources */,
 				922BA5981F600B520068A5C3 /* UIButton+WebCache.m in Sources */,
 				922BA5E21F616D040068A5C3 /* FavBravery.m in Sources */,
 				922BA5C01F601C3C0068A5C3 /* HeaderView.m in Sources */,
+				C30CD3261F798D960053C22B /* ProgramTVCell.m in Sources */,
 				922BA59C1F600B520068A5C3 /* UIImageView+HighlightedWebCache.m in Sources */,
 				922BA5991F600B520068A5C3 /* UIImage+GIF.m in Sources */,
 				922BA5911F600B520068A5C3 /* SDImageCache.m in Sources */,
