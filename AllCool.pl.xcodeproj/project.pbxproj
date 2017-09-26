@@ -551,6 +551,8 @@
 				922BA5B01F600EDF0068A5C3 /* ButtonCorner.m */,
 				922BA5E91F61764A0068A5C3 /* MyTextField.h */,
 				922BA5EA1F61764A0068A5C3 /* MyTextField.m */,
+				92C3C8511F781E17008404C7 /* CommonLabel.h */,
+				92C3C8521F781E17008404C7 /* CommonLabel.m */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -1238,6 +1240,7 @@
 				92C3C84A1F78150E008404C7 /* icon_back.png in Resources */,
 				92ADAFA11F5FC99800501EA0 /* ic_messaging.png in Resources */,
 				92ADAF741F5FC99800501EA0 /* bermenu.jpg in Resources */,
+				92C3C84F1F781A59008404C7 /* ProfilVC.xib in Resources */,
 				92ADAFDE1F5FC99800501EA0 /* vote_select.png in Resources */,
 				92ADAF9B1F5FC99800501EA0 /* festivale_app_cover.png in Resources */,
 				92ADAFCD1F5FC99800501EA0 /* quotes.png in Resources */,
@@ -1339,6 +1342,7 @@
 				C30CD31D1F7977500053C22B /* FestivalViewVC.m in Sources */,
 				92A2A9F51F6D65F50000939D /* ChangePasswordVC.m in Sources */,
 				922BA5971F600B520068A5C3 /* SDWebImagePrefetcher.m in Sources */,
+				92C3C84E1F781A59008404C7 /* ProfilVC.m in Sources */,
 				922BA59E1F600B520068A5C3 /* UIView+WebCacheOperation.m in Sources */,
 				922BA5A41F600B520068A5C3 /* SVProgressHUD.m in Sources */,
 				922BA5A21F600B520068A5C3 /* SVIndefiniteAnimatedView.m in Sources */,
@@ -1386,6 +1390,7 @@
 				922BA5931F600B520068A5C3 /* SDWebImageDecoder.m in Sources */,
 				922BA5951F600B520068A5C3 /* SDWebImageDownloaderOperation.m in Sources */,
 				922BA61D1F62B0660068A5C3 /* FavListVC.m in Sources */,
+				92C3C8531F781E17008404C7 /* CommonLabel.m in Sources */,
 				922BA5EB1F61764B0068A5C3 /* MyTextField.m in Sources */,
 				92A2A9FB1F6D6A9C0000939D /* ProfileEditVC.m in Sources */,
 				92C3C8441F7618B7008404C7 /* ACFloatingTextField.m in Sources */,
