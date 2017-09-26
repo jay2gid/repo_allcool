@@ -10,6 +10,8 @@
 
 @interface LoginVC : UIViewController<UIGestureRecognizerDelegate>
 {
+    IBOutlet UITextField *txtEmail;
+    IBOutlet UITextField *txtPass;
 
     IBOutlet UIButton *btnForgot;
 }

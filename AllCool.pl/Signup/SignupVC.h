@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface SignupVC : UIViewController
-
+{
+    IBOutlet UITextField *txtFname;
+    IBOutlet UITextField *txtLname;
+    IBOutlet UITextField *txtEmail;
+    IBOutlet UITextField *txtPass;
+    IBOutlet UITextField *txtConPass;
+}
 @end

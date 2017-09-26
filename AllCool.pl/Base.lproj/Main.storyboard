@@ -158,7 +158,7 @@
                                             <color key="titleColor" red="1" green="0.92156862745098034" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="1k4-2A-aUN" kind="show" id="RcV-9b-tzf"/>
+                                            <action selector="btnLoginClk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KMS-lr-adC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -170,6 +170,8 @@
                     <navigationItem key="navigationItem" id="rfv-R3-f17"/>
                     <connections>
                         <outlet property="btnForgot" destination="f10-MZ-61T" id="Lcu-aI-TE6"/>
+                        <outlet property="txtEmail" destination="Ibq-km-Ze9" id="Ror-Ft-ycf"/>
+                        <outlet property="txtPass" destination="joi-GY-IpQ" id="Vlz-of-XwI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -179,7 +181,7 @@
         <!--SignUP VC-->
         <scene sceneID="s6y-3X-uRT">
             <objects>
-                <viewController id="IoP-YL-3HA" userLabel="SignUP VC" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignupVC" id="IoP-YL-3HA" userLabel="SignUP VC" customClass="SignupVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MaZ-01-YPj"/>
                         <viewControllerLayoutGuide type="bottom" id="GyG-ky-kCH"/>
@@ -208,8 +210,11 @@
                                         <state key="normal" title="Zarejestruj">
                                             <color key="titleColor" red="1" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnSignUpClk:" destination="IoP-YL-3HA" eventType="touchUpInside" id="dvP-yA-oEJ"/>
+                                        </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFb-Hn-Nny" userLabel="Name" customClass="ViewWithCornerAndBorder">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFb-Hn-Nny" customClass="ViewWithCornerAndBorder">
                                         <rect key="frame" x="25" y="151" width="270" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -223,7 +228,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K3m-fv-HiV" userLabel="Name" customClass="ViewWithCornerAndBorder">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K3m-fv-HiV" customClass="ViewWithCornerAndBorder">
                                         <rect key="frame" x="25" y="202" width="270" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -237,7 +242,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gS9-2w-Biu" userLabel="Name" customClass="ViewWithCornerAndBorder">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gS9-2w-Biu" customClass="ViewWithCornerAndBorder">
                                         <rect key="frame" x="25" y="252" width="270" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -251,7 +256,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3GP-hJ-FO0" userLabel="Name" customClass="ViewWithCornerAndBorder">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3GP-hJ-FO0" customClass="ViewWithCornerAndBorder">
                                         <rect key="frame" x="25" y="303" width="270" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -260,12 +265,12 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gOy-hf-I7R" userLabel="Name" customClass="ViewWithCornerAndBorder">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gOy-hf-I7R" customClass="ViewWithCornerAndBorder">
                                         <rect key="frame" x="25" y="353" width="270" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -274,7 +279,7 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -292,6 +297,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="txtConPass" destination="Hl1-qU-WLe" id="gkT-bY-nPU"/>
+                        <outlet property="txtEmail" destination="RXP-Gq-wQo" id="thq-ZD-eQH"/>
+                        <outlet property="txtFname" destination="89X-Pg-J3V" id="VKm-KK-WDh"/>
+                        <outlet property="txtLname" destination="w79-hL-XKH" id="QUb-Bg-7FP"/>
+                        <outlet property="txtPass" destination="B6l-bv-pbz" id="lDg-UL-1lR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36L-z5-jb8" sceneMemberID="firstResponder"/>
             </objects>
@@ -349,10 +361,10 @@
             </objects>
             <point key="canvasLocation" x="293" y="213"/>
         </scene>
-        <!--SignUP VC-->
+        <!--ForgotPsswodVC-->
         <scene sceneID="3Ah-69-lEr">
             <objects>
-                <viewController id="Bfu-ln-iWA" userLabel="SignUP VC" customClass="ForgotPsswodVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ForgotPsswodVC" id="Bfu-ln-iWA" userLabel="ForgotPsswodVC" customClass="ForgotPsswodVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ENS-sZ-f0h"/>
                         <viewControllerLayoutGuide type="bottom" id="8FY-FT-NjX"/>
@@ -2065,7 +2077,4 @@
         <image name="user_login.png" width="128" height="128"/>
         <image name="useredit.png" width="128" height="128"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="RcV-9b-tzf"/>
-    </inferredMetricsTieBreakers>
 </document>

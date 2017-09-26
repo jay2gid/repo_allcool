@@ -9,6 +9,8 @@
 #import "WebServiceCalls.h"
 #import "AFNetworking.h"
 
+#define BASE_URL @"http://allcool.pl/api_ios/"
+
 static AFHTTPRequestOperationManager *manager;
 
 @interface WebServiceCalls(){

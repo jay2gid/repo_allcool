@@ -11,7 +11,7 @@
 #define WIDTH ((([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait) || ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)) ? [[UIScreen mainScreen] bounds].size.width : [[UIScreen mainScreen] bounds].size.height)
 #define HEIGHT ((([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait) || ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)) ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width)
 
-#define BASE_URL @"http://www.townhouseapp.com/"
+#define BASE_URL_A @"http://www.townhouseapp.com/"
 #define kClientID @"431281662590-2sm5ihqbmrvkv9ohg9rf80d880ucv6r8.apps.googleusercontent.com";
 #define BASE_URL_SOURCE @"http://www.townhouseapp.com"
 
