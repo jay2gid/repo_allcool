@@ -8,6 +8,8 @@
 
 #import "FavBearVC.h"
 #import "BotalVC.h"
+#import "BearCell.h"
+#import "ViewAddDodaj.h"
 @interface FavBearVC ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
@@ -16,10 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     GET_HEADER_VIEW
     header.title.text = @"Ulubione piwa";
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,9 +41,11 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"Cells" owner:self options:nil]objectAtIndex:0];
+    BearCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"Cells" owner:self options:nil]objectAtIndex:0];
     
-
+    cell.btnDaduj.tag = indexPath.row;
+    [cell.btnDaduj addTarget:self action:@selector(methodDauj:) forControlEvents:UIControlEventTouchUpInside];
+    
     return cell;
 }
 
@@ -49,6 +53,12 @@
 {
     BotalVC *OBJ = [self.storyboard instantiateViewControllerWithIdentifier:@"BotalVC"];
     [self.navigationController pushViewController:OBJ animated:YES];
+}
+
+-(void)methodDauj:(UIButton*)sender
+{
+    ViewAddDodaj *view = [[[NSBundle mainBundle] loadNibNamed:@"View" owner:self options:nil]objectAtIndex:0];
+    [self.view addSubview:view];
 }
 
 @end

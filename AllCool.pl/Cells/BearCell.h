@@ -10,4 +10,8 @@
 
 @interface BearCell : UITableViewCell
 
+@property(nonatomic,strong)IBOutlet UIButton *btnDaduj;
+@property(nonatomic,strong)IBOutlet UIButton *btnKasuj;
+@property(nonatomic,strong)IBOutlet UIButton *btnNottaki;
+
 @end

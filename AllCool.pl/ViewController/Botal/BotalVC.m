@@ -7,7 +7,7 @@
 //
 
 #import "BotalVC.h"
-
+#import "ViewAddRatingTobotal.h"
 @interface BotalVC ()
 {
 
@@ -59,6 +59,12 @@
     [sender setTitleColor:APP_COLOR_RED forState:UIControlStateNormal];
 
 
+}
+- (IBAction)tapRating:(id)sender {
+    
+    ViewAddRatingTobotal *view = [[[NSBundle mainBundle] loadNibNamed:@"View" owner:self options:nil]objectAtIndex:1];
+    [self.view addSubview:view];
+    
 }
 
 @end

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9208E3AF1F79F4150031BA48 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9208E3AC1F79F4150031BA48 /* View.xib */; };
+		9208E3B01F79F4150031BA48 /* ViewAddDodaj.m in Sources */ = {isa = PBXBuildFile; fileRef = 9208E3AE1F79F4150031BA48 /* ViewAddDodaj.m */; };
+		9208E3B31F79F59B0031BA48 /* ViewAddRatingTobotal.m in Sources */ = {isa = PBXBuildFile; fileRef = 9208E3B21F79F59B0031BA48 /* ViewAddRatingTobotal.m */; };
+		9208E3B81F79F8D30031BA48 /* ProfilVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9208E3B61F79F8D30031BA48 /* ProfilVC.m */; };
+		9208E3B91F79F8D30031BA48 /* ProfilVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9208E3B71F79F8D30031BA48 /* ProfilVC.xib */; };
 		922BA5201F6009710068A5C3 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 922BA51F1F6009710068A5C3 /* LoginVC.m */; };
 		922BA5281F600A390068A5C3 /* ViewWithCornerAndBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 922BA5271F600A390068A5C3 /* ViewWithCornerAndBorder.m */; };
 		922BA5831F600B520068A5C3 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 922BA52C1F600B520068A5C3 /* AFHTTPRequestOperation.m */; };
@@ -214,6 +219,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9208E3AC1F79F4150031BA48 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = View.xib; path = CustomView/View.xib; sourceTree = "<group>"; };
+		9208E3AD1F79F4150031BA48 /* ViewAddDodaj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewAddDodaj.h; path = CustomView/ViewAddDodaj.h; sourceTree = "<group>"; };
+		9208E3AE1F79F4150031BA48 /* ViewAddDodaj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewAddDodaj.m; path = CustomView/ViewAddDodaj.m; sourceTree = "<group>"; };
+		9208E3B11F79F59B0031BA48 /* ViewAddRatingTobotal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewAddRatingTobotal.h; path = CustomView/ViewAddRatingTobotal.h; sourceTree = "<group>"; };
+		9208E3B21F79F59B0031BA48 /* ViewAddRatingTobotal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewAddRatingTobotal.m; path = CustomView/ViewAddRatingTobotal.m; sourceTree = "<group>"; };
+		9208E3B51F79F8D30031BA48 /* ProfilVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfilVC.h; sourceTree = "<group>"; };
+		9208E3B61F79F8D30031BA48 /* ProfilVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfilVC.m; sourceTree = "<group>"; };
+		9208E3B71F79F8D30031BA48 /* ProfilVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfilVC.xib; sourceTree = "<group>"; };
 		922BA51E1F6009710068A5C3 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginVC.h; path = Login/LoginVC.h; sourceTree = "<group>"; };
 		922BA51F1F6009710068A5C3 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginVC.m; path = Login/LoginVC.m; sourceTree = "<group>"; };
 		922BA5261F600A390068A5C3 /* ViewWithCornerAndBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewWithCornerAndBorder.h; path = HelperClasses/ViewWithCornerAndBorder.h; sourceTree = "<group>"; };
@@ -507,6 +520,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9208E3B41F79F8D30031BA48 /* PROFIL */ = {
+			isa = PBXGroup;
+			children = (
+				9208E3B51F79F8D30031BA48 /* ProfilVC.h */,
+				9208E3B61F79F8D30031BA48 /* ProfilVC.m */,
+				9208E3B71F79F8D30031BA48 /* ProfilVC.xib */,
+			);
+			name = PROFIL;
+			path = ViewController/PROFIL;
+			sourceTree = "<group>";
+		};
 		922BA5211F60097F0068A5C3 /* LoginVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -751,6 +775,11 @@
 		922BA5CA1F6153190068A5C3 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				9208E3AC1F79F4150031BA48 /* View.xib */,
+				9208E3AD1F79F4150031BA48 /* ViewAddDodaj.h */,
+				9208E3AE1F79F4150031BA48 /* ViewAddDodaj.m */,
+				9208E3B11F79F59B0031BA48 /* ViewAddRatingTobotal.h */,
+				9208E3B21F79F59B0031BA48 /* ViewAddRatingTobotal.m */,
 				922BA5C31F601C570068A5C3 /* HeaderView */,
 				922BA5D01F6164A30068A5C3 /* DrewerVeiw */,
 			);
@@ -785,6 +814,7 @@
 				92A2A9FC1F6D6AD30000939D /* ProfileEditVC */,
 				92A2AA001F6D6E320000939D /* RadarVC */,
 				92A2AA141F6FFF0A0000939D /* Botal */,
+				9208E3B41F79F8D30031BA48 /* PROFIL */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -1204,6 +1234,7 @@
 				92ADAFBA1F5FC99800501EA0 /* map_unselect.png in Resources */,
 				92ADAF751F5FC99800501EA0 /* box.png in Resources */,
 				92ADAFB81F5FC99800501EA0 /* map_red.png in Resources */,
+				9208E3B91F79F8D30031BA48 /* ProfilVC.xib in Resources */,
 				92C3C84A1F78150E008404C7 /* icon_back.png in Resources */,
 				92ADAFA11F5FC99800501EA0 /* ic_messaging.png in Resources */,
 				92ADAF741F5FC99800501EA0 /* bermenu.jpg in Resources */,
@@ -1232,6 +1263,7 @@
 				92ADAFAA1F5FC99800501EA0 /* likea.png in Resources */,
 				92ADAF711F5FC99800501EA0 /* beerbarall.png in Resources */,
 				92ADAFC31F5FC99800501EA0 /* padlock.png in Resources */,
+				9208E3AF1F79F4150031BA48 /* View.xib in Resources */,
 				92ADAFB31F5FC99800501EA0 /* listvisitfestvial.png in Resources */,
 				92ADAF941F5FC99800501EA0 /* exibitors_select.png in Resources */,
 				92ADAF851F5FC99800501EA0 /* daycalender.png in Resources */,
@@ -1310,6 +1342,7 @@
 				922BA59E1F600B520068A5C3 /* UIView+WebCacheOperation.m in Sources */,
 				922BA5A41F600B520068A5C3 /* SVProgressHUD.m in Sources */,
 				922BA5A21F600B520068A5C3 /* SVIndefiniteAnimatedView.m in Sources */,
+				9208E3B31F79F59B0031BA48 /* ViewAddRatingTobotal.m in Sources */,
 				922BA58C1F600B520068A5C3 /* APPhotoLibrary.m in Sources */,
 				922BA5B11F600EDF0068A5C3 /* ButtonCorner.m in Sources */,
 				922BA5861F600B520068A5C3 /* AFNetworkReachabilityManager.m in Sources */,
@@ -1340,6 +1373,7 @@
 				922BA5DD1F61693D0068A5C3 /* FavBearVC.m in Sources */,
 				922BA5201F6009710068A5C3 /* LoginVC.m in Sources */,
 				922BA5841F600B520068A5C3 /* AFHTTPRequestOperationManager.m in Sources */,
+				9208E3B01F79F4150031BA48 /* ViewAddDodaj.m in Sources */,
 				922BA5871F600B520068A5C3 /* AFSecurityPolicy.m in Sources */,
 				92A2A9FF1F6D6E200000939D /* RadarVC.m in Sources */,
 				92ADAEDF1F5FC83B00501EA0 /* main.m in Sources */,
@@ -1365,6 +1399,7 @@
 				922BA5981F600B520068A5C3 /* UIButton+WebCache.m in Sources */,
 				922BA5E21F616D040068A5C3 /* FavBravery.m in Sources */,
 				922BA5C01F601C3C0068A5C3 /* HeaderView.m in Sources */,
+				9208E3B81F79F8D30031BA48 /* ProfilVC.m in Sources */,
 				C30CD3261F798D960053C22B /* ProgramTVCell.m in Sources */,
 				922BA59C1F600B520068A5C3 /* UIImageView+HighlightedWebCache.m in Sources */,
 				922BA5991F600B520068A5C3 /* UIImage+GIF.m in Sources */,
