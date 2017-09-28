@@ -16,6 +16,8 @@
     IBOutlet UIView *viewUpButtons;
     
     int tag;
+    
+    NSArray *arrFest, *arrNewFest, *arrOldFest;
 }
 @end
 
@@ -31,6 +33,72 @@
     viewUpButtons.layer.borderWidth = 1;
     
     tag =1;
+    
+    [self get_New_Festival];
+    [self get_Old_Festival];
+    
+    [tableList reloadData];
+
+}
+
+-(void) get_New_Festival
+{
+    // http://allcool.pl/api_ios/festival/new_in_festival.php
+    
+    SVHUD_START
+    [WebServiceCalls GET:@"festival/new_in_festival.php" parameter:nil completionBlock:^(id JSON, WebServiceResult result)
+     {
+         SVHUD_STOP
+         NSLog(@"%@", JSON);
+         
+         @try
+         {
+             if ([JSON[@"success"] integerValue] == 1)
+             {
+                 arrNewFest = JSON[@"festivals"];
+             }
+             else
+             {
+                 [WebServiceCalls alert:@"Unable to fetch data. try again"];
+             }
+         }
+         @catch (NSException *exception)
+         {
+         }
+         @finally
+         {
+         }
+     }];
+}
+
+-(void) get_Old_Festival
+{
+    // http://allcool.pl/api_ios/festival/out_festival.php
+    
+    SVHUD_START
+    [WebServiceCalls GET:@"festival/out_festival.php" parameter:nil completionBlock:^(id JSON, WebServiceResult result)
+     {
+         SVHUD_STOP
+         NSLog(@"%@", JSON);
+         
+         @try
+         {
+             if ([JSON[@"success"] integerValue] == 1)
+             {
+                 arrOldFest = JSON[@"festivals"];
+             }
+             else
+             {
+                 [WebServiceCalls alert:@"Unable to fetch data. try again"];
+             }
+         }
+         @catch (NSException *exception)
+         {
+         }
+         @finally
+         {
+         }
+     }];
 }
 
 - (void)didReceiveMemoryWarning

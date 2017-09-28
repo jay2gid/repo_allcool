@@ -36,14 +36,23 @@
          SVHUD_STOP
          NSLog(@"%@", JSON);
          
-         if ([JSON[@"success"] integerValue] == 1)
+         @try
          {
-             arrProducers = JSON[@"producers"];
-             [self loadData];
+             if ([JSON[@"success"] integerValue] == 1)
+             {
+                 arrProducers = JSON[@"producers"];
+                 [self loadData];
+             }
+             else
+             {
+                 [WebServiceCalls alert:@"Unable to fetch data. try again"];
+             }
          }
-         else
+         @catch (NSException *exception)
          {
-             [WebServiceCalls alert:@"Unable to fetch data. try again"];
+         }
+         @finally
+         {
          }
      }];
 }
