@@ -1158,6 +1158,7 @@
 				TargetAttributes = {
 					92ADAED91F5FC83B00501EA0 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = K8ZWDWPB4Y;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -1525,8 +1526,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = K8ZWDWPB4Y;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = AllCool.pl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.woko.AllCool-pl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1541,8 +1544,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = K8ZWDWPB4Y;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = AllCool.pl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.woko.AllCool-pl";
 				PRODUCT_NAME = "$(TARGET_NAME)";

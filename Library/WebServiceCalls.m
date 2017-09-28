@@ -9,6 +9,8 @@
 #import "WebServiceCalls.h"
 #import "AFNetworking.h"
 
+#define BASE_URL @"http://allcool.pl/api_ios/"
+
 static AFHTTPRequestOperationManager *manager;
 
 @interface WebServiceCalls(){
@@ -54,29 +56,15 @@ static NSString *getuserphone;
     }
 }
 
+
 + (void)POST:(NSString *)url parameter:(NSDictionary *)parameter completionBlock:(WebCallBlock)block
 {
-    @try
+    if ([self isNetwork])
     {
-        if ([WebServiceCalls isNetwork]==YES)
+        @try
         {
-            AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] init];
-            manager.securityPolicy.allowInvalidCertificates = YES;//This is for https
-            manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-            
-            AFJSONRequestSerializer *requestSerializer = [AFJSONRequestSerializer serializer];
-            
-            [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-            [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
-            
-            
-            [manager.requestSerializer setValue:@"parse-application-id-removed" forHTTPHeaderField:@"X-Parse-Application-Id"];
-            [manager.requestSerializer setValue:@"parse-rest-api-key-removed" forHTTPHeaderField:@"X-Parse-REST-API-Key"];
-            [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-            manager.securityPolicy.allowInvalidCertificates = YES;
-            manager.requestSerializer = requestSerializer;
-            
-            [manager POST:[[NSString stringWithFormat:@"%@%@",BASE_URL,url] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] parameters:parameter constructingBodyWithBlock:^(id<AFMultipartFormData> formData)
+            NSString *URLSTRING = [NSString stringWithFormat:@"%@%@",BASE_URL,url];
+            [manager POST:[URLSTRING stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] parameters:parameter constructingBodyWithBlock:^(id<AFMultipartFormData> formData)
              {
                  
              }
@@ -88,13 +76,14 @@ static NSString *getuserphone;
              }
                   failure:^(AFHTTPRequestOperation *operation, NSError* error)
              {
-                 block(@"1",WebServiceResultFail);
+                 [SVProgressHUD dismiss];
+                 block(@"1",WebServiceResultSuccess);
              }];
         }
-    }
-    @catch (NSException *exception)
-    {
-        block(@"1",WebServiceResultFail);
+        @catch (NSException *exception)
+        {
+            block(@"1",WebServiceResultSuccess);
+        }
     }
 }
 
@@ -103,57 +92,57 @@ static NSString *getuserphone;
     
     @try
     {
-        if ([WebServiceCalls isNetwork]==YES)
-        {
-            AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] init];
-            manager.securityPolicy.allowInvalidCertificates = YES;//This is for https
-            manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-            
-            NSString *urlString = [NSString stringWithFormat:@"%@%@",BASE_URL,url];
-            
-            [manager POST:[urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] parameters:parameter constructingBodyWithBlock:^(id<AFMultipartFormData> formData)
-             {
-                 [formData appendPartWithFileData:imageData name:@"file" fileName:@"food_image.jpg" mimeType:@"image/jpeg"];
-             }
-                  success:^(AFHTTPRequestOperation *operation, id responseObject)
-             {
-                 NSMutableArray * responseJson = [[NSMutableArray alloc]init];
-                 responseJson = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
-                 block(responseJson,WebServiceResultSuccess);
-             }
-                  failure:^(AFHTTPRequestOperation *operation, NSError* error)
-             {
-                 block(@"1",WebServiceResultFail);
-             }];
-        }
+        AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] init];
+        manager.securityPolicy.allowInvalidCertificates = YES;//This is for https
+        manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+        
+        [manager POST:url parameters:parameter constructingBodyWithBlock:^(id<AFMultipartFormData> formData)
+         {
+             [formData appendPartWithFileData:imageData name:@"userImage" fileName:@"userImage.jpg" mimeType:@"image/jpeg"];
+         }
+              success:^(AFHTTPRequestOperation *operation, id responseObject)
+         {
+             
+             NSMutableArray * responseJson = [[NSMutableArray alloc]init];
+             responseJson = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
+             block(responseJson,WebServiceResultSuccess);
+             
+         }
+         
+              failure:^(AFHTTPRequestOperation *operation, NSError* error)
+         {
+             block(@"1",WebServiceResultSuccess);
+             
+         }];
+        
     }
     @catch (NSException *exception)
     {
-        block(@"1",WebServiceResultFail);
+        block(@"1",WebServiceResultSuccess);
     }
+    
 }
 
 + (void)GET:(NSString *)url parameter:(NSDictionary *)parameter completionBlock:(WebCallBlock)block
 {
+    
+    
     @try
     {
-        if ([WebServiceCalls isNetwork]==YES)
-        {
-            NSString *urlString = [NSString stringWithFormat:@"%@%@",BASE_URL,url];
-            if ([[url substringWithRange:NSMakeRange(0, 4)] isEqualToString:@"http"])
-            {
-                urlString = url;
-            }
-            
-            [manager GET:urlString parameters:parameter success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-                
-                id responce = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-                block(responce,WebServiceResultSuccess);
-                
-            } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
-                block(@"1",WebServiceResultFail);
-            }];
-        }
+        
+        NSString *URLSTRING = [NSString stringWithFormat:@"%@%@",BASE_URL,url];
+        [manager GET:[URLSTRING stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] parameters:nil success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject)
+         {
+             [SVProgressHUD dismiss];
+             NSMutableArray * responseJson = [[NSMutableArray alloc]init];
+             responseJson = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
+             block(responseJson,WebServiceResultSuccess);
+             
+         } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+             [SVProgressHUD dismiss];
+             block(@"1",WebServiceResultSuccess);
+             
+         }];
         
         /*NSURL *urlStr=  [NSURL URLWithString:[[NSString stringWithFormat:@"%@%@",BASE_URL,url] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
          NSMutableURLRequest *request=[NSMutableURLRequest requestWithURL:urlStr];
@@ -166,10 +155,11 @@ static NSString *getuserphone;
     }
     @catch (NSException *exception)
     {
-        block(@"1",WebServiceResultFail);
+        block(@"1",WebServiceResultSuccess);
         UIAlertView *aler = [[UIAlertView alloc]initWithTitle:@"Network Error" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [aler show];
     }
+    
 }
 
 +(void)warningAlert:(NSString *)alertString
