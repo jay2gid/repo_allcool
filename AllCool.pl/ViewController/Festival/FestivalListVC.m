@@ -33,6 +33,12 @@
     viewUpButtons.layer.borderWidth = 1;
     
     tag =1;
+    
+    [self get_New_Festival];
+    [self get_Old_Festival];
+    
+    [tableList reloadData];
+
 }
 
 -(void) get_New_Festival
@@ -79,7 +85,7 @@
          {
              if ([JSON[@"success"] integerValue] == 1)
              {
-                 arrNewFest = JSON[@"festivals"];
+                 arrOldFest = JSON[@"festivals"];
              }
              else
              {
