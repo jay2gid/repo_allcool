@@ -217,6 +217,7 @@
 		C30CD3261F798D960053C22B /* ProgramTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C30CD3251F798D960053C22B /* ProgramTVCell.m */; };
 		C30CD3291F798DD20053C22B /* RatingTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C30CD3281F798DD20053C22B /* RatingTVCell.m */; };
 		C30CD32C1F798E360053C22B /* CategoryTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C30CD32B1F798E360053C22B /* CategoryTVCell.m */; };
+		C33985921F7E9BF900F33AF8 /* FestListTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C33985911F7E9BF900F33AF8 /* FestListTVCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -511,6 +512,8 @@
 		C30CD3281F798DD20053C22B /* RatingTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingTVCell.m; sourceTree = "<group>"; };
 		C30CD32A1F798E360053C22B /* CategoryTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTVCell.h; sourceTree = "<group>"; };
 		C30CD32B1F798E360053C22B /* CategoryTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTVCell.m; sourceTree = "<group>"; };
+		C33985901F7E9BF900F33AF8 /* FestListTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FestListTVCell.h; sourceTree = "<group>"; };
+		C33985911F7E9BF900F33AF8 /* FestListTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FestListTVCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -832,6 +835,8 @@
 				922BA5E41F616DA70068A5C3 /* BraveryCell.m */,
 				922BA5D51F6167B90068A5C3 /* BearCell.h */,
 				922BA5D61F6167B90068A5C3 /* BearCell.m */,
+				C33985901F7E9BF900F33AF8 /* FestListTVCell.h */,
+				C33985911F7E9BF900F33AF8 /* FestListTVCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -1419,6 +1424,7 @@
 				922BA5A41F600B520068A5C3 /* SVProgressHUD.m in Sources */,
 				922BA5A21F600B520068A5C3 /* SVIndefiniteAnimatedView.m in Sources */,
 				9208E3B31F79F59B0031BA48 /* ViewAddRatingTobotal.m in Sources */,
+				C33985921F7E9BF900F33AF8 /* FestListTVCell.m in Sources */,
 				922BA58C1F600B520068A5C3 /* APPhotoLibrary.m in Sources */,
 				922BA5B11F600EDF0068A5C3 /* ButtonCorner.m in Sources */,
 				922BA5861F600B520068A5C3 /* AFNetworkReachabilityManager.m in Sources */,

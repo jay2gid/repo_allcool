@@ -7,6 +7,7 @@
 //
 
 #import "FestivalListVC.h"
+#import "FestListTVCell.h"
 
 @interface FestivalListVC ()
 {
@@ -25,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     GET_HEADER_VIEW
     header.title.text = @"Festiwale piwne";
     
@@ -37,8 +38,9 @@
     [self get_New_Festival];
     [self get_Old_Festival];
     
+    arrFest = arrNewFest;
     [tableList reloadData];
-
+    
 }
 
 -(void) get_New_Festival
@@ -112,10 +114,10 @@
     btnRight.backgroundColor = CLEAR_COLOR;
     [btnRight setTitleColor:APP_COLOR_RED forState:UIControlStateNormal];
     [btnLeft setTitleColor:APP_COLOR_RED forState:UIControlStateNormal];
-   
+    
     sender.backgroundColor = APP_COLOR_RED;
     [sender setTitleColor:WHITE_COLOR forState:UIControlStateNormal];
-  
+    
     tag = (int)sender.tag;
     [tableList reloadData];
 }
@@ -131,13 +133,28 @@
 {
     if (tag == 1)
     {
-        return 3;
+        arrFest = arrNewFest;
+        
+        return arrFest.count;
     }
-    return 5;
+    
+    arrFest = arrOldFest;
+    
+    return arrFest.count;
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"Cells" owner:self options:nil]objectAtIndex:2];
+    FestListTVCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"Cells" owner:self options:nil]objectAtIndex:2];
+    
+    [cell.imgFestLogo sd_setImageWithURL:[NSURL URLWithString:arrFest[indexPath.row][@"f_logo"]] placeholderImage:[UIImage imageNamed:@"noimage.jpg"]];
+    
+    cell.lblFestName.text = arrFest[indexPath.row][@"f_name"];
+    
+    cell.lblPlaceName.text = [NSString stringWithFormat:@"%@ %@, %@", arrFest[indexPath.row][@"street_name"], arrFest[indexPath.row][@"street_num"], arrFest[indexPath.row][@"city"]];
+    
+    cell.lblDates.text = [NSString stringWithFormat:@"%@-%@", arrFest[indexPath.row][@"start_Date"], arrFest[indexPath.row][@"end_Date"]];
+    
     return cell;
 }
 
