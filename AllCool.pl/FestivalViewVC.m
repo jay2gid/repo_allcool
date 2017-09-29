@@ -21,6 +21,8 @@
     NSArray *arrImgSelected, *arrImgDefault, *arrImgName, *arrLblName;
     
     NSInteger tag;
+    
+    NSArray *arrExibitors, *arrProg, *arrRating, *arrCategory;
 }
 
 - (void)viewDidLoad
@@ -48,7 +50,138 @@
     imgMapPreiew.hidden = YES;
     
     tag = 0;
+    
+    [self get_Fest_Exibitors];
+    [self get_Fest_Prog];
+    [self get_Fest_Rating];
+    [self get_Fest_Category];
+    
     [tblViewFest reloadData];
+}
+
+-(void) get_Fest_Exibitors
+{
+    // http://allcool.pl/api_ios/festival/festival_categories_beer.php?fcid=4&uid=1
+    
+    SVHUD_START
+    [WebServiceCalls GET:@"festival/festival_categories_beer.php?fcid=14&uid=1" parameter:nil completionBlock:^(id JSON, WebServiceResult result)
+     {
+         //SVHUD_STOP
+         NSLog(@"%@", JSON);
+         
+         @try
+         {
+             if ([JSON[@"success"] integerValue] == 1)
+             {
+                 arrExibitors = JSON[@"beer_details"];
+                 [tblViewFest reloadData];
+             }
+             else
+             {
+                 [WebServiceCalls alert:@"Unable to fetch data. try again"];
+             }
+         }
+         @catch (NSException *exception)
+         {
+         }
+         @finally
+         {
+         }
+     }];
+}
+
+-(void) get_Fest_Prog
+{
+    // http://allcool.pl/api_ios/festival/festival_programs.php?id=4
+    
+    SVHUD_START
+    [WebServiceCalls GET:@"festival/festival_programs.php?id=4" parameter:nil completionBlock:^(id JSON, WebServiceResult result)
+     {
+         //SVHUD_STOP
+         NSLog(@"%@", JSON);
+         
+         @try
+         {
+             if ([JSON[@"success"] integerValue] == 1)
+             {
+                 arrProg = JSON[@"festivalsprogram"];
+                 [tblViewFest reloadData];
+             }
+             else
+             {
+                 [WebServiceCalls alert:@"Unable to fetch data. try again"];
+             }
+         }
+         @catch (NSException *exception)
+         {
+         }
+         @finally
+         {
+         }
+     }];
+}
+
+-(void) get_Fest_Rating
+{
+    // http://allcool.pl/api_ios/festival/festival_rating.php?id=4
+    
+    SVHUD_START
+    [WebServiceCalls GET:@"festival/festival_rating.php?id=4" parameter:nil completionBlock:^(id JSON, WebServiceResult result)
+     {
+         //SVHUD_STOP
+         NSLog(@"%@", JSON);
+         
+         @try
+         {
+             if ([JSON[@"success"] integerValue] == 1)
+             {
+                 arrRating = JSON[@"beer_details"];
+                 [tblViewFest reloadData];
+             }
+             else
+             {
+                 [WebServiceCalls alert:@"Unable to fetch data. try again"];
+             }
+         }
+         @catch (NSException *exception)
+         {
+         }
+         @finally
+         {
+         }
+     }];
+}
+
+-(void) get_Fest_Category
+{
+    // http://allcool.pl/api_ios/festival/festival_review.php?id=4
+    
+    SVHUD_START
+    [WebServiceCalls GET:@"festival/festival_review.php?id=4" parameter:nil completionBlock:^(id JSON, WebServiceResult result)
+     {
+         SVHUD_STOP
+         NSLog(@"%@", JSON);
+         
+         @try
+         {
+             if ([JSON[@"success"] integerValue] == 1)
+             {
+                 arrCategory = JSON[@"festivalsprogram"];
+                 [tblViewFest reloadData];
+             }
+             else
+             {
+                 [WebServiceCalls alert:@"Unable to fetch data. try again"];
+             }
+         }
+         @catch (NSException *exception)
+         {
+         }
+         @finally
+         {
+             SVHUD_STOP
+         }
+     }];
 }
 
 - (IBAction)tabBtnClk:(UIButton *)sender

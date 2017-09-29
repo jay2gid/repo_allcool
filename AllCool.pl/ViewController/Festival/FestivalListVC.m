@@ -33,7 +33,7 @@
     viewUpButtons.layer.borderColor = APP_COLOR_RED.CGColor;
     viewUpButtons.layer.borderWidth = 1;
     
-    tag =1;
+    tag = 1;
     
     [self get_New_Festival];
     [self get_Old_Festival];
@@ -58,6 +58,7 @@
              if ([JSON[@"success"] integerValue] == 1)
              {
                  arrNewFest = JSON[@"festivals"];
+                 [tableList reloadData];
              }
              else
              {
@@ -88,6 +89,7 @@
              if ([JSON[@"success"] integerValue] == 1)
              {
                  arrOldFest = JSON[@"festivals"];
+                 [tableList reloadData];
              }
              else
              {
