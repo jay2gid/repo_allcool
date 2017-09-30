@@ -6,15 +6,18 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (2.4.0):
     - GoogleMaps/Base (= 2.4.0)
+  - LiquidFloatingActionButton (1.2.0)
 
 DEPENDENCIES:
   - GoogleMaps
   - GooglePlaces
+  - LiquidFloatingActionButton
 
 SPEC CHECKSUMS:
   GoogleMaps: 8436ab5d1c25e36915b2f7416d0c8e3fa2e76c61
   GooglePlaces: aafe5990fa7951e98e078761bbdaaf236d7e0c65
+  LiquidFloatingActionButton: 9c28961915754e08cf596ea6bdd60f9cd949f172
 
-PODFILE CHECKSUM: 0d3fde900da7b76214014c363c0e61227b850f45
+PODFILE CHECKSUM: 5f17a3719aa422993e1c8262a7342a0b393d4896
 
 COCOAPODS: 1.2.1

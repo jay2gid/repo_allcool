@@ -7,113 +7,132 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04C347050F88EE2D88B841080A43B47A /* Pods-AllCool.pl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1F3FAABE53BE44A2B74D112D732CEB /* Pods-AllCool.pl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1324ADBE15010742BC6615E7CE92F483 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		19F61CA69C02ADD6842EFA9A39F52BA4 /* Pods-AllCool.pl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C048C9A742980269D38049591F55DDF /* Pods-AllCool.pl-dummy.m */; };
+		0636D820D7A28182A38DFEDD0B4265B8 /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359D649FA84DC8705BCC127A11B2F56 /* ArrayEx.swift */; };
+		1966598572E070BAEE27F15622C5E416 /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350CA537ABBC990EAC9B057B46FA695C /* CGPointEx.swift */; };
+		3B564D995F752798FE6CCD98AA10E350 /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9637CBF65B73156F170FC372817A2355 /* UIColorEx.swift */; };
+		3D28228BA6376224424ABCDEB282B104 /* LiquidFloatingActionButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C1815FE24E8523A619D19CCF7C28A2 /* LiquidFloatingActionButton-dummy.m */; };
+		4C1000F3F17B2CE8D1FF2F2D1FCAE05C /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A4EE814B6E6EF148F79C4441EFA0C8 /* CGRectEx.swift */; };
+		4D5B1EA134D7C144E22F61ABF3F9761A /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319526C0D2363F65FB0F6163E3841757 /* LiquidUtil.swift */; };
+		511C901CF53ACF4BE0AAE71D5D90402D /* Pods-AllCool.pl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C048C9A742980269D38049591F55DDF /* Pods-AllCool.pl-dummy.m */; };
+		52BC6CDBD327A325EAC54A0099EDECCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7D5F16F30A7738537F8CAA944B46EFEA /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9173703A63074A0BCA6B6A19E2AC6BCA /* SimpleCircleLiquidEngine.swift */; };
+		94E79B91257D5DD5F1163045AA76A872 /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07254C0F33F93EFC2012653187720661 /* LiquittableCircle.swift */; };
+		97E460D609CC50720354ABAC3C7F40A4 /* Pods-AllCool.pl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1F3FAABE53BE44A2B74D112D732CEB /* Pods-AllCool.pl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DAEAB5D5736D03E6798C6A5B98B492F /* LiquidFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A736BB93267C4E7B467F99FDDBAF3 /* LiquidFloatingActionButton.swift */; };
+		C30076E046315B3FEB2ADE84129F7898 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E68DB70743BA87355B6E4AC462A016BC /* LiquidFloatingActionButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5706C6E0FDB388F58A57909E22F1B19E /* LiquidFloatingActionButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14CEA6BED79BC31E252A789FD7BAB0A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62BDD710F761A9FAA74F4010A24BF66D;
+			remoteInfo = LiquidFloatingActionButton;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03779D741BA61259DBE35184E19466A5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		08F1229163C7F5E61C7C4B361510F11C /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		07254C0F33F93EFC2012653187720661 /* LiquittableCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquittableCircle.swift; path = Pod/Classes/LiquittableCircle.swift; sourceTree = "<group>"; };
 		0D1F3FAABE53BE44A2B74D112D732CEB /* Pods-AllCool.pl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AllCool.pl-umbrella.h"; sourceTree = "<group>"; };
-		1C6200385182862E9168588E60B1CD37 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		10642D89DDA74EFD954D18F2A33DAFE7 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		1DD4CA18EF0753D5C3FB46E7EF1F5FC7 /* LiquidFloatingActionButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiquidFloatingActionButton.xcconfig; sourceTree = "<group>"; };
+		20A4EE814B6E6EF148F79C4441EFA0C8 /* CGRectEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectEx.swift; path = Pod/Classes/CGRectEx.swift; sourceTree = "<group>"; };
+		25B25DEA72782B217D83C80C8E8B961C /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		2C048C9A742980269D38049591F55DDF /* Pods-AllCool.pl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AllCool.pl-dummy.m"; sourceTree = "<group>"; };
+		319526C0D2363F65FB0F6163E3841757 /* LiquidUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidUtil.swift; path = Pod/Classes/LiquidUtil.swift; sourceTree = "<group>"; };
+		350CA537ABBC990EAC9B057B46FA695C /* CGPointEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPointEx.swift; path = Pod/Classes/CGPointEx.swift; sourceTree = "<group>"; };
+		35C1815FE24E8523A619D19CCF7C28A2 /* LiquidFloatingActionButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LiquidFloatingActionButton-dummy.m"; sourceTree = "<group>"; };
+		387B7CEEBA758D06E00825C4C68C9DFD /* Pods_AllCool_pl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AllCool_pl.framework; path = "Pods-AllCool.pl.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AB10183E506360DFCD1E3393141D3B4 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		5706C6E0FDB388F58A57909E22F1B19E /* LiquidFloatingActionButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidFloatingActionButton-umbrella.h"; sourceTree = "<group>"; };
 		5C2D11AF33DE73B2FE09E8328659D441 /* Pods-AllCool.pl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AllCool.pl.modulemap"; sourceTree = "<group>"; };
 		61BC05C616EA2C06E10E65B42FF65F14 /* Pods-AllCool.pl-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AllCool.pl-frameworks.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		70324FDF1FBB41BEA92DE76E00BD3E96 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		743D9E8E2109C21978872F053DB32857 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		782A736BB93267C4E7B467F99FDDBAF3 /* LiquidFloatingActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidFloatingActionButton.swift; path = Pod/Classes/LiquidFloatingActionButton.swift; sourceTree = "<group>"; };
+		9173703A63074A0BCA6B6A19E2AC6BCA /* SimpleCircleLiquidEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleCircleLiquidEngine.swift; path = Pod/Classes/SimpleCircleLiquidEngine.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A65ED65616C5861E2765BDC60AAAF910 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
-		A92DFDA40F47C0FD221B2872C31099A1 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		9637CBF65B73156F170FC372817A2355 /* UIColorEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorEx.swift; path = Pod/Classes/UIColorEx.swift; sourceTree = "<group>"; };
+		A59180302A1FB4E24D525B9E54026925 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		ADEDB99EFCFF051C0D5C4D69A2C582D8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2035B24067B6A050C28665C12AD33F1 /* Pods-AllCool.pl-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AllCool.pl-resources.sh"; sourceTree = "<group>"; };
-		B22C69ADCE7C9D529F11B17B4EF5E065 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		BBDA045807F3E9593329BC81A08FCCC2 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		C6E482476AA9AB90E2C95734290E9187 /* LiquidFloatingActionButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidFloatingActionButton-prefix.pch"; sourceTree = "<group>"; };
 		D5641AAEEA3149C4814256BCD04C2051 /* Pods-AllCool.pl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AllCool.pl.debug.xcconfig"; sourceTree = "<group>"; };
+		DAFD70E5EC68AE0A13D3FBE4DC342763 /* LiquidFloatingActionButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LiquidFloatingActionButton.modulemap; sourceTree = "<group>"; };
 		DBD2D4FF87DB1EB213E1D584F7E183E2 /* Pods-AllCool.pl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AllCool.pl.release.xcconfig"; sourceTree = "<group>"; };
 		DC772B5606DE833A83B6A86087360A8C /* Pods-AllCool.pl-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AllCool.pl-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E75A307E78A10A006CEA0608E89803B9 /* LiquidFloatingActionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LiquidFloatingActionButton.framework; path = LiquidFloatingActionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8AEEE6C4EF7005742A62EDDFC9C726F /* Pods-AllCool.pl-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AllCool.pl-acknowledgements.plist"; sourceTree = "<group>"; };
-		F8855B44EAD72B9492777095D7E0BA02 /* Pods_AllCool_pl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AllCool_pl.framework; path = "Pods-AllCool.pl.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F359D649FA84DC8705BCC127A11B2F56 /* ArrayEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayEx.swift; path = Pod/Classes/ArrayEx.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		20EFEF32531A1DC8E19573395DC06DF6 /* Frameworks */ = {
+		088BC17434FFF2876CE3BF1E6690305D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1324ADBE15010742BC6615E7CE92F483 /* Foundation.framework in Frameworks */,
+				52BC6CDBD327A325EAC54A0099EDECCB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA87A2B4C5A28D0F617707BBD7E15474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30076E046315B3FEB2ADE84129F7898 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00B63D9B3EBC8ECAFD5DA8C24F1A42DF /* GooglePlaces */ = {
+		136CB5CC095F715A3B5C39BDD6B28E71 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				475420FA59EFC8377CF994A338979247 /* Frameworks */,
-				09DB508F39D8BE758EA4A7B9047268E9 /* Resources */,
-			);
-			name = GooglePlaces;
-			path = GooglePlaces;
-			sourceTree = "<group>";
-		};
-		09DB508F39D8BE758EA4A7B9047268E9 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				A65ED65616C5861E2765BDC60AAAF910 /* GooglePlaces.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		26C94CF6FBD559155351548F2127E7DB /* GoogleMaps */ = {
-			isa = PBXGroup;
-			children = (
-				B2F22323EA3B1ADB4F96376E3F709A68 /* Base */,
-				488E301C4ACDDA928635C4886F5F6158 /* Maps */,
-			);
-			name = GoogleMaps;
-			path = GoogleMaps;
-			sourceTree = "<group>";
-		};
-		343584E22C57489C672A8E6F731CB43A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				1C6200385182862E9168588E60B1CD37 /* GoogleMaps.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		385FA015FFB9210F372AB1078B856AAB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				26C94CF6FBD559155351548F2127E7DB /* GoogleMaps */,
-				00B63D9B3EBC8ECAFD5DA8C24F1A42DF /* GooglePlaces */,
+				D2397A64CCD7D16D9AA95614D14B5C81 /* GoogleMaps */,
+				54DA0D964A0BA12AD0F1EC18AB3D933B /* GooglePlaces */,
+				8EC8660339093D5045C36DAE387CF258 /* LiquidFloatingActionButton */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		475420FA59EFC8377CF994A338979247 /* Frameworks */ = {
+		1A90C9D18DD1E8D75F3F4D247AE47697 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				70324FDF1FBB41BEA92DE76E00BD3E96 /* GooglePlaces.framework */,
+				E75A307E78A10A006CEA0608E89803B9 /* LiquidFloatingActionButton.framework */,
+				387B7CEEBA758D06E00825C4C68C9DFD /* Pods_AllCool_pl.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EA45B26DF36811FF88FEB9F1F0E3639 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				25B25DEA72782B217D83C80C8E8B961C /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3AE8573C27F9400EB4A15A7028415397 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A59180302A1FB4E24D525B9E54026925 /* GoogleMapsBase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		488E301C4ACDDA928635C4886F5F6158 /* Maps */ = {
+		54DA0D964A0BA12AD0F1EC18AB3D933B /* GooglePlaces */ = {
 			isa = PBXGroup;
 			children = (
-				82CE66B3B7EC3F6274BF43A52FEEAE6E /* Frameworks */,
-				343584E22C57489C672A8E6F731CB43A /* Resources */,
+				C4E864DE26A221496F265E677E263522 /* Frameworks */,
+				EAF7C7F48983E5E3F1B24451B26DB39C /* Resources */,
 			);
-			name = Maps;
-			sourceTree = "<group>";
-		};
-		4CFA8C2E94378AFFDBA3DF92FBE7E3DC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B22C69ADCE7C9D529F11B17B4EF5E065 /* GoogleMapsBase.framework */,
-			);
-			name = Frameworks;
+			name = GooglePlaces;
+			path = GooglePlaces;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -121,35 +140,44 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				385FA015FFB9210F372AB1078B856AAB /* Pods */,
-				9FDB31179BC12ECBCD63E18C96366525 /* Products */,
+				136CB5CC095F715A3B5C39BDD6B28E71 /* Pods */,
+				1A90C9D18DD1E8D75F3F4D247AE47697 /* Products */,
 				C6DC74F2F4661503CDE0AF19995E243A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		82CE66B3B7EC3F6274BF43A52FEEAE6E /* Frameworks */ = {
+		8B4C77DD0563DD65FA23E0BC76C21974 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				08F1229163C7F5E61C7C4B361510F11C /* GoogleMaps.framework */,
-				A92DFDA40F47C0FD221B2872C31099A1 /* GoogleMapsCore.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9FDB31179BC12ECBCD63E18C96366525 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F8855B44EAD72B9492777095D7E0BA02 /* Pods_AllCool_pl.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B2F22323EA3B1ADB4F96376E3F709A68 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				4CFA8C2E94378AFFDBA3DF92FBE7E3DC /* Frameworks */,
+				3AE8573C27F9400EB4A15A7028415397 /* Frameworks */,
 			);
 			name = Base;
+			sourceTree = "<group>";
+		};
+		8BCCC8C2FB1254E2A5C723C279487DCC /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				C5CCE2C104C46AAC4DAA5C4D28570753 /* Frameworks */,
+				1EA45B26DF36811FF88FEB9F1F0E3639 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		8EC8660339093D5045C36DAE387CF258 /* LiquidFloatingActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				F359D649FA84DC8705BCC127A11B2F56 /* ArrayEx.swift */,
+				350CA537ABBC990EAC9B057B46FA695C /* CGPointEx.swift */,
+				20A4EE814B6E6EF148F79C4441EFA0C8 /* CGRectEx.swift */,
+				782A736BB93267C4E7B467F99FDDBAF3 /* LiquidFloatingActionButton.swift */,
+				319526C0D2363F65FB0F6163E3841757 /* LiquidUtil.swift */,
+				07254C0F33F93EFC2012653187720661 /* LiquittableCircle.swift */,
+				9173703A63074A0BCA6B6A19E2AC6BCA /* SimpleCircleLiquidEngine.swift */,
+				9637CBF65B73156F170FC372817A2355 /* UIColorEx.swift */,
+				C430554D76431DF7FF36C517E28FDF56 /* Support Files */,
+			);
+			name = LiquidFloatingActionButton;
+			path = LiquidFloatingActionButton;
 			sourceTree = "<group>";
 		};
 		B8CD0FCAB9AC5A8378879227A3F69DE8 /* Pods-AllCool.pl */ = {
@@ -178,12 +206,53 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C430554D76431DF7FF36C517E28FDF56 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADEDB99EFCFF051C0D5C4D69A2C582D8 /* Info.plist */,
+				DAFD70E5EC68AE0A13D3FBE4DC342763 /* LiquidFloatingActionButton.modulemap */,
+				1DD4CA18EF0753D5C3FB46E7EF1F5FC7 /* LiquidFloatingActionButton.xcconfig */,
+				35C1815FE24E8523A619D19CCF7C28A2 /* LiquidFloatingActionButton-dummy.m */,
+				C6E482476AA9AB90E2C95734290E9187 /* LiquidFloatingActionButton-prefix.pch */,
+				5706C6E0FDB388F58A57909E22F1B19E /* LiquidFloatingActionButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LiquidFloatingActionButton";
+			sourceTree = "<group>";
+		};
+		C4E864DE26A221496F265E677E263522 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				743D9E8E2109C21978872F053DB32857 /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5CCE2C104C46AAC4DAA5C4D28570753 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AB10183E506360DFCD1E3393141D3B4 /* GoogleMaps.framework */,
+				10642D89DDA74EFD954D18F2A33DAFE7 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6DC74F2F4661503CDE0AF19995E243A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				B8CD0FCAB9AC5A8378879227A3F69DE8 /* Pods-AllCool.pl */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D2397A64CCD7D16D9AA95614D14B5C81 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				8B4C77DD0563DD65FA23E0BC76C21974 /* Base */,
+				8BCCC8C2FB1254E2A5C723C279487DCC /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -194,35 +263,69 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		EAF7C7F48983E5E3F1B24451B26DB39C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BBDA045807F3E9593329BC81A08FCCC2 /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C0253990660F74EB9C6585BCCDAE8638 /* Headers */ = {
+		52A922C71B5BE6128421BC27691801AB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C347050F88EE2D88B841080A43B47A /* Pods-AllCool.pl-umbrella.h in Headers */,
+				97E460D609CC50720354ABAC3C7F40A4 /* Pods-AllCool.pl-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC3C77FAD16E6003F28FFA2B03779B97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68DB70743BA87355B6E4AC462A016BC /* LiquidFloatingActionButton-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F249078079B975731E8F1C854C1483E2 /* Pods-AllCool.pl */ = {
+		62BDD710F761A9FAA74F4010A24BF66D /* LiquidFloatingActionButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6B3E3D2DC7372CBA628C190E87079F67 /* Build configuration list for PBXNativeTarget "Pods-AllCool.pl" */;
+			buildConfigurationList = 93F43E9852D375D854EE45AD31D76292 /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton" */;
 			buildPhases = (
-				6EA8B4EAC433056545520BBA57C258C3 /* Sources */,
-				20EFEF32531A1DC8E19573395DC06DF6 /* Frameworks */,
-				C0253990660F74EB9C6585BCCDAE8638 /* Headers */,
+				2C32FB457251894479DE0F3DD687FC53 /* Sources */,
+				088BC17434FFF2876CE3BF1E6690305D /* Frameworks */,
+				CC3C77FAD16E6003F28FFA2B03779B97 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = LiquidFloatingActionButton;
+			productName = LiquidFloatingActionButton;
+			productReference = E75A307E78A10A006CEA0608E89803B9 /* LiquidFloatingActionButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7761E6E27DF7897744145ED99620CC3E /* Pods-AllCool.pl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7037D53F9E1BC25EFC322935B8F87F34 /* Build configuration list for PBXNativeTarget "Pods-AllCool.pl" */;
+			buildPhases = (
+				2929C778BB5C7FD4F9425C45E389F616 /* Sources */,
+				BA87A2B4C5A28D0F617707BBD7E15474 /* Frameworks */,
+				52A922C71B5BE6128421BC27691801AB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8ACC4937EF36ADED29A534BE84A47187 /* PBXTargetDependency */,
+			);
 			name = "Pods-AllCool.pl";
 			productName = "Pods-AllCool.pl";
-			productReference = F8855B44EAD72B9492777095D7E0BA02 /* Pods_AllCool_pl.framework */;
+			productReference = 387B7CEEBA758D06E00825C4C68C9DFD /* Pods_AllCool_pl.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -242,62 +345,86 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 9FDB31179BC12ECBCD63E18C96366525 /* Products */;
+			productRefGroup = 1A90C9D18DD1E8D75F3F4D247AE47697 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F249078079B975731E8F1C854C1483E2 /* Pods-AllCool.pl */,
+				62BDD710F761A9FAA74F4010A24BF66D /* LiquidFloatingActionButton */,
+				7761E6E27DF7897744145ED99620CC3E /* Pods-AllCool.pl */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6EA8B4EAC433056545520BBA57C258C3 /* Sources */ = {
+		2929C778BB5C7FD4F9425C45E389F616 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19F61CA69C02ADD6842EFA9A39F52BA4 /* Pods-AllCool.pl-dummy.m in Sources */,
+				511C901CF53ACF4BE0AAE71D5D90402D /* Pods-AllCool.pl-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C32FB457251894479DE0F3DD687FC53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0636D820D7A28182A38DFEDD0B4265B8 /* ArrayEx.swift in Sources */,
+				1966598572E070BAEE27F15622C5E416 /* CGPointEx.swift in Sources */,
+				4C1000F3F17B2CE8D1FF2F2D1FCAE05C /* CGRectEx.swift in Sources */,
+				3D28228BA6376224424ABCDEB282B104 /* LiquidFloatingActionButton-dummy.m in Sources */,
+				9DAEAB5D5736D03E6798C6A5B98B492F /* LiquidFloatingActionButton.swift in Sources */,
+				4D5B1EA134D7C144E22F61ABF3F9761A /* LiquidUtil.swift in Sources */,
+				94E79B91257D5DD5F1163045AA76A872 /* LiquittableCircle.swift in Sources */,
+				7D5F16F30A7738537F8CAA944B46EFEA /* SimpleCircleLiquidEngine.swift in Sources */,
+				3B564D995F752798FE6CCD98AA10E350 /* UIColorEx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8ACC4937EF36ADED29A534BE84A47187 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LiquidFloatingActionButton;
+			target = 62BDD710F761A9FAA74F4010A24BF66D /* LiquidFloatingActionButton */;
+			targetProxy = 14CEA6BED79BC31E252A789FD7BAB0A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		06D650BC3F62F3EB5DEC8F3E8CA923E9 /* Debug */ = {
+		069C85C680CCE0EE46AB3EF737AE611B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5641AAEEA3149C4814256BCD04C2051 /* Pods-AllCool.pl.debug.xcconfig */;
+			baseConfigurationReference = 1DD4CA18EF0753D5C3FB46E7EF1F5FC7 /* LiquidFloatingActionButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AllCool.pl/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiquidFloatingActionButton/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AllCool.pl/Pods-AllCool.pl.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AllCool_pl;
+				MODULEMAP_FILE = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LiquidFloatingActionButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -343,41 +470,40 @@
 			};
 			name = Release;
 		};
-		5DA605D87BEE4E49FA252CEECAC52385 /* Release */ = {
+		594A61694EFCF8595E8CF4104206E792 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBD2D4FF87DB1EB213E1D584F7E183E2 /* Pods-AllCool.pl.release.xcconfig */;
+			baseConfigurationReference = 1DD4CA18EF0753D5C3FB46E7EF1F5FC7 /* LiquidFloatingActionButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AllCool.pl/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiquidFloatingActionButton/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AllCool.pl/Pods-AllCool.pl.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AllCool_pl;
+				MODULEMAP_FILE = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LiquidFloatingActionButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		C104F7F091290C3D1E248192F07FE689 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -427,6 +553,83 @@
 			};
 			name = Debug;
 		};
+		DC910BA195EBC110CAD712602F4339C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD2D4FF87DB1EB213E1D584F7E183E2 /* Pods-AllCool.pl.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AllCool.pl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AllCool.pl/Pods-AllCool.pl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AllCool_pl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EFDD0A33A0633D2C645BF8AB20190993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5641AAEEA3149C4814256BCD04C2051 /* Pods-AllCool.pl.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AllCool.pl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AllCool.pl/Pods-AllCool.pl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AllCool_pl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -439,11 +642,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6B3E3D2DC7372CBA628C190E87079F67 /* Build configuration list for PBXNativeTarget "Pods-AllCool.pl" */ = {
+		7037D53F9E1BC25EFC322935B8F87F34 /* Build configuration list for PBXNativeTarget "Pods-AllCool.pl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				06D650BC3F62F3EB5DEC8F3E8CA923E9 /* Debug */,
-				5DA605D87BEE4E49FA252CEECAC52385 /* Release */,
+				EFDD0A33A0633D2C645BF8AB20190993 /* Debug */,
+				DC910BA195EBC110CAD712602F4339C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93F43E9852D375D854EE45AD31D76292 /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				594A61694EFCF8595E8CF4104206E792 /* Debug */,
+				069C85C680CCE0EE46AB3EF737AE611B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
