@@ -15,6 +15,9 @@
 @end
 
 @implementation FavBearVC
+{
+    NSArray *arrBeer;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +25,37 @@
     GET_HEADER_VIEW
     header.title.text = @"Ulubione piwa";
     
+    [self get_Data];
+}
+
+-(void) get_Data
+{
+    // http://allcool.pl/api_ios/wishlist_favourite_record_beer.php
+    
+    SVHUD_START
+    [WebServiceCalls GET:@"wishlist_favourite_record_beer.php" parameter:nil completionBlock:^(id JSON, WebServiceResult result)
+     {
+         SVHUD_STOP
+         NSLog(@"%@", JSON);
+         
+         @try
+         {
+             if ([JSON[@"success"] integerValue] == 1)
+             {
+                 arrBeer = JSON[@"festivals"];
+             }
+             else
+             {
+                 [WebServiceCalls alert:@"Unable to fetch data. try again"];
+             }
+         }
+         @catch (NSException *exception)
+         {
+         }
+         @finally
+         {
+         }
+     }];
 }
 
 - (void)didReceiveMemoryWarning {
