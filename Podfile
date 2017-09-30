@@ -9,7 +9,6 @@ target 'AllCool.pl' do
 
   pod 'GoogleMaps'
   pod 'GooglePlaces'
-  pod "LiquidFloatingActionButton"
 
 
 end

@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>LiquidFloatingActionButton.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-AllCool.pl.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>62BDD710F761A9FAA74F4010A24BF66D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7761E6E27DF7897744145ED99620CC3E</key>
+		<key>F249078079B975731E8F1C854C1483E2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
