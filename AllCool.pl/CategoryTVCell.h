@@ -10,4 +10,6 @@
 
 @interface CategoryTVCell : UITableViewCell
 
+@property (strong, nonatomic) IBOutlet UILabel *lblMsz;
+
 @end

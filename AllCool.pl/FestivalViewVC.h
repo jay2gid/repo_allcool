@@ -38,4 +38,7 @@
     IBOutlet UITableView *tblViewFest;
     IBOutlet UIImageView *imgMapPreiew;
 }
+
+@property (nonatomic, strong) NSString *F_ID;
+
 @end

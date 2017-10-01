@@ -65,7 +65,36 @@
         
         if ([JSON[@"success"] integerValue] == 1)
         {
-            [WebServiceCalls alert:JSON[@"message"]];
+            //[WebServiceCalls alert:JSON[@"message"]];
+            
+            /*
+             {
+             message = "Zalogowano z sukcesem";
+             success = 1;
+             "user_detail" =     {
+             address = "        ";
+             city = "";
+             contact = "";
+             country = Poland;
+             "dat_add" = "2017-03-22 02:26:13";
+             dob = "";
+             firstname = RRahul;
+             image = "http://allcool.pl/assests/images/user/1494731616_1494731613908.jpg";
+             lastname = Jangid;
+             msg = "Zalogowano z sukcesem";
+             newsletter = "";
+             postcode = "";
+             quote = "";
+             title = Pan;
+             useremail = "rahuljangid1993@gmail.com";
+             userid = 1;
+             usrtype = 2;
+             };
+             }
+             */
+            
+            NSString *setUserID = [NSString stringWithFormat:@"%@", JSON[@"user_detail"][@"userid"]];
+            [[NSUserDefaults standardUserDefaults] setObject:setUserID forKey:@"userid"];
             
             UIStoryboard *storybord = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             FirstVC *obj = [storybord instantiateViewControllerWithIdentifier:@"FirstVC"];

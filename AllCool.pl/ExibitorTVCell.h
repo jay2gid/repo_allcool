@@ -10,4 +10,7 @@
 
 @interface ExibitorTVCell : UITableViewCell
 
+@property (strong, nonatomic) IBOutlet UIImageView *imgPic;
+@property (strong, nonatomic) IBOutlet UILabel *lblTitle;
+
 @end

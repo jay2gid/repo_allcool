@@ -164,6 +164,7 @@
 {
     UIStoryboard *storybord = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     FestivalViewVC *obj = [storybord instantiateViewControllerWithIdentifier:@"FestivalViewVC"];
+    obj.F_ID = arrFest[indexPath.row][@"id"];
     [self.navigationController pushViewController:obj animated:YES];
 }
 

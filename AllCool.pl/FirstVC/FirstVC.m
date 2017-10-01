@@ -20,11 +20,10 @@
     
     [super viewDidLoad];
     
+    HIDE_NAV_BAR
     GET_HEADER_VIEW
+    
     header.title.text = @"Map";
-    
-    
-    
     
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:28.33
                                                             longitude:77.100
@@ -42,8 +41,6 @@
     marker.snippet = @"Australia";
     marker.map = mapView;
     marker.icon = [UIImage imageNamed:@"ll-3.png"];
-    
-
     
 }
 

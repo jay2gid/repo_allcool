@@ -10,4 +10,7 @@
 
 @interface ProgramTVCell : UITableViewCell
 
+@property (strong, nonatomic) IBOutlet UILabel *lblNo;
+@property (strong, nonatomic) IBOutlet UILabel *lblDate_Days;
+
 @end

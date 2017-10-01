@@ -10,6 +10,8 @@
 
 @interface RatingTVCell : UITableViewCell
 
+@property (strong, nonatomic) IBOutlet UILabel *lblName;
 @property (strong, nonatomic) IBOutlet StarRatingControl *viewStar;
+@property (strong, nonatomic) IBOutlet UILabel *lblDate;
 
 @end

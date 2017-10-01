@@ -25,6 +25,8 @@
     NSArray *arrExibitors, *arrProg, *arrRating, *arrCategory;
 }
 
+@synthesize F_ID;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -51,6 +53,8 @@
     
     tag = 0;
     
+    arrExibitors = arrProg = arrRating = arrCategory = @[];
+    
     [self get_Fest_Exibitors];
     [self get_Fest_Prog];
     [self get_Fest_Rating];
@@ -63,8 +67,10 @@
 {
     // http://allcool.pl/api_ios/festival/festival_categories_beer.php?fcid=4&uid=1
     
+    NSString *url = [NSString stringWithFormat:@"festival/festival_categories_beer.php?fcid=%@&uid=%@", F_ID, UserID];
+    
     SVHUD_START
-    [WebServiceCalls GET:@"festival/festival_categories_beer.php?fcid=14&uid=1" parameter:nil completionBlock:^(id JSON, WebServiceResult result)
+    [WebServiceCalls GET:url parameter:nil completionBlock:^(id JSON, WebServiceResult result)
      {
          //SVHUD_STOP
          NSLog(@"%@", JSON);
@@ -78,6 +84,7 @@
              }
              else
              {
+                 arrExibitors = @[];
                  [WebServiceCalls alert:@"Unable to fetch data. try again"];
              }
          }
@@ -94,8 +101,10 @@
 {
     // http://allcool.pl/api_ios/festival/festival_programs.php?id=4
     
+    NSString *url = [NSString stringWithFormat:@"festival/festival_programs.php?id=%@", F_ID];
+    
     SVHUD_START
-    [WebServiceCalls GET:@"festival/festival_programs.php?id=4" parameter:nil completionBlock:^(id JSON, WebServiceResult result)
+    [WebServiceCalls GET:url parameter:nil completionBlock:^(id JSON, WebServiceResult result)
      {
          //SVHUD_STOP
          NSLog(@"%@", JSON);
@@ -109,6 +118,7 @@
              }
              else
              {
+                 arrProg = @[];
                  [WebServiceCalls alert:@"Unable to fetch data. try again"];
              }
          }
@@ -125,8 +135,10 @@
 {
     // http://allcool.pl/api_ios/festival/festival_rating.php?id=4
     
+    NSString *url = [NSString stringWithFormat:@"festival/festival_rating.php?id=%@", F_ID];
+
     SVHUD_START
-    [WebServiceCalls GET:@"festival/festival_rating.php?id=4" parameter:nil completionBlock:^(id JSON, WebServiceResult result)
+    [WebServiceCalls GET:url parameter:nil completionBlock:^(id JSON, WebServiceResult result)
      {
          //SVHUD_STOP
          NSLog(@"%@", JSON);
@@ -140,6 +152,7 @@
              }
              else
              {
+                 arrRating = @[];
                  [WebServiceCalls alert:@"Unable to fetch data. try again"];
              }
          }
@@ -156,8 +169,10 @@
 {
     // http://allcool.pl/api_ios/festival/festival_review.php?id=4
     
+    NSString *url = [NSString stringWithFormat:@"festival/festival_review.php?id=%@", F_ID];
+
     SVHUD_START
-    [WebServiceCalls GET:@"festival/festival_review.php?id=4" parameter:nil completionBlock:^(id JSON, WebServiceResult result)
+    [WebServiceCalls GET:url parameter:nil completionBlock:^(id JSON, WebServiceResult result)
      {
          SVHUD_STOP
          NSLog(@"%@", JSON);
@@ -171,6 +186,7 @@
              }
              else
              {
+                 arrCategory = @[];
                  [WebServiceCalls alert:@"Unable to fetch data. try again"];
              }
          }
@@ -245,13 +261,42 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return tag+1;
+    if (tag == 0)
+    {
+        return arrExibitors.count;
+    }
+    else if (tag == 1)
+    {
+        return arrProg.count;
+    }
+    else if (tag == 3)
+    {
+        return arrRating.count;
+    }
+    else
+    {
+        return arrCategory.count;
+    }
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (tag == 0 || tag == 1)
+    if (tag == 0)
     {
-        UITableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"FestCell" owner:self options:nil]objectAtIndex:tag];
+        ExibitorTVCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"FestCell" owner:self options:nil]objectAtIndex:tag];
+        
+        [cell.imgPic sd_setImageWithURL:[NSURL URLWithString:arrExibitors[indexPath.row][@"image"]] placeholderImage:[UIImage imageNamed:@"noimage.jpg"]];
+        
+        cell.lblTitle.text = arrExibitors[indexPath.row][@"title"];
+        
+        return cell;
+    }
+    else if (tag == 1)
+    {
+        ProgramTVCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"FestCell" owner:self options:nil]objectAtIndex:tag];
+        
+        cell.lblNo.text = [NSString stringWithFormat:@"%@", arrProg[indexPath.row][@"no"]];
+        cell.lblDate_Days.text = [NSString stringWithFormat:@"%@ | %@", arrProg[indexPath.row][@"dat"], arrProg[indexPath.row][@"days"]];
         
         return cell;
     }
@@ -259,13 +304,20 @@
     {
         RatingTVCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"FestCell" owner:self options:nil]objectAtIndex:2];
         
-        cell.viewStar.rating = indexPath.row;
+        cell.lblName.text = arrRating[indexPath.row][@"name"];
+        
+        NSInteger star = [arrRating[indexPath.row][@"name"] integerValue];
+        cell.viewStar.rating = star;
+        
+        cell.lblDate.text = arrRating[indexPath.row][@"dat"];
         
         return cell;
     }
     else
     {
-        UITableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"FestCell" owner:self options:nil]objectAtIndex:3];
+        CategoryTVCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"FestCell" owner:self options:nil]objectAtIndex:3];
+        
+        cell.lblMsz.text = arrCategory[indexPath.row][@"message"];
         
         return cell;
     }
