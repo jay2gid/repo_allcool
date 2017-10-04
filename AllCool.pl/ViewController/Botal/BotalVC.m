@@ -25,6 +25,8 @@
 
 @implementation BotalVC
 
+@synthesize dictBeer;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -63,6 +65,8 @@
 - (IBAction)tapRating:(id)sender {
     
     ViewAddRatingTobotal *view = [[[NSBundle mainBundle] loadNibNamed:@"View" owner:self options:nil]objectAtIndex:1];
+    view.frame = CGRectMake(0, 0, WIDTH, HEIGHT);
+    view.BID = dictBeer[@"id"];
     [self.view addSubview:view];
     
 }

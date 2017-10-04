@@ -10,4 +10,6 @@
 
 @interface BotalVC : UIViewController
 
+@property (nonatomic, strong) NSDictionary *dictBeer;
+
 @end

@@ -28,7 +28,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WX8-Zl-K0o">
                                 <rect key="frame" x="90" y="4" width="265" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -40,7 +40,7 @@
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IBU 70 | ABV 6.5 | BLG 16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmM-jf-idR">
                                 <rect key="frame" x="90" y="57" width="265" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -79,7 +79,11 @@
                 <outlet property="btnDaduj" destination="mnu-tZ-SA8" id="7he-v7-idy"/>
                 <outlet property="btnKasuj" destination="Qtf-PP-qyR" id="5LM-9n-gBC"/>
                 <outlet property="btnNottaki" destination="NJ2-Bj-2P3" id="zCz-TB-kfc"/>
+                <outlet property="imgBeerLogo" destination="JuF-pX-7oX" id="6J0-ug-qzz"/>
+                <outlet property="lblTitle" destination="WX8-Zl-K0o" id="Wka-sv-eAh"/>
+                <outlet property="lbl_IBU_ABV_BLG" destination="pmM-jf-idR" id="uxV-YK-Jgq"/>
                 <outlet property="viewMid" destination="GeY-f1-Us2" id="LZN-HP-tds"/>
+                <outlet property="viewStarRating" destination="R3x-x8-YI8" id="GE3-P0-jwv"/>
             </connections>
             <point key="canvasLocation" x="70.5" y="-136"/>
         </tableViewCell>

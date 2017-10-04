@@ -10,6 +10,12 @@
 
 @interface BearCell : UITableViewCell
 
+@property (strong, nonatomic) IBOutlet UIImageView *imgBeerLogo;
+@property (strong, nonatomic) IBOutlet UILabel *lblTitle;
+@property (strong, nonatomic) IBOutlet StarRatingControl *viewStarRating;
+@property (strong, nonatomic) IBOutlet UILabel *lbl_IBU_ABV_BLG;
+
+
 @property(nonatomic,strong)IBOutlet UIButton *btnDaduj;
 @property(nonatomic,strong)IBOutlet UIButton *btnKasuj;
 @property(nonatomic,strong)IBOutlet UIButton *btnNottaki;

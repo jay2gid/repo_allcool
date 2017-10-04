@@ -15,7 +15,13 @@
     // Drawing code
 }
 
-- (IBAction)tapCancel:(UIButton *)sender {
+- (IBAction)btnSendClk:(id)sender
+{
+    
+}
+
+- (IBAction)tapCancel:(UIButton *)sender
+{
     [self removeFromSuperview];
 }
 

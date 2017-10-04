@@ -16,7 +16,9 @@
 #define BASE_URL_SOURCE @"http://www.townhouseapp.com"
 
 #define UserID [[NSUserDefaults standardUserDefaults]objectForKey:@"userid"]
-#define USER_NAME_ [[NSUserDefaults standardUserDefaults]objectForKey:@"name"]
+#define User_Name [[NSUserDefaults standardUserDefaults]objectForKey:@"username"]
+#define User_Email [[NSUserDefaults standardUserDefaults]objectForKey:@"useremail"]
+#define User_Type [[NSUserDefaults standardUserDefaults]objectForKey:@"usertype"]
 
 
 ////// --- COLORS

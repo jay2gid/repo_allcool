@@ -10,11 +10,10 @@
 
 @implementation ViewCorner
 
-- (void)drawRect:(CGRect)rect {
-    
+- (void)drawRect:(CGRect)rect
+{
     self.clipsToBounds = YES;
     self.layer.cornerRadius = 3;
-    
 }
 
 

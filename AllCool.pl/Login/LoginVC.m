@@ -96,6 +96,15 @@
             NSString *setUserID = [NSString stringWithFormat:@"%@", JSON[@"user_detail"][@"userid"]];
             [[NSUserDefaults standardUserDefaults] setObject:setUserID forKey:@"userid"];
             
+            NSString *setUserName = [NSString stringWithFormat:@"%@ %@", JSON[@"user_detail"][@"firstname"], JSON[@"user_detail"][@"lastname"]];
+            [[NSUserDefaults standardUserDefaults] setObject:setUserName forKey:@"username"];
+            
+            NSString *setEmailID = [NSString stringWithFormat:@"%@", JSON[@"user_detail"][@"useremail"]];
+            [[NSUserDefaults standardUserDefaults] setObject:setEmailID forKey:@"useremail"];
+            
+            NSString *setUserType = [NSString stringWithFormat:@"%@", JSON[@"user_detail"][@"usrtype"]];
+            [[NSUserDefaults standardUserDefaults] setObject:setUserType forKey:@"usertype"];
+            
             UIStoryboard *storybord = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             FirstVC *obj = [storybord instantiateViewControllerWithIdentifier:@"FirstVC"];
             [self.navigationController pushViewController:obj animated:YES];

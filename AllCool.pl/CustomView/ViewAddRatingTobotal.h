@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewAddRatingTobotal : UIView
+{
+    IBOutlet StarRatingControl *viewStarRating;
+    IBOutlet ACFloatingTextfield *txtName;
+    IBOutlet ACFloatingTextfield *txtEmail;
+    IBOutlet ACFloatingTextfield *txtComment;
+}
+
+@property (nonatomic, strong) NSString *BID;
 
 @end

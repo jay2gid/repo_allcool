@@ -460,6 +460,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="tblViewBeer" destination="1be-8W-aLo" id="TqG-ne-Lpe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rw5-jj-Kzo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
