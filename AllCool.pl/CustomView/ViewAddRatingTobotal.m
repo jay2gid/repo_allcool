@@ -34,15 +34,14 @@
 
 -(void) add_Comment
 {
-    // http://allcool.pl/api_ios/festival/singlebeer_rating.php?id=14
+    // http://allcool.pl/api_ios/festival/singlebeer_rating.php
 
-    NSString *url = [NSString stringWithFormat:@"festival/singlebeer_rating.php?id=%@", BID];
     NSString *star = [NSString stringWithFormat:@"%ld", viewStarRating.rating];
     
     SVHUD_START
     NSDictionary *dict = @{@"uid":UserID, @"bid":BID, @"rating":star, @"comment":txtComment.text, @"email":User_Email, @"type":User_Type};
     
-    [WebServiceCalls POST:url parameter:dict completionBlock:^(id JSON, WebServiceResult result)
+    [WebServiceCalls POST:@"festival/singlebeer_rating.php" parameter:dict completionBlock:^(id JSON, WebServiceResult result)
      {
          SVHUD_STOP
          NSLog(@"%@", JSON);
@@ -59,6 +58,7 @@
          }
          @catch (NSException *exception)
          {
+             [WebServiceCalls alert:@"Unable to fetch data. try again"];
          }
          @finally
          {

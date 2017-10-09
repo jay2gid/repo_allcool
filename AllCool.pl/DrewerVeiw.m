@@ -62,16 +62,28 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSArray *array = @[@"FirstVC",@"FavBravery",@"FavBearVC",@"BrowaryVC",@"FestivalListVC",@"FavListVC",@"RadarVC",@"SettingVC"];
-    
-    if (indexPath.row == 8) {
+    NSArray *array = @[@"FirstVC",@"FavBravery",@"FavBearVC",@"BrowaryVC",@"FestivalListVC",@"FavListVC",@"RadarVC",@"",@"",@"SettingVC",@"LoginVC"];
+    if (indexPath.row < 7)
+    {
+        UIViewController *con = [self.backSelf.storyboard instantiateViewControllerWithIdentifier:array[indexPath.row]];
         
+        [self.backSelf.navigationController pushViewController:con animated:YES];
+    }
+    else if (indexPath.row == 7 || indexPath.row == 8)
+    {
         ProfilVC *obj = [[ProfilVC alloc]initWithNibName:@"ProfilVC" bundle:nil];
         [self.backSelf.navigationController pushViewController:obj animated:YES];
+    }
+    else if (indexPath.row == 9)
+    {
+        UIViewController *con = [self.backSelf.storyboard instantiateViewControllerWithIdentifier:array[indexPath.row]];
         
+        [self.backSelf.navigationController pushViewController:con animated:YES];
     }
     else
     {
+        [[NSUserDefaults standardUserDefaults] setObject:NULL forKey:@"userid"];
+        
         UIViewController *con = [self.backSelf.storyboard instantiateViewControllerWithIdentifier:array[indexPath.row]];
         
         [self.backSelf.navigationController pushViewController:con animated:YES];

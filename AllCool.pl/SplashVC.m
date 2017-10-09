@@ -33,7 +33,17 @@
 
 -(void)method
 {
-    [self performSegueWithIdentifier:@"goLogin" sender:nil];
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"userid"] != NULL)
+    {
+        UIStoryboard *storybord = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        FirstVC *obj = [storybord instantiateViewControllerWithIdentifier:@"FirstVC"];
+        
+        self.navigationController.viewControllers = [NSArray arrayWithObject:obj];
+    }
+    else
+    {
+        [self performSegueWithIdentifier:@"goLogin" sender:nil];
+    }
 }
 
 - (void)didReceiveMemoryWarning{
