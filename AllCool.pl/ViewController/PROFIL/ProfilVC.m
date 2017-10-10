@@ -9,7 +9,11 @@
 #import "ProfilVC.h"
 
 @interface ProfilVC ()
-
+{
+    
+    IBOutlet UIView *viewForHeader;
+    
+}
 @end
 
 @implementation ProfilVC
@@ -21,7 +25,7 @@
     
     GET_HEADER_VIEW
     header.title.text = @"Profil";
-    
+    [viewForHeader addSubview:header];
     // Do any additional setup after loading the view from its nib.
 }
 
