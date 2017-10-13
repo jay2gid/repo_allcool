@@ -41,7 +41,7 @@
 
 -(void)loadData
 {
-    NSArray *arrayImegs = @[@"listbeertaste",@"listpubvisit",@"listbrewery",@"listfavbrewer",@"listfestival",@"listpubvisit",@"listvisitfestvial",@"listcustom"];
+    NSArray *arrayImegs = @[@"listbeertaste",@"listpubvisit",@"listbrewery",@"listfavbrewer",@"listpubvisit",@"listvisitfestvial",@"listcustom"];
     
     // NSArray *arrTitles;
     

@@ -65,7 +65,7 @@
     NSArray *array = @[@"FirstVC",@"FavBravery",@"FavBearVC",@"BrowaryVC",@"FestivalListVC",@"FavListVC",@"RadarVC",@"",@"",@"SettingVC",@"LoginVC"];
     if (indexPath.row < 7)
     {
-        UIViewController *con = [self.backSelf.storyboard instantiateViewControllerWithIdentifier:array[indexPath.row]];
+        UIViewController *con = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:array[indexPath.row]];
         
         [self.backSelf.navigationController pushViewController:con animated:YES];
     }
