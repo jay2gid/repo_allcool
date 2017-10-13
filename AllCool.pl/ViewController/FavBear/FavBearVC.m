@@ -10,6 +10,7 @@
 #import "BotalVC.h"
 #import "BearCell.h"
 #import "ViewAddDodaj.h"
+#import "ViewNotesList.h"
 @interface FavBearVC ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
@@ -92,6 +93,9 @@
     cell.lbl_IBU_ABV_BLG.text = [NSString stringWithFormat:@"IBU %@ | ABV %@ | BLG %@", arrBeer[indexPath.row][@"ibu"], arrBeer[indexPath.row][@"alcohole_per"], arrBeer[indexPath.row][@"ekstrakt"]];
     
     [cell.btnDaduj addTarget:self action:@selector(methodDauj:) forControlEvents:UIControlEventTouchUpInside];
+    cell.btnDaduj.tag = indexPath.row;
+    [cell.btnNottaki addTarget:self action:@selector(methodNottaki:) forControlEvents:UIControlEventTouchUpInside];
+    cell.btnNottaki.tag = indexPath.row;
     
     return cell;
 }
@@ -108,6 +112,13 @@
     ViewAddDodaj *view = [[[NSBundle mainBundle] loadNibNamed:@"View" owner:self options:nil]objectAtIndex:0];
     view.frame = CGRectMake(0, 0, WIDTH, HEIGHT);
     [self.view addSubview:view];
+}
+
+-(void)methodNottaki:(UIButton *)sender
+{
+    ViewNotesList *obj = [[[NSBundle mainBundle] loadNibNamed:@"ViewNotesList" owner:self options:nil] objectAtIndex:0];
+    obj.selfBack = self;
+    [self.view addSubview:obj];
 }
 
 @end

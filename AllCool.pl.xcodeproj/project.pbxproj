@@ -76,6 +76,8 @@
 		922BA61A1F62A5FF0068A5C3 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 922BA6191F62A5FF0068A5C3 /* test.png */; };
 		922BA61D1F62B0660068A5C3 /* FavListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 922BA61C1F62B0660068A5C3 /* FavListVC.m */; };
 		922BA61F1F62BEDD0068A5C3 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 922BA61E1F62BEDD0068A5C3 /* icon.png */; };
+		9234505E1F91111400418E2C /* ViewNotesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9234505D1F91111400418E2C /* ViewNotesList.m */; };
+		923450601F91113B00418E2C /* ViewNotesList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9234505F1F91113B00418E2C /* ViewNotesList.xib */; };
 		92A2A9F51F6D65F50000939D /* ChangePasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2A9F41F6D65F50000939D /* ChangePasswordVC.m */; };
 		92A2A9FB1F6D6A9C0000939D /* ProfileEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2A9FA1F6D6A9C0000939D /* ProfileEditVC.m */; };
 		92A2A9FF1F6D6E200000939D /* RadarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2A9FE1F6D6E200000939D /* RadarVC.m */; };
@@ -355,6 +357,9 @@
 		922BA61B1F62B0660068A5C3 /* FavListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavListVC.h; path = ViewController/FavList/FavListVC.h; sourceTree = "<group>"; };
 		922BA61C1F62B0660068A5C3 /* FavListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavListVC.m; path = ViewController/FavList/FavListVC.m; sourceTree = "<group>"; };
 		922BA61E1F62BEDD0068A5C3 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = allcoolicon/icon.png; sourceTree = SOURCE_ROOT; };
+		9234505C1F91111400418E2C /* ViewNotesList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewNotesList.h; path = CustomView/ViewNotesList.h; sourceTree = "<group>"; };
+		9234505D1F91111400418E2C /* ViewNotesList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewNotesList.m; path = CustomView/ViewNotesList.m; sourceTree = "<group>"; };
+		9234505F1F91113B00418E2C /* ViewNotesList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ViewNotesList.xib; path = CustomView/ViewNotesList.xib; sourceTree = "<group>"; };
 		92A2A9F21F6D63A90000939D /* BHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHeader.h; sourceTree = "<group>"; };
 		92A2A9F31F6D65F50000939D /* ChangePasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChangePasswordVC.h; path = ViewController/NewPassword/ChangePasswordVC.h; sourceTree = "<group>"; };
 		92A2A9F41F6D65F50000939D /* ChangePasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChangePasswordVC.m; path = ViewController/NewPassword/ChangePasswordVC.m; sourceTree = "<group>"; };
@@ -783,6 +788,7 @@
 		922BA5CA1F6153190068A5C3 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				9234505B1F9110F200418E2C /* NotesList */,
 				9208E3AC1F79F4150031BA48 /* View.xib */,
 				9208E3AD1F79F4150031BA48 /* ViewAddDodaj.h */,
 				9208E3AE1F79F4150031BA48 /* ViewAddDodaj.m */,
@@ -878,6 +884,16 @@
 				922BA6161F62A0AF0068A5C3 /* BrowaryVC.m */,
 			);
 			name = Browary;
+			sourceTree = "<group>";
+		};
+		9234505B1F9110F200418E2C /* NotesList */ = {
+			isa = PBXGroup;
+			children = (
+				9234505C1F91111400418E2C /* ViewNotesList.h */,
+				9234505D1F91111400418E2C /* ViewNotesList.m */,
+				9234505F1F91113B00418E2C /* ViewNotesList.xib */,
+			);
+			name = NotesList;
 			sourceTree = "<group>";
 		};
 		92A2A9F61F6D66060000939D /* ChangePassword */ = {
@@ -1271,6 +1287,7 @@
 				92C3C84A1F78150E008404C7 /* icon_back.png in Resources */,
 				92ADAFA11F5FC99800501EA0 /* ic_messaging.png in Resources */,
 				92ADAF741F5FC99800501EA0 /* bermenu.jpg in Resources */,
+				923450601F91113B00418E2C /* ViewNotesList.xib in Resources */,
 				92ADAFDE1F5FC99800501EA0 /* vote_select.png in Resources */,
 				92ADAF9B1F5FC99800501EA0 /* festivale_app_cover.png in Resources */,
 				92ADAFCD1F5FC99800501EA0 /* quotes.png in Resources */,
@@ -1416,6 +1433,7 @@
 			files = (
 				922BA5941F600B520068A5C3 /* SDWebImageDownloader.m in Sources */,
 				922BA5881F600B520068A5C3 /* AFURLConnectionOperation.m in Sources */,
+				9234505E1F91111400418E2C /* ViewNotesList.m in Sources */,
 				922BA5831F600B520068A5C3 /* AFHTTPRequestOperation.m in Sources */,
 				C30CD31D1F7977500053C22B /* FestivalViewVC.m in Sources */,
 				92A2A9F51F6D65F50000939D /* ChangePasswordVC.m in Sources */,

@@ -21,7 +21,14 @@
     [GMSServices provideAPIKey:@"AIzaSyAHgc0o2XkUDVwnw7F0ru8b7JpWlPL5aOc"];
     [GMSPlacesClient provideAPIKey:@"AIzaSyAHgc0o2XkUDVwnw7F0ru8b7JpWlPL5aOc"];
 
-    /*if ([[NSUserDefaults standardUserDefaults] objectForKey:@"userid"] != NULL)
+    
+    
+    [SVProgressHUD  setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+    [SVProgressHUD  setDefaultAnimationType:SVProgressHUDAnimationTypeNative];
+    [SVProgressHUD setBackgroundColor:[UIColor blackColor]];
+    
+    
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"userid"] != NULL)
     {
         UIStoryboard *storybord = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         FirstVC *obj = [storybord instantiateViewControllerWithIdentifier:@"FirstVC"];
@@ -32,7 +39,7 @@
         [self.window makeKeyAndVisible];
         
         return YES;
-    }*/
+    }
     // Override point for customization after application launch.
     return YES;
 }
