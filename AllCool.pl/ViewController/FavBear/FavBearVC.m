@@ -125,9 +125,7 @@
 
 -(void)methodKasuj:(UIButton *)sender
 {
-    UIAlertController * alert=[UIAlertController
-                               
-                               alertControllerWithTitle:@"Sure want to delete from list" message:@"" preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertController * alert=[UIAlertController alertControllerWithTitle:@"Sure want to delete from list" message:@"" preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction* yesButton = [UIAlertAction
                                 actionWithTitle:@"Yes"
