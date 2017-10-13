@@ -67,8 +67,9 @@
                                 style:UIAlertActionStyleDefault
                                 handler:^(UIAlertAction * action)
                                 {
-                                    //What we write here????????**
-                                    
+                                    ViewAddDodaj *view = [[[NSBundle mainBundle] loadNibNamed:@"View" owner:self options:nil]objectAtIndex:0];
+                                    view.frame = CGRectMake(0, 0, WIDTH, HEIGHT);
+                                    [self addSubview:view];
                                     
                                 }];
     
@@ -78,8 +79,8 @@
                                style:UIAlertActionStyleDefault
                                handler:^(UIAlertAction * action)
                                {
-                                   //What we write here????????**
-                                   
+                                   // What we write here????????**
+                                   // api shoud b there
                                }];
     
     UIAlertAction* cancel = [UIAlertAction
@@ -90,7 +91,6 @@
                                    
                                }];
     [alert addAction:cancel];
-
     [alert addAction:yesButton];
     [alert addAction:noButton];
     

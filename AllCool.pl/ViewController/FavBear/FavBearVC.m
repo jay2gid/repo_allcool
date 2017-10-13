@@ -9,8 +9,7 @@
 #import "FavBearVC.h"
 #import "BotalVC.h"
 #import "BearCell.h"
-#import "ViewAddDodaj.h"
-#import "ViewNotesList.h"
+
 @interface FavBearVC ()<UITableViewDataSource,UITableViewDelegate>
 
 @end

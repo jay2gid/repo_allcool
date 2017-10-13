@@ -31,4 +31,8 @@
 
 #import "FestivalViewVC.h"
 #import "FirstVC.h"
+
+#import "ViewAddDodaj.h"
+#import "ViewNotesList.h"
+
 #endif
