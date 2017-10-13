@@ -96,6 +96,9 @@
     [cell.btnNottaki addTarget:self action:@selector(methodNottaki:) forControlEvents:UIControlEventTouchUpInside];
     cell.btnNottaki.tag = indexPath.row;
     
+    [cell.btnKasuj addTarget:self action:@selector(methodKasuj:) forControlEvents:UIControlEventTouchUpInside];
+    cell.btnKasuj.tag = indexPath.row;
+    
     return cell;
 }
 
@@ -120,4 +123,35 @@
     [self.view addSubview:obj];
 }
 
+-(void)methodKasuj:(UIButton *)sender
+{
+    UIAlertController * alert=[UIAlertController
+                               
+                               alertControllerWithTitle:@"Sure want to delete from list" message:@"" preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction* yesButton = [UIAlertAction
+                                actionWithTitle:@"Yes"
+                                style:UIAlertActionStyleDefault
+                                handler:^(UIAlertAction * action)
+                                {
+                                   
+                                    
+                                }];
+    
+    
+    UIAlertAction* noButton = [UIAlertAction
+                               actionWithTitle:@"No"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction * action)
+                               {
+                                   // What we write here????????**
+                                   // api shoud b there
+                               }];
+    
+   
+    [alert addAction:yesButton];
+    [alert addAction:noButton];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
 @end
