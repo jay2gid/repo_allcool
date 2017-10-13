@@ -82,6 +82,15 @@
                                    
                                }];
     
+    UIAlertAction* cancel = [UIAlertAction
+                               actionWithTitle:@"Cancel"
+                               style:UIAlertActionStyleCancel
+                               handler:^(UIAlertAction * action)
+                               {
+                                   
+                               }];
+    [alert addAction:cancel];
+
     [alert addAction:yesButton];
     [alert addAction:noButton];
     
