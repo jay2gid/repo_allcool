@@ -78,6 +78,9 @@
 		922BA61F1F62BEDD0068A5C3 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 922BA61E1F62BEDD0068A5C3 /* icon.png */; };
 		9234505E1F91111400418E2C /* ViewNotesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9234505D1F91111400418E2C /* ViewNotesList.m */; };
 		923450601F91113B00418E2C /* ViewNotesList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9234505F1F91113B00418E2C /* ViewNotesList.xib */; };
+		928912511F9266FE00890E25 /* FloatingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 928912501F9266FE00890E25 /* FloatingButton.m */; };
+		928912531F9267EC00890E25 /* FloatingButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928912521F9267EC00890E25 /* FloatingButtonCell.xib */; };
+		928912561F92688100890E25 /* FloatingButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 928912551F92688100890E25 /* FloatingButtonCell.m */; };
 		92A2A9F51F6D65F50000939D /* ChangePasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2A9F41F6D65F50000939D /* ChangePasswordVC.m */; };
 		92A2A9FB1F6D6A9C0000939D /* ProfileEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2A9FA1F6D6A9C0000939D /* ProfileEditVC.m */; };
 		92A2A9FF1F6D6E200000939D /* RadarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2A9FE1F6D6E200000939D /* RadarVC.m */; };
@@ -360,6 +363,11 @@
 		9234505C1F91111400418E2C /* ViewNotesList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewNotesList.h; path = CustomView/ViewNotesList.h; sourceTree = "<group>"; };
 		9234505D1F91111400418E2C /* ViewNotesList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewNotesList.m; path = CustomView/ViewNotesList.m; sourceTree = "<group>"; };
 		9234505F1F91113B00418E2C /* ViewNotesList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ViewNotesList.xib; path = CustomView/ViewNotesList.xib; sourceTree = "<group>"; };
+		9289124F1F9266FE00890E25 /* FloatingButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatingButton.h; sourceTree = "<group>"; };
+		928912501F9266FE00890E25 /* FloatingButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatingButton.m; sourceTree = "<group>"; };
+		928912521F9267EC00890E25 /* FloatingButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FloatingButtonCell.xib; sourceTree = "<group>"; };
+		928912541F92688100890E25 /* FloatingButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatingButtonCell.h; sourceTree = "<group>"; };
+		928912551F92688100890E25 /* FloatingButtonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatingButtonCell.m; sourceTree = "<group>"; };
 		92A2A9F21F6D63A90000939D /* BHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHeader.h; sourceTree = "<group>"; };
 		92A2A9F31F6D65F50000939D /* ChangePasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChangePasswordVC.h; path = ViewController/NewPassword/ChangePasswordVC.h; sourceTree = "<group>"; };
 		92A2A9F41F6D65F50000939D /* ChangePasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChangePasswordVC.m; path = ViewController/NewPassword/ChangePasswordVC.m; sourceTree = "<group>"; };
@@ -788,6 +796,7 @@
 		922BA5CA1F6153190068A5C3 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				9289124E1F9266D400890E25 /* FloatingButtons */,
 				9234505B1F9110F200418E2C /* NotesList */,
 				9208E3AC1F79F4150031BA48 /* View.xib */,
 				9208E3AD1F79F4150031BA48 /* ViewAddDodaj.h */,
@@ -894,6 +903,18 @@
 				9234505F1F91113B00418E2C /* ViewNotesList.xib */,
 			);
 			name = NotesList;
+			sourceTree = "<group>";
+		};
+		9289124E1F9266D400890E25 /* FloatingButtons */ = {
+			isa = PBXGroup;
+			children = (
+				9289124F1F9266FE00890E25 /* FloatingButton.h */,
+				928912501F9266FE00890E25 /* FloatingButton.m */,
+				928912521F9267EC00890E25 /* FloatingButtonCell.xib */,
+				928912541F92688100890E25 /* FloatingButtonCell.h */,
+				928912551F92688100890E25 /* FloatingButtonCell.m */,
+			);
+			name = FloatingButtons;
 			sourceTree = "<group>";
 		};
 		92A2A9F61F6D66060000939D /* ChangePassword */ = {
@@ -1258,6 +1279,7 @@
 				92ADAFB91F5FC99800501EA0 /* map_select.png in Resources */,
 				92ADAF6B1F5FC99800501EA0 /* activity.png in Resources */,
 				92ADAF921F5FC99800501EA0 /* event_white.png in Resources */,
+				928912531F9267EC00890E25 /* FloatingButtonCell.xib in Resources */,
 				92ADAF901F5FC99800501EA0 /* event1.jpg in Resources */,
 				92ADAF8F1F5FC99800501EA0 /* event.png in Resources */,
 				92ADAF811F5FC99800501EA0 /* clock_red.png in Resources */,
@@ -1454,6 +1476,7 @@
 				922BA5A51F600B520068A5C3 /* SVRadialGradientLayer.m in Sources */,
 				922BA58B1F600B520068A5C3 /* AFURLSessionManager.m in Sources */,
 				922BA5891F600B520068A5C3 /* AFURLRequestSerialization.m in Sources */,
+				928912561F92688100890E25 /* FloatingButtonCell.m in Sources */,
 				92A2AA131F6FFF030000939D /* BotalVC.m in Sources */,
 				922BA59D1F600B520068A5C3 /* UIImageView+WebCache.m in Sources */,
 				922BA5A61F600B520068A5C3 /* TPKeyboardAvoidingScrollView.m in Sources */,
@@ -1498,6 +1521,7 @@
 				922BA5921F600B520068A5C3 /* SDWebImageCompat.m in Sources */,
 				922BA5981F600B520068A5C3 /* UIButton+WebCache.m in Sources */,
 				922BA5E21F616D040068A5C3 /* FavBravery.m in Sources */,
+				928912511F9266FE00890E25 /* FloatingButton.m in Sources */,
 				922BA5C01F601C3C0068A5C3 /* HeaderView.m in Sources */,
 				9208E3B81F79F8D30031BA48 /* ProfilVC.m in Sources */,
 				C30CD3261F798D960053C22B /* ProgramTVCell.m in Sources */,

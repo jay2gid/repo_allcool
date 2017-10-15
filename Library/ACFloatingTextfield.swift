@@ -80,7 +80,7 @@ import UIKit
     //MARK:- UITtextfield Draw Method Override
     override open func draw(_ rect: CGRect) {
         super.draw(rect)
-        self.upadteTextField(frame: CGRect(x:self.frame.minX, y:self.frame.minY-6, width:rect.width, height:rect.height+16))     //30-June-2017 vikram singh
+        self.upadteTextField(frame: CGRect(x:self.frame.minX, y:self.frame.minY, width:rect.width, height:rect.height))     //30-June-2017 vikram singh
     }
     
     // MARK:- Loading From NIB

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewAddRatingTobotal : UIView
+@interface ViewAddRatingTobotal : TPKeyboardAvoidingScrollView
 {
     IBOutlet StarRatingControl *viewStarRating;
     IBOutlet ACFloatingTextfield *txtName;
