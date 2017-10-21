@@ -7,8 +7,13 @@
 //
 
 #import "LoginVC.h"
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
-@interface LoginVC ()
+@interface LoginVC ()<FBSDKLoginButtonDelegate>
+{
+    FBSDKLoginButton *loginButton;
+}
 
 @end
 
@@ -25,7 +30,24 @@
     btnForgot.layer.shadowOffset = CGSizeMake(1, 1);
     btnForgot.layer.shadowOpacity = 10;
     
+    loginButton = [[FBSDKLoginButton alloc] init];
+    loginButton.center = self.view.center;
+    [self.view addSubview:loginButton];
+    loginButton.loginBehavior = FBSDKLoginBehaviorWeb;
+    loginButton.hidden = true;
+    loginButton.delegate = self;
 }
+- (IBAction)tapFacebookLogin:(id)sender
+{
+    [loginButton sendActionsForControlEvents:UIControlEventTouchUpInside];
+}
+
+- (IBAction)tapGoogleLogin:(id)sender
+{
+    
+}
+
+
 
 - (IBAction)btnLoginClk:(id)sender
 {
@@ -46,19 +68,16 @@
     }
     else
     {
-        [self LoginAPI];
+        NSDictionary *dict = @{@"email":txtEmail.text, @"password":txtPass.text, @"type":@"user"};
+
+        [self LoginWithParamerter:dict];
     }
 }
 
--(void) LoginAPI
+-(void)LoginWithParamerter:(NSDictionary *)param
 {
     SVHUD_START
-    
-    NSDictionary *dict = @{@"email":txtEmail.text, @"password":txtPass.text, @"type":@"user"};
-    
-    // http://allcool.pl/api_ios/check_login.php
-
-    [WebServiceCalls POST:@"check_login.php" parameter:dict completionBlock:^(id JSON, WebServiceResult result)
+    [WebServiceCalls POST:@"check_login.php" parameter:param completionBlock:^(id JSON, WebServiceResult result)
     {
         SVHUD_STOP
         NSLog(@"%@", JSON);
@@ -121,5 +140,60 @@
     [super didReceiveMemoryWarning];
 }
 
+
+#pragma mark Facebook Delegate
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                          openURL:url
+                                                sourceApplication:sourceApplication
+                                                       annotation:annotation];
+}
+
+- (void)loginButton:(FBSDKLoginButton *)loginButton
+didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
+              error:(NSError *)error
+{
+    ////  NSLog(@"%@",result);
+    ////  NSLog(@"%@",result);
+    
+    NSMutableDictionary* parameters = [NSMutableDictionary dictionary];
+    [parameters setValue:@"id,name,email" forKey:@"fields"];
+    
+    [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:parameters]
+     startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error)
+     {
+         if(!error)
+         {
+             NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+             [dic setObject:result[@"name"] forKey:@"name"];
+             [dic setObject:@"facebook" forKey:@"type"];
+
+             if (result[@"email"])
+             {
+                 [dic setObject:result[@"email"] forKey:@"name"];
+             }
+             else
+             {
+                 [dic setObject:[NSString stringWithFormat:@"%@@fb.com",result[@"id"]] forKey:@"email"];
+             }
+             
+             [self LoginWithParamerter:dic];
+             
+             FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
+             [loginManager logOut];
+         }
+     }];
+}
+
+- (void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton { 
+    
+}
+
+
 GESTURE_POP_DELEGATE
+
 @end

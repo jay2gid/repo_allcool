@@ -18,6 +18,8 @@
     
     IBOutlet ACFloatingTextfield *txtPodasName;
     
+    NSMutableArray *arrayImegs;
+    NSMutableArray *arrayTitles;
 }
 
 @end
@@ -30,21 +32,20 @@
     GET_HEADER_VIEW
     header.title.text = @"Inne Listy";
     
-    [self loadData];
     scrollData.backgroundColor = [UIColor colorWithRed:220/255.0 green:220/255.0 blue:220/255.0 alpha:1];
 
     btn.layer.borderWidth = 1;
     btn.layer.borderColor = APP_COLOR_RED.CGColor;
     btn.layer.cornerRadius = 2;
     
+    [self loadData];
 }
 
 -(void)loadData
 {
-    NSArray *arrayImegs = @[@"listbeertaste",@"listpubvisit",@"listbrewery",@"listfavbrewer",@"listpubvisit",@"listvisitfestvial",@"listcustom"];
-    
-    // NSArray *arrTitles;
-    
+    arrayImegs = [NSMutableArray arrayWithArray:@[@"listbeertaste",@"listpubvisit",@"listbrewery",@"listfavbrewer",@"listpubvisit",@"listvisitfestvial",@"listcustom"]];
+    arrayImegs = [NSMutableArray arrayWithArray:@[@"Piwa spróbowane",@"Odwiedzone bary",@"Odwiedzone browary",@"Ulubione browary",@"Ulubione festiwale",@"Odwiedzone festiwale",@"Sztosy spróbowane"]];
+
     for (int i = 0; i<arrayImegs.count; i++)
     {
         int wd = WIDTH/3;
@@ -58,7 +59,6 @@
         UIImageView *image = [[UIImageView alloc]initWithFrame:CGRectMake(wd/6+5,10,wd-wd/3-10,wd- wd/3-10)];
         [view addSubview:image];
         image.image = [UIImage imageNamed:arrayImegs[i]];
-        
         
         UILabel *lbl = [[UILabel alloc]initWithFrame:CGRectMake(5,wd-40,wd-10,40)];
         lbl.numberOfLines = 0;
@@ -88,6 +88,5 @@
 {
     viewPopup.hidden = true;
 }
-
 
 @end

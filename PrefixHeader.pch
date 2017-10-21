@@ -34,5 +34,6 @@
 
 #import "ViewAddDodaj.h"
 #import "ViewNotesList.h"
+#import "FloatingButton.h"
 
 #endif

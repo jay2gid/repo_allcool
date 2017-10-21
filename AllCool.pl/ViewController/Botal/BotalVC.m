@@ -71,4 +71,11 @@
     
 }
 
+- (IBAction)tapOptions:(UIButton *)sender
+{
+    FloatingButton *buttons = [[FloatingButton alloc]initWithFrame:self.view.bounds];
+    buttons.backgroundColor =  [UIColor colorWithRed:0 green:0 blue:0 alpha:0.2];
+    buttons.pointAnimateFrom = sender.frame.origin.y;
+    [self.view addSubview:buttons];
+}
 @end
