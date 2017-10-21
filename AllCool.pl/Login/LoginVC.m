@@ -10,10 +10,12 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
-@interface LoginVC ()<FBSDKLoginButtonDelegate>
+@interface LoginVC ()<FBSDKLoginButtonDelegate,GIDSignInDelegate,GIDSignInUIDelegate>
 {
     FBSDKLoginButton *loginButton;
 }
+
+@property(strong, nonatomic) GIDSignInButton *signInButton;
 
 @end
 
@@ -36,6 +38,16 @@
     loginButton.loginBehavior = FBSDKLoginBehaviorWeb;
     loginButton.hidden = true;
     loginButton.delegate = self;
+    
+    
+    [GIDSignIn sharedInstance].uiDelegate = self;
+    [GIDSignIn sharedInstance].clientID = kClientID;
+    
+    _signInButton = [[GIDSignInButton alloc]init];
+    _signInButton.center = self.view.center;
+    [self.view addSubview:_signInButton];
+    [GIDSignIn sharedInstance].delegate = self;
+    _signInButton.hidden = true;
 }
 - (IBAction)tapFacebookLogin:(id)sender
 {
@@ -44,7 +56,7 @@
 
 - (IBAction)tapGoogleLogin:(id)sender
 {
-    
+    [_signInButton sendActionsForControlEvents:UIControlEventTouchUpInside];
 }
 
 
@@ -81,9 +93,17 @@
     {
         SVHUD_STOP
         NSLog(@"%@", JSON);
-        
-        if ([JSON[@"success"] integerValue] == 1)
+        if (result == WebServiceResultFail) {
+            
+            if (JSON)
+            {
+               [WebServiceCalls alert:JSON[@"message"]];
+            }
+        }
+        else
         {
+            if ([JSON[@"success"] integerValue] == 1)
+            {
             //[WebServiceCalls alert:JSON[@"message"]];
             
             /*
@@ -127,10 +147,11 @@
             UIStoryboard *storybord = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             FirstVC *obj = [storybord instantiateViewControllerWithIdentifier:@"FirstVC"];
             [self.navigationController pushViewController:obj animated:YES];
-        }
-        else
-        {
-            [WebServiceCalls alert:JSON[@"message"]];
+            }
+            else
+            {
+                [WebServiceCalls alert:JSON[@"message"]];
+            }
         }
     }];
 }
@@ -193,7 +214,24 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
     
 }
 
-
-GESTURE_POP_DELEGATE
+- (void)signIn:(GIDSignIn *)signIn didSignInForUser:(GIDGoogleUser *)user withError:(NSError *)error {
+    
+//    NSString *userId = user.userID;                  // For client-side use only!
+//    NSString *idToken = user.authentication.idToken; // Safe to send to the server
+      NSString *fullName = user.profile.name;
+//    NSString *givenName = user.profile.givenName;
+//    NSString *familyName = user.profile.familyName;
+      NSString *email = user.profile.email;
+    
+   
+    if (user)
+    {
+        NSDictionary *dic = @{@"name":fullName,@"email":email,@"type":@"google"};
+        [self LoginWithParamerter:dic];
+    }
+    [signIn signOut];
+    // NSLog(@"%@ %@ %@ %@ %@ %@",userId,idToken,fullName,givenName,familyName,email);
+    
+}
 
 @end

@@ -223,7 +223,7 @@ fileprivate extension ACFloatingTextfield {
             
             labelErrorPlaceholder?.isHidden = false
             var frame = labelErrorPlaceholder?.frame
-            frame?.origin.y -= (frame?.height ?? 0)!
+            //frame?.origin.y -= (frame?.height ?? 0)!
             labelErrorPlaceholder?.frame = frame!
             UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseInOut, animations: {
                 self.bottomLineView?.backgroundColor = self.errorLineColor;
@@ -252,8 +252,8 @@ fileprivate extension ACFloatingTextfield {
             return
         }
         
-        var labelErrorFrame = labelErrorPlaceholder?.frame;
-        labelErrorFrame?.origin.y -= (labelErrorFrame?.height ?? 0)!
+        let labelErrorFrame = labelErrorPlaceholder?.frame;
+        //labelErrorFrame?.origin.y -= (labelErrorFrame?.height ?? 0)!
         
         UIView.animate(withDuration: 0.2, animations: {
             self.labelErrorPlaceholder?.frame = labelErrorFrame!

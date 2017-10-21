@@ -12,7 +12,7 @@
 #define HEIGHT ((([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait) || ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)) ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width)
 
 #define BASE_URL_A @"http://www.townhouseapp.com/"
-#define kClientID @"431281662590-2sm5ihqbmrvkv9ohg9rf80d880ucv6r8.apps.googleusercontent.com";
+#define kClientID @"222696923807-q9n8qqhskqi6msljdu5lvu10sjrisope.apps.googleusercontent.com";
 #define BASE_URL_SOURCE @"http://www.townhouseapp.com"
 
 #define UserID [[NSUserDefaults standardUserDefaults]objectForKey:@"userid"]

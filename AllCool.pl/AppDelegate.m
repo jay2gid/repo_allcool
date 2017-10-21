@@ -7,10 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-
-@import GoogleMaps;
-@import GooglePlaces;
+@import FirebaseCore;
 @interface AppDelegate ()
 
 @end
@@ -19,6 +16,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [GIDSignIn sharedInstance].delegate = self;
+    //[FIRApp configure];
     
     [GMSServices provideAPIKey:@"AIzaSyAHgc0o2XkUDVwnw7F0ru8b7JpWlPL5aOc"];
     [GMSPlacesClient provideAPIKey:@"AIzaSyAHgc0o2XkUDVwnw7F0ru8b7JpWlPL5aOc"];
@@ -84,7 +84,13 @@
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                                           openURL:url
                                                 sourceApplication:sourceApplication
-                                                       annotation:annotation];
+                                                       annotation:annotation] || [[GIDSignIn sharedInstance] handleURL:url
+                                                                                                     sourceApplication:sourceApplication
+                                                                                                            annotation:annotation];
+}
+
+- (void)signIn:(GIDSignIn *)signIn didSignInForUser:(GIDGoogleUser *)user withError:(NSError *)error {
+    
 }
 
 @end

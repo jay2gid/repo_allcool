@@ -65,24 +65,27 @@ static NSString *getuserphone;
         {
             NSString *URLSTRING = [NSString stringWithFormat:@"%@%@",BASE_URL,url];
             [manager POST:[URLSTRING stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] parameters:parameter constructingBodyWithBlock:^(id<AFMultipartFormData> formData)
-             {
-                 
-             }
-                  success:^(AFHTTPRequestOperation *operation, id responseObject)
+             {}
+             success:^(AFHTTPRequestOperation *operation, id responseObject)
              {
                  NSMutableArray * responseJson = [[NSMutableArray alloc]init];
                  responseJson = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
-                 block(responseJson,WebServiceResultSuccess);
+                
+                 if (responseJson)
+                     block(responseJson,WebServiceResultSuccess);
+                 else
+                     block(@{@"message":@"Error : Could not getting proper responce"},WebServiceResultFail);
+
              }
                   failure:^(AFHTTPRequestOperation *operation, NSError* error)
              {
                  [SVProgressHUD dismiss];
-                 block(@"1",WebServiceResultSuccess);
+                 block(@{@"message":@"Error : Server Problem"},WebServiceResultFail);
              }];
         }
         @catch (NSException *exception)
         {
-            block(@"1",WebServiceResultSuccess);
+            block(@{@"message":@"Error"},WebServiceResultFail);
         }
     }
 }

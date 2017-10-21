@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GoogleSignIn/GoogleSignIn.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@import GoogleMaps;
+@import GooglePlaces;
+@import Google;
+@import GoogleSignIn;
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate,GIDSignInDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
