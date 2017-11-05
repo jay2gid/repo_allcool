@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LoginVC.h"
 
 @interface ViewController ()
 
@@ -24,5 +25,15 @@
     [super didReceiveMemoryWarning];
 }
 
+- (IBAction)tapWroc:(id)sender {
+    
+    for (UIViewController *controller in [self.navigationController viewControllers])
+    {
+        if ([controller isKindOfClass:[LoginVC class]])
+        {
+            [self.navigationController popToViewController:controller animated:true];
+        }
+    }
+}
 
 @end

@@ -35,5 +35,11 @@
 #import "ViewAddDodaj.h"
 #import "ViewNotesList.h"
 #import "FloatingButton.h"
+#import "UIView+Toast.h"
 
+#import "FavBearVC.h"
+#import "FavListVC.h"
+#import "FavBravery.h"
+#import "FestivalListVC.h"
+#import "RatingCell.h"
 #endif

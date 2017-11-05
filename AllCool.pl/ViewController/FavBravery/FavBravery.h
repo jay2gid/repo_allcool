@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FavBravery : UIViewController
+@interface FavBravery : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property(nonatomic,readwrite) BOOL isBack;
+@property(nonatomic,readwrite) int apiTag;
+
 
 @end

@@ -9,7 +9,9 @@
 #import "ViewNotesList.h"
 
 @implementation ViewNotesList
-
+{
+    NSArray *arrayData;
+}
 - (void)drawRect:(CGRect)rect {
 
     self.frame = CGRectMake(0, HEIGHT, WIDTH, HEIGHT);
@@ -22,9 +24,47 @@
         
     }];
     
-    _tableList.delegate = self;
-    _tableList.dataSource = self;
-    [_tableList reloadData];
+    NSDictionary *param;
+    
+    if (_tagFOR == 1)
+    {
+      param =@{@"uid": UserID, @"bid":[NSString stringWithFormat:@"%@",_dict[@"id"]] };
+    }
+    if (_tagFOR == 2)
+    {
+        param =@{@"uid": UserID, @"vid":[NSString stringWithFormat:@"%@",_dict[@"id"]] };
+    }
+    
+    SVHUD_START
+    [WebServiceCalls POST:@"get_notes.php" parameter:param completionBlock:^(id JSON, WebServiceResult result)
+     {
+         SVHUD_STOP
+         NSLog(@"%@", JSON);
+         
+         @try
+         {
+             if ([JSON[@"success"] integerValue] == 1)
+             {
+                 arrayData = [NSMutableArray arrayWithArray:JSON[@"notes_details"]] ;
+               
+                 _tableList.delegate = self;
+                 _tableList.dataSource = self;
+                 [_tableList reloadData];
+                 
+             }
+             else
+             {
+                 [self.selfBack.navigationController.view makeToast:@"Notes not found."];
+             }
+         }
+         @catch (NSException *exception)
+         {
+         }
+         @finally
+         {
+         }
+     }];
+    
 }
 
 - (IBAction)tapBack:(id)sender {
@@ -47,54 +87,24 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 4;
+    return arrayData.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"ViewNotesList" owner:self options:nil]objectAtIndex:1];
     
+    UITextView *txt = [cell viewWithTag:1];
+    txt.text = [NSString stringWithFormat:@"%@",arrayData[indexPath.row][@"comment"]];
+    
+    UILabel *lblDate = [cell viewWithTag:2];
+    lblDate.text = [NSString stringWithFormat:@"Date : %@",arrayData[indexPath.row][@"dat"]];
+  
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIAlertController * alert=[UIAlertController
-                               
-                               alertControllerWithTitle:@"Options" message:@"" preferredStyle:UIAlertControllerStyleActionSheet];
-    
-    UIAlertAction* yesButton = [UIAlertAction
-                                actionWithTitle:@"Edit"
-                                style:UIAlertActionStyleDefault
-                                handler:^(UIAlertAction * action)
-                                {
-                                    ViewAddDodaj *view = [[[NSBundle mainBundle] loadNibNamed:@"View" owner:self options:nil]objectAtIndex:0];
-                                    view.frame = CGRectMake(0, 0, WIDTH, HEIGHT);
-                                    [self addSubview:view];
-                                    
-                                }];
-    
-    
-    UIAlertAction* noButton = [UIAlertAction
-                               actionWithTitle:@"Delete"
-                               style:UIAlertActionStyleDefault
-                               handler:^(UIAlertAction * action)
-                               {
-                                   // What we write here????????**
-                                   // api shoud b there
-                               }];
-    
-    UIAlertAction* cancel = [UIAlertAction
-                               actionWithTitle:@"Cancel"
-                               style:UIAlertActionStyleCancel
-                               handler:^(UIAlertAction * action)
-                               {
-                                   
-                               }];
-    [alert addAction:cancel];
-    [alert addAction:yesButton];
-    [alert addAction:noButton];
-    
-    [self.selfBack presentViewController:alert animated:YES completion:nil];
+
 }
 
 @end

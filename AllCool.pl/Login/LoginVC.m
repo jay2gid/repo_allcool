@@ -26,7 +26,7 @@
     [super viewDidLoad];
 
     HIDE_NAV_BAR
-    GESTURE_POP
+    
     
     btnForgot.layer.shadowColor = BLACK_COLOR.CGColor;
     btnForgot.layer.shadowOffset = CGSizeMake(1, 1);
@@ -48,6 +48,9 @@
     [self.view addSubview:_signInButton];
     [GIDSignIn sharedInstance].delegate = self;
     _signInButton.hidden = true;
+    
+    GESTURE_POP_REMOVE
+    
 }
 - (IBAction)tapFacebookLogin:(id)sender
 {

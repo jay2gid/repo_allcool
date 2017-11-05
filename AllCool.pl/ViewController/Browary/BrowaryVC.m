@@ -45,7 +45,7 @@
              }
              else
              {
-                 [WebServiceCalls alert:@"Unable to fetch data. try again"];
+                // [WebServiceCalls alert:@"Unable to fetch data. try again"];
              }
          }
          @catch (NSException *exception)

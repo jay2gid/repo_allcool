@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewAddDodaj : UIView
+@interface ViewAddDodaj : TPKeyboardAvoidingScrollView<UITextViewDelegate>
 
+@property (strong, nonatomic) IBOutlet UIButton *btnOK;
 
+@property (strong, nonatomic) IBOutlet UITextView *txtNote;
 
 @end

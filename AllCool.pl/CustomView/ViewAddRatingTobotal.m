@@ -10,7 +10,7 @@
 
 @implementation ViewAddRatingTobotal
 
-@synthesize BID;
+@synthesize BID,delegate;
 
 - (void)drawRect:(CGRect)rect
 {
@@ -18,6 +18,8 @@
     
     txtName.text = User_Name;
     txtEmail.text = User_Email;
+    
+    txtComment.delegate  = self;
 }
 
 - (IBAction)btnSendClk:(id)sender
@@ -39,26 +41,39 @@
     NSString *star = [NSString stringWithFormat:@"%ld", viewStarRating.rating];
     
     SVHUD_START
-    NSDictionary *dict = @{@"uid":UserID, @"bid":BID, @"rating":star, @"comment":txtComment.text, @"email":User_Email, @"type":User_Type};
+    NSDictionary *dict = @{@"uid":UserID,@"name":User_Name,@"bid":BID, @"rating":star, @"comment":txtComment.text, @"email":User_Email, @"type":[NSString stringWithFormat:@"%@",_dictBear[@"type"]]};
     
-    [WebServiceCalls POST:@"festival/singlebeer_rating.php" parameter:dict completionBlock:^(id JSON, WebServiceResult result)
+//    $uid = $_POST['uid'];
+//    $bid = $_POST['bid'];
+//    $name = $_POST['name'];
+//    $email = $_POST['email'];
+//    $rating = $_POST['rating'];
+//    $comment = $_POST['comment'];
+//    $type = $_POST['type'];
+    
+    [WebServiceCalls POST:@"vendorss/singlebeer_rating.php" parameter:dict completionBlock:^(id JSON, WebServiceResult result)
      {
          SVHUD_STOP
          NSLog(@"%@", JSON);
-         
          @try
          {
              if ([JSON[@"success"] integerValue] == 1)
              {
+                 [self removeFromSuperview];
+                 [self.selfBack.navigationController.view makeToast:@"Rating Submitted"];
+                 [delegate didSuccessRating];
              }
              else
              {
-                 [WebServiceCalls alert:@"Unable to fetch data. try again"];
+                 if (JSON[@"message"])
+                     [WebServiceCalls alert:JSON[@"message"]];
+                 
+                 
              }
          }
          @catch (NSException *exception)
          {
-             [WebServiceCalls alert:@"Unable to fetch data. try again"];
+            // [WebServiceCalls alert:@"Unable to fetch data. try again"];
          }
          @finally
          {
@@ -70,5 +85,15 @@
 {
     [self removeFromSuperview];
 }
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    
+   if( textField.text.length == 30)
+       return false;
+    
+   else return true;
+}
+
 
 @end

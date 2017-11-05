@@ -8,14 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewAddRatingTobotal : TPKeyboardAvoidingScrollView
+@protocol ratingSuccessDelegate <NSObject>
+-(void)didSuccessRating;
+@end;
+
+
+@interface ViewAddRatingTobotal : UIView<UITextFieldDelegate>
 {
     IBOutlet StarRatingControl *viewStarRating;
     IBOutlet ACFloatingTextfield *txtName;
     IBOutlet ACFloatingTextfield *txtEmail;
     IBOutlet ACFloatingTextfield *txtComment;
 }
+@property (nonatomic, strong) NSDictionary *dictBear;
+
+@property (strong, nonatomic) id<ratingSuccessDelegate> delegate;
+
 
 @property (nonatomic, strong) NSString *BID;
+@property (nonatomic, strong) UIViewController *selfBack;
 
 @end

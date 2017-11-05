@@ -18,7 +18,7 @@
     NSArray *mediaTypeArray;
     NSString *cameraString;
     NSString *libraryString;
-    
+
 }
 
 +(APPhotoLibrary *)sharedInstance;

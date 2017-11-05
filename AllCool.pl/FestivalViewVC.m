@@ -85,7 +85,7 @@
              else
              {
                  arrExibitors = @[];
-                 [WebServiceCalls alert:@"Unable to fetch data. try again"];
+                 /// [WebServiceCalls alert:@"Unable to fetch data. try again"];
              }
          }
          @catch (NSException *exception)
@@ -119,7 +119,7 @@
              else
              {
                  arrProg = @[];
-                 [WebServiceCalls alert:@"Unable to fetch data. try again"];
+              //   [WebServiceCalls alert:@"Unable to fetch data. try again"];
              }
          }
          @catch (NSException *exception)
@@ -153,7 +153,7 @@
              else
              {
                  arrRating = @[];
-                 [WebServiceCalls alert:@"Unable to fetch data. try again"];
+                 //[WebServiceCalls alert:@"Unable to fetch data. try again"];
              }
          }
          @catch (NSException *exception)
@@ -187,7 +187,7 @@
              else
              {
                  arrCategory = @[];
-                 [WebServiceCalls alert:@"Unable to fetch data. try again"];
+                 //[WebServiceCalls alert:@"Unable to fetch data. try again"];
              }
          }
          @catch (NSException *exception)

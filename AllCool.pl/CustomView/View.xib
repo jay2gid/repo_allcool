@@ -23,7 +23,7 @@
                             <rect key="frame" x="20" y="67" width="303" height="120"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ebH-rh-VgD">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ebH-rh-VgD">
                                     <rect key="frame" x="9" y="0.0" width="285" height="112"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -66,15 +66,16 @@
                             <state key="normal" title="ZAPISZ">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
-                            <connections>
-                                <action selector="btnSendClk:" destination="iN0-l3-epB" eventType="touchUpInside" id="ItP-JS-SO2"/>
-                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnOK" destination="lzy-90-mI8" id="fCT-c2-xLB"/>
+                <outlet property="txtNote" destination="ebH-rh-VgD" id="Ksl-yQ-x6Q"/>
+            </connections>
             <point key="canvasLocation" x="34.5" y="53.5"/>
         </view>
         <view clipsSubviews="YES" contentMode="scaleToFill" id="l47-JZ-QiW" customClass="ViewAddRatingTobotal">
@@ -111,7 +112,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="dodaz komentarz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UaZ-tg-MtO" customClass="ACFloatingTextfield" customModule="AllCool_pl" customModuleProvider="target">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="dodaz komentarz (30)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UaZ-tg-MtO" customClass="ACFloatingTextfield" customModule="AllCool_pl" customModuleProvider="target">
                             <rect key="frame" x="18" y="285" width="292" height="52"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <nil key="textColor"/>

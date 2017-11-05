@@ -77,10 +77,10 @@ static NSString *getuserphone;
                      block(@{@"message":@"Error : Could not getting proper responce"},WebServiceResultFail);
 
              }
-                  failure:^(AFHTTPRequestOperation *operation, NSError* error)
+            failure:^(AFHTTPRequestOperation *operation, NSError* error)
              {
                  [SVProgressHUD dismiss];
-                 block(@{@"message":@"Error : Server Problem"},WebServiceResultFail);
+                  block(@{@"message":@"Error : Server Problem"},WebServiceResultFail);
              }];
         }
         @catch (NSException *exception)

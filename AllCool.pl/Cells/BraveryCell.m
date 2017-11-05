@@ -9,25 +9,21 @@
 #import "BraveryCell.h"
 
 @implementation BraveryCell
-{
-    IBOutlet UILabel *lblDaduj;
-    IBOutlet UILabel *lblKasuj;
-    IBOutlet UILabel *lblNottaki;
-}
+@synthesize btnDaduj,btnKasuj,btnNottaki;
 - (void)awakeFromNib {
     [super awakeFromNib];
     
-    lblDaduj.layer.cornerRadius = 13;
-    lblDaduj.layer.borderWidth = 1;
-    lblDaduj.layer.borderColor = lblDaduj.textColor.CGColor;
+    btnDaduj.layer.cornerRadius = 13;
+    btnDaduj.layer.borderWidth = 1;
+    btnDaduj.layer.borderColor = btnDaduj.titleLabel.textColor.CGColor;
     
-    lblKasuj.layer.cornerRadius = 13;
-    lblKasuj.layer.borderWidth = 1;
-    lblKasuj.layer.borderColor = lblKasuj.textColor.CGColor;
+    btnKasuj.layer.cornerRadius = 13;
+    btnKasuj.layer.borderWidth = 1;
+    btnKasuj.layer.borderColor = btnDaduj.titleLabel.textColor.CGColor;
     
-    lblNottaki.layer.cornerRadius = 13;
-    lblNottaki.layer.borderWidth = 1;
-    lblNottaki.layer.borderColor = lblNottaki.textColor.CGColor;
+    btnNottaki.layer.cornerRadius = 13;
+    btnNottaki.layer.borderWidth = 1;
+    btnNottaki.layer.borderColor = btnDaduj.titleLabel.textColor.CGColor;
     
     _imageBravery.clipsToBounds = YES;
     _imageBravery.layer.cornerRadius = 36;

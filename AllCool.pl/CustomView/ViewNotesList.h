@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+
+
+
 @interface ViewNotesList : UIView<UITableViewDelegate,UITableViewDataSource>
 
 @property(strong,nonatomic)UIViewController *selfBack;
 @property (strong, nonatomic) IBOutlet UITableView *tableList;
 @property (strong, nonatomic) IBOutlet UILabel *lblTitle;
 
+@property (readwrite, nonatomic) NSInteger tagFOR;
+
+@property (strong , nonatomic) NSDictionary *dict;
 @end

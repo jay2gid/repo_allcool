@@ -8,7 +8,7 @@
 
 #import "SignupVC.h"
 
-@interface SignupVC ()
+@interface SignupVC ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -17,7 +17,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    GESTURE_POP
 }
+GESTURE_POP_DELEGATE
 
 - (IBAction)btnSignUpClk:(id)sender
 {
@@ -69,12 +72,15 @@
          
          if ([JSON[@"success"] integerValue] == 1)
          {
-             [WebServiceCalls alert:JSON[@"message"]];
+             // [WebServiceCalls alert:JSON[@"message"]];
              
-             POP_BACK
+             // POP_BACK
              /*UIStoryboard *storybord = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
              FirstVC *obj = [storybord instantiateViewControllerWithIdentifier:@"FirstVC"];
              [self.navigationController pushViewController:obj animated:YES];*/
+             
+             [self performSegueWithIdentifier:@"goMessage" sender:nil];
+             [SVProgressHUD showInfoWithStatus:JSON[@"message"]];
          }
          else
          {

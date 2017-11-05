@@ -27,9 +27,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    GET_HEADER_VIEW
-    header.title.text = @"Festiwale piwne";
-    
+    if (_isBack)
+    {
+        GET_HEADER_VIEW_WITH_BACK
+        if (_apiTag == 1) {
+            header.title.text = @"Ulubione festiwale";
+        }
+        else if (_apiTag == 2) {
+            header.title.text = @"Odwiedzone festiwale";
+        }
+
+        viewUpButtons.hidden = true;
+        tableList.frame = CGRectMake(0, 0, WIDTH, HEIGHT - 64);
+   
+    }
+    else
+    {
+        GET_HEADER_VIEW
+        header.title.text = @"Festiwale piwne";
+    }
     viewUpButtons.layer.borderColor = APP_COLOR_RED.CGColor;
     viewUpButtons.layer.borderWidth = 1;
     
@@ -45,10 +61,18 @@
 
 -(void) get_New_Festival
 {
-    // http://allcool.pl/api_ios/festival/new_in_festival.php
-    
     SVHUD_START
-    [WebServiceCalls GET:@"festival/new_in_festival.php" parameter:nil completionBlock:^(id JSON, WebServiceResult result)
+    
+    NSString *url = @"festival/new_in_festival.php";
+
+    if (_apiTag == 1) {
+        url= [NSString stringWithFormat:@"festival/get_favourite_festival.php?uid=%@",UserID];
+    }
+    else if (_apiTag == 2) {
+        url= [NSString stringWithFormat:@"festival/get_visited_festival.php?uid=%@",UserID];
+    }
+    
+    [WebServiceCalls GET:url parameter:nil completionBlock:^(id JSON, WebServiceResult result)
      {
          SVHUD_STOP
          NSLog(@"%@", JSON);
@@ -62,7 +86,7 @@
              }
              else
              {
-                 [WebServiceCalls alert:@"Unable to fetch data. try again"];
+                // [WebServiceCalls alert:@"Unable to fetch data. try again"];
              }
          }
          @catch (NSException *exception)
@@ -93,7 +117,7 @@
              }
              else
              {
-                 [WebServiceCalls alert:@"Unable to fetch data. try again"];
+                // [WebServiceCalls alert:@"Unable to fetch data. try again"];
              }
          }
          @catch (NSException *exception)

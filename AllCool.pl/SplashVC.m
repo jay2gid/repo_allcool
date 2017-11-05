@@ -43,13 +43,19 @@
     else
     {
         [self performSegueWithIdentifier:@"goLogin" sender:nil];
+
     }
+    [self performSelector:@selector(remobveGIF) withObject:nil afterDelay:1];
+}
+
+-(void)remobveGIF
+{
+    [imgaeGif removeFromSuperview];
 }
 
 - (void)didReceiveMemoryWarning{
     
     [super didReceiveMemoryWarning];
- 
 }
 
 @end

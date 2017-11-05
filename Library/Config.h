@@ -78,6 +78,7 @@
 
 #define GESTURE_POP self.navigationController.interactivePopGestureRecognizer.enabled = YES; self.navigationController.interactivePopGestureRecognizer.delegate = self;
 
+#define GESTURE_POP_REMOVE self.navigationController.interactivePopGestureRecognizer.enabled = NO; self.navigationController.interactivePopGestureRecognizer.delegate = self;
 
 #define SET_CORNER layer.cornerRadius = 5;
 

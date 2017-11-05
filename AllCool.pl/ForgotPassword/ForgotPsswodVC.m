@@ -8,7 +8,7 @@
 
 #import "ForgotPsswodVC.h"
 
-@interface ForgotPsswodVC ()
+@interface ForgotPsswodVC ()<UIGestureRecognizerDelegate>
 {
 
     IBOutlet UILabel *lblEnterEmail;
@@ -23,7 +23,8 @@
     lblEnterEmail.layer.shadowColor = BLACK_COLOR.CGColor;
     lblEnterEmail.layer.shadowOffset = CGSizeMake(1, 1);
     lblEnterEmail.layer.shadowOpacity = 10;
-    
+    GESTURE_POP
+
 }
 
 - (void)didReceiveMemoryWarning

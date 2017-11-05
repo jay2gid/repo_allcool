@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface FestivalListVC : UIViewController
+@property(nonatomic,readwrite) BOOL isBack;
+@property(nonatomic,readwrite) int apiTag;
 
 @end

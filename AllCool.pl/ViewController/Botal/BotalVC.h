@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface BotalVC : UIViewController
+#import "ViewAddRatingTobotal.h"
+@interface BotalVC : UIViewController<UITableViewDelegate,UITableViewDataSource,ratingSuccessDelegate>
 
 @property (nonatomic, strong) NSDictionary *dictBeer;
 

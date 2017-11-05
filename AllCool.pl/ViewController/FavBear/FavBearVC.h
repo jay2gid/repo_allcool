@@ -10,8 +10,9 @@
 
 @interface FavBearVC : UIViewController
 {
-    
     IBOutlet UITableView *tblViewBeer;
-    
 }
+@property(nonatomic,readwrite) BOOL isBack;
+@property(nonatomic,readwrite) int apiTag;
+
 @end
