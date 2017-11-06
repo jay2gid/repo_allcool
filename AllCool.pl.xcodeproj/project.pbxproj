@@ -84,6 +84,8 @@
 		922BA61F1F62BEDD0068A5C3 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 922BA61E1F62BEDD0068A5C3 /* icon.png */; };
 		9234505E1F91111400418E2C /* ViewNotesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9234505D1F91111400418E2C /* ViewNotesList.m */; };
 		923450601F91113B00418E2C /* ViewNotesList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9234505F1F91113B00418E2C /* ViewNotesList.xib */; };
+		9284B0E71FAF109E009B5ABB /* ViewSaveInList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9284B0E61FAF109E009B5ABB /* ViewSaveInList.m */; };
+		9284B0E91FAF10B5009B5ABB /* ViewSaveinList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9284B0E81FAF10B5009B5ABB /* ViewSaveinList.xib */; };
 		928912511F9266FE00890E25 /* FloatingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 928912501F9266FE00890E25 /* FloatingButton.m */; };
 		928912531F9267EC00890E25 /* FloatingButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928912521F9267EC00890E25 /* FloatingButtonCell.xib */; };
 		928912561F92688100890E25 /* FloatingButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 928912551F92688100890E25 /* FloatingButtonCell.m */; };
@@ -381,6 +383,9 @@
 		9234505C1F91111400418E2C /* ViewNotesList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewNotesList.h; path = CustomView/ViewNotesList.h; sourceTree = "<group>"; };
 		9234505D1F91111400418E2C /* ViewNotesList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewNotesList.m; path = CustomView/ViewNotesList.m; sourceTree = "<group>"; };
 		9234505F1F91113B00418E2C /* ViewNotesList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ViewNotesList.xib; path = CustomView/ViewNotesList.xib; sourceTree = "<group>"; };
+		9284B0E51FAF109E009B5ABB /* ViewSaveInList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewSaveInList.h; path = CustomView/ViewSaveInList.h; sourceTree = "<group>"; };
+		9284B0E61FAF109E009B5ABB /* ViewSaveInList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewSaveInList.m; path = CustomView/ViewSaveInList.m; sourceTree = "<group>"; };
+		9284B0E81FAF10B5009B5ABB /* ViewSaveinList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewSaveinList.xib; sourceTree = "<group>"; };
 		9289124F1F9266FE00890E25 /* FloatingButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatingButton.h; sourceTree = "<group>"; };
 		928912501F9266FE00890E25 /* FloatingButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatingButton.m; sourceTree = "<group>"; };
 		928912521F9267EC00890E25 /* FloatingButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FloatingButtonCell.xib; sourceTree = "<group>"; };
@@ -903,6 +908,9 @@
 			children = (
 				922BA5DB1F61693D0068A5C3 /* FavBearVC.h */,
 				922BA5DC1F61693D0068A5C3 /* FavBearVC.m */,
+				9284B0E51FAF109E009B5ABB /* ViewSaveInList.h */,
+				9284B0E61FAF109E009B5ABB /* ViewSaveInList.m */,
+				9284B0E81FAF10B5009B5ABB /* ViewSaveinList.xib */,
 			);
 			name = FavBear;
 			sourceTree = "<group>";
@@ -1345,6 +1353,7 @@
 				92ADAF811F5FC99800501EA0 /* clock_red.png in Resources */,
 				92ADAF6E1F5FC99800501EA0 /* banner002.jpg in Resources */,
 				92ADAFDA1F5FC99800501EA0 /* user.png in Resources */,
+				9284B0E91FAF10B5009B5ABB /* ViewSaveinList.xib in Resources */,
 				92ADAF731F5FC99800501EA0 /* beermenu.png in Resources */,
 				92ADAF961F5FC99800501EA0 /* eye.png in Resources */,
 				92ADAFDC1F5FC99800501EA0 /* useredit.png in Resources */,
@@ -1585,6 +1594,7 @@
 				922BA5961F600B520068A5C3 /* SDWebImageManager.m in Sources */,
 				922BA5931F600B520068A5C3 /* SDWebImageDecoder.m in Sources */,
 				922BA5951F600B520068A5C3 /* SDWebImageDownloaderOperation.m in Sources */,
+				9284B0E71FAF109E009B5ABB /* ViewSaveInList.m in Sources */,
 				922BA61D1F62B0660068A5C3 /* FavListVC.m in Sources */,
 				922BA5EB1F61764B0068A5C3 /* MyTextField.m in Sources */,
 				92A2A9FB1F6D6A9C0000939D /* ProfileEditVC.m in Sources */,

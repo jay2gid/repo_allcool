@@ -329,4 +329,68 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)tapButtonOption:(id)sender {
+    
+    UIAlertController * view=   [UIAlertController
+                                 alertControllerWithTitle:@""
+                                 message:@""
+                                 preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction* online = [UIAlertAction
+                             actionWithTitle:@"Odwiedzony"
+                             style:UIAlertActionStyleDefault
+                             handler:^(UIAlertAction * action)
+                             {
+                                 [view dismissViewControllerAnimated:YES completion:nil];
+                             }];
+    UIAlertAction* offline = [UIAlertAction
+                              actionWithTitle:@"Ulubiony"
+                              style:UIAlertActionStyleDefault
+                              handler:^(UIAlertAction * action)
+                              {
+                                  [view dismissViewControllerAnimated:YES completion:nil];
+                                  
+                              }];
+    UIAlertAction* doNotDistrbe = [UIAlertAction
+                                   actionWithTitle:@"Pokaz droge"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action)
+                                   {
+                                       [view dismissViewControllerAnimated:YES completion:nil];
+                                       
+                                   }];
+    UIAlertAction* away = [UIAlertAction
+                           actionWithTitle:@"Ocen festiwal"
+                           style:UIAlertActionStyleDestructive
+                           handler:^(UIAlertAction * action)
+                           {
+                               [view dismissViewControllerAnimated:YES completion:nil];
+                               
+                           }];
+    
+    
+    UIAlertAction* cancel = [UIAlertAction
+                             actionWithTitle:@"Cancel"
+                             style:UIAlertActionStyleCancel
+                             handler:^(UIAlertAction * action)
+                             {
+                                 
+                             }];
+    
+    [online setValue:[[UIImage imageNamed:@"flag_op"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forKey:@"image"];
+    [offline setValue:[[UIImage imageNamed:@"like_op"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forKey:@"image"];
+    [doNotDistrbe setValue:[[UIImage imageNamed:@"star_op"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forKey:@"image"];
+    [away setValue:[[UIImage imageNamed:@"star_op"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forKey:@"image"];
+    
+    [view addAction:online];
+    [view addAction:offline];
+    [view addAction:doNotDistrbe];
+    [view addAction:away];
+    [view addAction:cancel];
+    
+    [self presentViewController:view animated:YES completion:nil];
+}
+
+
 @end

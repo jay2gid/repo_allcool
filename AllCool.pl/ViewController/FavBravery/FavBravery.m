@@ -113,7 +113,7 @@
     cell.lblCity.text = [NSString stringWithFormat:@"%@",arrList[indexPath.row][@"street_name"]];
     cell.lblAvgRating.text = [NSString stringWithFormat:@"%@",arrList[indexPath.row][@"Avg_rating"]];
 
-    [cell.imageBravery sd_setImageWithURL:[NSURL URLWithString:arrList[indexPath.row][@"img"]] placeholderImage:[UIImage imageNamed:@"noimage.jpg"]];
+    [cell.imageBravery sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",arrList[indexPath.row][@"img"]]]   placeholderImage:[UIImage imageNamed:@"noimage.jpg"]];
 
     
     [cell.btnDaduj addTarget:self action:@selector(methodDauj:) forControlEvents:UIControlEventTouchUpInside];

@@ -61,12 +61,25 @@
          {
              if ([JSON[@"success"] integerValue] == 1)
              {
-                 arrBeer = [NSMutableArray arrayWithArray:JSON[@"beer_details"]] ;
-                 [tblViewBeer reloadData];
+                 if(JSON[@"beer_details"])
+                 {
+                     arrBeer = [NSMutableArray array];
+                     
+                     for (int i = 0; i < [JSON[@"beer_details"] count]; i++) {
+                         
+                         NSString *idstr =  [NSString stringWithFormat:@"%@",JSON[@"beer_details"][i][@"id"]];
+                         if (![idstr isEqualToString:@"<null>"])
+                         {
+                             [arrBeer addObject: JSON[@"beer_details"][i]];
+                         }
+                     }
+                     
+                     [tblViewBeer reloadData];
+                 }
              }
              else
              {
-                 //[WebServiceCalls alert:@"Unable to fetch data. try again"];
+                 // [WebServiceCalls alert:@"Unable to fetch data. try again"];
              }
          }
          @catch (NSException *exception)
@@ -101,7 +114,8 @@
     
     cell.btnDaduj.tag = indexPath.row;
     
-    [cell.imgBeerLogo sd_setImageWithURL:[NSURL URLWithString:arrBeer[indexPath.row][@"image"]] placeholderImage:[UIImage imageNamed:@"noimage.jpg"]];
+    
+    [cell.imgBeerLogo sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",arrBeer[indexPath.row][@"image"]]] placeholderImage:[UIImage imageNamed:@"noimage.jpg"]];
     
     cell.lblTitle.text = arrBeer[indexPath.row][@"title"];
     
@@ -117,6 +131,12 @@
     [cell.btnKasuj addTarget:self action:@selector(methodKasuj:) forControlEvents:UIControlEventTouchUpInside];
     cell.btnKasuj.tag = indexPath.row;
     
+    if (_apiTag == 1)
+    {
+        cell.btnKasuj.hidden = true;
+        cell.btnDaduj.frame = cell.btnKasuj.frame;
+    }
+        
     return cell;
 }
 

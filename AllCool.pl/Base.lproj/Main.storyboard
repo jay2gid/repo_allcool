@@ -955,7 +955,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9h1-e0-aFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1815" y="3144.7183098591549"/>
+            <point key="canvasLocation" x="1868" y="3146"/>
         </scene>
         <!--Festival ListVC-->
         <scene sceneID="91u-y7-1Cr">
@@ -1270,6 +1270,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                         <state key="normal" image="icon_plus"/>
                                         <connections>
+                                            <action selector="tapButtonOption:" destination="Uql-1R-4fg" eventType="touchUpInside" id="I4r-g6-Bje"/>
                                             <action selector="tapButtonOption:" destination="7Xv-z2-mqb" eventType="touchUpInside" id="PT9-Jr-Chm"/>
                                         </connections>
                                     </button>
@@ -1304,7 +1305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cti-GR-ztc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1867.5" y="2466.5492957746478"/>
+            <point key="canvasLocation" x="1868" y="2467"/>
         </scene>
         <!--BotalVC-->
         <scene sceneID="mRF-0W-ABZ">
